@@ -13,6 +13,7 @@
 		79C9CF1C16B14502006A03F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79C9CF1A16B14502006A03F4 /* InfoPlist.strings */; };
 		79C9CF1E16B14502006A03F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C9CF1D16B14502006A03F4 /* main.m */; };
 		79C9CF2216B14502006A03F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C9CF2116B14502006A03F4 /* AppDelegate.m */; };
+		79C9CF3716B14777006A03F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C9CF3616B14777006A03F4 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		79C9CF1F16B14502006A03F4 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		79C9CF2016B14502006A03F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79C9CF2116B14502006A03F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79C9CF3516B14777006A03F4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		79C9CF3616B14777006A03F4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			children = (
 				79C9CF2016B14502006A03F4 /* AppDelegate.h */,
 				79C9CF2116B14502006A03F4 /* AppDelegate.m */,
+				79C9CF3516B14777006A03F4 /* ViewController.h */,
+				79C9CF3616B14777006A03F4 /* ViewController.m */,
 				79C9CF1816B14502006A03F4 /* Supporting Files */,
 			);
 			path = Demo;
@@ -153,6 +158,7 @@
 			files = (
 				79C9CF1E16B14502006A03F4 /* main.m in Sources */,
 				79C9CF2216B14502006A03F4 /* AppDelegate.m in Sources */,
+				79C9CF3716B14777006A03F4 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +262,7 @@
 				79C9CF2716B14502006A03F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

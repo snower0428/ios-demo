@@ -11,19 +11,19 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
-
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
+@synthesize viewController = _viewController;
+@synthesize navCtrl = _navCtrl;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    self.viewController = [[ViewController alloc] init];
+    self.navCtrl = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.navCtrl;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -64,6 +64,15 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+- (void)dealloc
+{
+    [_viewController release];
+    [_navCtrl release];
+    [_window release];
+    
+    [super dealloc];
 }
 
 @end
