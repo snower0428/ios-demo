@@ -38,6 +38,9 @@
     [self.view addSubview:_tableView];
     
 //    NSLog(@"ViewController ---------- viewDidLoad");
+    
+    NSString *str = [NSString stringWithFormat:@"%@", @"I am 10 and 123 years and 23.5 old!"];
+    NSLog(@"numberStr:%@ ---- intStr:%@ ---- floatStr:%@", [str getNumberString], [str getIntString], [str getFloatString]);
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -54,6 +57,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     if (indexPath.row < [_arrayViewController count]) {
         id object = NSClassFromString([_arrayViewController objectAtIndex:indexPath.row]);
         UIViewController *ctrl = [[[object alloc] init] autorelease];
