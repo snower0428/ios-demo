@@ -85,6 +85,7 @@
 		79E6FF3D16B426DA0075CAAF /* UILabel+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6FF3C16B426DA0075CAAF /* UILabel+Additions.m */; };
 		79E6FF4016B427500075CAAF /* NSFileManager+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6FF3F16B4274F0075CAAF /* NSFileManager+Additions.m */; };
 		79E6FF4316B427ED0075CAAF /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6FF4216B427EC0075CAAF /* NSData+Additions.m */; };
+		79E6FF4516B42C890075CAAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FF4416B42C880075CAAF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -242,6 +243,7 @@
 		79E6FF3F16B4274F0075CAAF /* NSFileManager+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Additions.m"; sourceTree = "<group>"; };
 		79E6FF4116B427EC0075CAAF /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Additions.h"; sourceTree = "<group>"; };
 		79E6FF4216B427EC0075CAAF /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
+		79E6FF4416B42C880075CAAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 		79C9CF0216B14502006A03F4 = {
 			isa = PBXGroup;
 			children = (
+				79E6FF4416B42C880075CAAF /* README.md */,
 				79C9CF1716B14502006A03F4 /* Demo */,
 				79C9CF1016B14502006A03F4 /* Frameworks */,
 				79C9CF0E16B14502006A03F4 /* Products */,
@@ -553,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C9CF1C16B14502006A03F4 /* InfoPlist.strings in Resources */,
+				79E6FF4516B42C890075CAAF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
