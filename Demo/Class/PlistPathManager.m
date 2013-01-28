@@ -30,25 +30,4 @@
 	return path;
 }
 
-+ (NSString *)babyCompletePlist
-{
-    return [RES_DIRECTORY stringByAppendingPathComponent:@"baby_complete.plist"];
-}
-
-+ (NSString *)faceCompletePlist
-{
-    return [RES_DIRECTORY stringByAppendingPathComponent:@"face.plist"];
-}
-
-
-+ (NSString *)hertCompletePlist
-{
-    return [RES_DIRECTORY stringByAppendingPathComponent:@"hert.plist"];
-}
-
-+ (NSString *)loadingViewPlist
-{
-    return [RES_DIRECTORY stringByAppendingPathComponent:@"loading_view.plist"];
-}
-
 @end

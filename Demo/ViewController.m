@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 #import "BabySelectViewController.h"
-//#import "ASIHttpDemoViewCtrl.h"
-//#import "TableViewDemoCtrl.h"
-//#import "KalCalendar/Kal.h"
+#import "ASIHttpDemoViewCtrl.h"
+#import "TableViewDemoCtrl.h"
+#import "KalCalendar/Kal.h"
 //#import "CarouselDemoViewController.h"
 
 @interface ViewController ()
@@ -24,15 +24,21 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _arrayName = [[NSArray alloc] initWithObjects:@"BabyInfo", @"ASIHttpRequest", @"TableView", @"KalCalendar", @"Carousel", nil];
+    _arrayName = [[NSArray alloc] initWithObjects:
+                  @"BabyInfo", 
+                  @"ASIHttpRequest", 
+                  @"TableView", 
+                  @"KalCalendar", 
+//                  @"Carousel", 
+                  nil];
     
-    _arrayViewController = [[NSArray alloc] initWithObjects:NSStringFromClass([BabySelectViewController class]), nil];
-    
-//    _arrayViewController = [@[NSStringFromClass([BabySelectViewController class]),
-//                            NSStringFromClass([ASIHttpDemoViewCtrl class]),
-//                            NSStringFromClass([TableViewDemoCtrl class]),
-//                            NSStringFromClass([KalViewController class]),
-//                            NSStringFromClass([CarouselDemoViewController class])] retain];
+    _arrayViewController = [[NSArray alloc] initWithObjects:
+                            NSStringFromClass([BabySelectViewController class]),
+                            NSStringFromClass([ASIHttpDemoViewCtrl class]),
+                            NSStringFromClass([TableViewDemoCtrl class]),
+                            NSStringFromClass([KalViewController class]),
+//                            NSStringFromClass([CarouselDemoViewController class]),
+                            nil];
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.bounds.size.height) style:UITableViewStyleGrouped];
     _tableView.delegate = self;

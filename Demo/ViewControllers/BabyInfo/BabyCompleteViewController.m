@@ -10,8 +10,10 @@
 #import "PlistPathManager.h"
 #import "BBAnimation.h"
 
-#define ANIMATION_BOUNCE_KEY    @"bounceAnimation"
-#define ANIMATION_MOVE_KEY      @"moveAnimation"
+#define ANIMATION_BOUNCE_KEY        @"bounceAnimation"
+#define ANIMATION_MOVE_KEY          @"moveAnimation"
+
+#define BABY_COMPLETE_PLIST_PATH    [RES_DIRECTORY stringByAppendingPathComponent:@"baby_complete.plist"]
 
 @interface BabyCompleteViewController ()
 - (void)initBackground;
@@ -42,8 +44,7 @@
     [self initBackground];
     
     // 盒子落下动画
-    NSString *babyCompletePlistPath = [PlistPathManager babyCompletePlist];
-    NSDictionary *babyCompletePlist = [NSDictionary dictionaryWithContentsOfFile:babyCompletePlistPath];
+    NSDictionary *babyCompletePlist = [NSDictionary dictionaryWithContentsOfFile:BABY_COMPLETE_PLIST_PATH];
     if (babyCompletePlist) {
         _animationBox = [LayerParser parseLayerItem:babyCompletePlist resDirectory:RES_DIRECTORY];
         [self.view addSubview:_animationBox];

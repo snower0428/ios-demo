@@ -15,9 +15,4 @@
 + (NSString *)libraryDirectory;
 + (NSString *)tempDirectory;
 
-+ (NSString *)babyCompletePlist;
-+ (NSString *)faceCompletePlist;
-+ (NSString *)hertCompletePlist;
-+ (NSString *)loadingViewPlist;
-
 @end
