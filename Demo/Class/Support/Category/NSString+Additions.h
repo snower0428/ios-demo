@@ -68,4 +68,7 @@
 //格式输出版本号只保留第一个小数点（如5.0.1-->5.01）
 - (NSString *)formatVersion;
 
+//是否为空字符串
+- (BOOL)isEmpty;
+
 @end

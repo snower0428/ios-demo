@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>duration</key>
+	<real>1.5</real>
+	<key>frame</key>
+	<string>{{25,100},{-1,-1}}</string>
+	<key>image</key>
+	<string>box0001.png</string>
+	<key>images</key>
+	<array>
+		<string>box0001.png</string>
+		<string>box0002.png</string>
+		<string>box0003.png</string>
+		<string>box0004.png</string>
+		<string>box0005.png</string>
+		<string>box0006.png</string>
+		<string>box0007.png</string>
+		<string>box0008.png</string>
+		<string>box0009.png</string>
+		<string>box0010.png</string>
+		<string>box0011.png</string>
+		<string>box0012.png</string>
+		<string>box0013.png</string>
+		<string>box0014.png</string>
+		<string>box0015.png</string>
+		<string>box0016.png</string>
+		<string>box0017.png</string>
+		<string>box0018.png</string>
+		<string>box0019.png</string>
+		<string>box0020.png</string>
+		<string>box0021.png</string>
+		<string>box0022.png</string>
+		<string>box0023.png</string>
+		<string>box0024.png</string>
+	</array>
+	<key>interval</key>
+	<real>0.5</real>
+	<key>perodic</key>
+	<integer>1</integer>
+	<key>repeatCount</key>
+	<integer>1</integer>
+	<key>type</key>
+	<integer>3</integer>
+	<key>autoStart</key>
+	<integer>1</integer>
+	<key>autoStartDelayTime</key>
+	<integer>1</integer>
+	<key>stopAtLastFrame</key>
+	<true/>
+</dict>
+</plist>

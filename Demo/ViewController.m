@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-//#import "BabySelectViewController.h"
+#import "BabySelectViewController.h"
 //#import "ASIHttpDemoViewCtrl.h"
 //#import "TableViewDemoCtrl.h"
 //#import "KalCalendar/Kal.h"
@@ -26,6 +26,8 @@
     
     _arrayName = [[NSArray alloc] initWithObjects:@"BabyInfo", @"ASIHttpRequest", @"TableView", @"KalCalendar", @"Carousel", nil];
     
+    _arrayViewController = [[NSArray alloc] initWithObjects:NSStringFromClass([BabySelectViewController class]), nil];
+    
 //    _arrayViewController = [@[NSStringFromClass([BabySelectViewController class]),
 //                            NSStringFromClass([ASIHttpDemoViewCtrl class]),
 //                            NSStringFromClass([TableViewDemoCtrl class]),
@@ -39,8 +41,7 @@
     
 //    NSLog(@"ViewController ---------- viewDidLoad");
     
-    NSString *str = [NSString stringWithFormat:@"%@", @"I am 10 and 123 years and 23.5 old!"];
-    NSLog(@"numberStr:%@ ---- intStr:%@ ---- floatStr:%@", [str getNumberString], [str getIntString], [str getFloatString]);
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated

@@ -327,4 +327,15 @@
 	}
 }
 
+- (BOOL)isEmpty
+{
+	if (self == nil) {
+		return YES;
+	}
+	if ([[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""]) {
+		return YES;
+	}
+	return NO;
+}
+
 @end

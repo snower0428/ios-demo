@@ -37,6 +37,18 @@ typedef void(^ButtonBlock)(void);
 #define MS_FONT(s)              [UIFont fontWithName:@"微软雅黑" size:s]
 #define FZY4JW_FONT(s)          [UIFont fontWithName:@"FZY4JW--GB1-0" size:s]
 
+//时间格式
+#define TIME_FORMAT_SEP_GENERAL         @"%d.%d.%d"
+#define TIME_FORMAT_SEP_POINT           @"%d.%d.%d"
+#define TIME_FORMAT_SEP_SEP             @"%d-%02d-%02d"
+
+//日期格式
+#define DATE_FORMAT_YYYY_MM_DD          @"yyyy-MM-dd"
+#define DATE_FORMAT_YYYY_MM             @"yyyy-MM"
+#define DATE_STR_FORMAT_YYYY_MM_DD      @"%04d-%02d-%02d"
+#define DATE_STR_FORMAT_YYYY_MM         @"%04d-%02d"
+#define DATE_FORMAT_YYYY_MM_DD_HH_mm_ss @"yyyy-MM-dd hh:mm:ss"
+
 //动画控件默认参数
 #define  ANIMATION_REPEATCOUNT_DEFAULT     1
 #define  ANIMATION_DURATION_DEFAULT        1.0
