@@ -25,7 +25,7 @@ ios-demo description
  *  4. if Kal.bundle does not in Copy Bundle Resources, drag into it
  *  5. add "-all_load" to Project/Target/Build Settings/Linking/Other Linker Flags
  *
- **************************************************/
+ */
 
 
 /**************************************************
@@ -42,7 +42,7 @@ ios-demo description
  *
  *  EDIT: To be clear, apps built using iCarousel do still support Snow Leopard, but you cannot develop using Snow Leopard.
  *
- **************************************************/
+ */
 
 
 /**************************************************
@@ -51,5 +51,5 @@ ios-demo description
  *  1. in info.plist add "Fonts provided by application" key;
  *  2. add font name to "Fonts provided by application" items;
  *
- **************************************************/
+ */
 
