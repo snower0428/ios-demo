@@ -6,7 +6,6 @@ ios-demo description
 ====================
 
 /**************************************************
- *
  *  How to use "support"
  *  1. add support directory (contain directory: CustomView,Utility,Base64,JSON and file: CommDefines.h)
  *  2. add frameworks: AVFoundation.framework, QuartzCore.framework, MediaPlayer.framework
@@ -24,12 +23,9 @@ ios-demo description
  *  3. drag libKal.a to Link Binary with Libraries
  *  4. if Kal.bundle does not in Copy Bundle Resources, drag into it
  *  5. add "-all_load" to Project/Target/Build Settings/Linking/Other Linker Flags
- *
- */
 
+    ==================================================
 
-/**************************************************
- *
  *  About iCarousel:
  *  iCarousel doesn't support Xcode 4.2 or Snow Leopard any more. 
  *  The minimum supported version is 4.3 on Lion.
@@ -41,15 +37,11 @@ ios-demo description
  *  but if you still get errors with it, just keep downloading an earlier version until you find one that works.
  *
  *  EDIT: To be clear, apps built using iCarousel do still support Snow Leopard, but you cannot develop using Snow Leopard.
- *
- */
 
+    ==================================================
 
-/**************************************************
- *
  *  How to add font to project:
  *  1. in info.plist add "Fonts provided by application" key;
  *  2. add font name to "Fonts provided by application" items;
- *
  */
 
