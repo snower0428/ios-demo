@@ -21,6 +21,18 @@
     return self;
 }
 
+- (id)init
+{
+    if (self = [super init]) {
+        // Init
+        _arrayYear = [[NSMutableArray alloc] init];
+        _arrayMonth = [[NSMutableArray alloc] init];
+        _arrayDay = [[NSMutableArray alloc] init];
+    }
+    
+    return self;
+}
+
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -122,12 +134,12 @@
     UIImageView *yearBg = [UIImageView imageViewWithFile:@"date_picker_year_bg.png"];
     yearBg.frame = CGRectMake(0, 0, 98, 98);
     [yearBgView addSubview:yearBg];
-    [yearBg release];
     
     _tableViewYear = [[UITableView alloc] initWithFrame:CGRectMake(25, 335, 98, 98) style:UITableViewStylePlain];
     _tableViewYear.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableViewYear.backgroundView = yearBgView;
     [self.view addSubview:_tableViewYear];
+    [_tableViewYear release];
     
     [yearBgView release];
     
@@ -136,12 +148,12 @@
     UIImageView *monthBg = [UIImageView imageViewWithFile:@"date_picker_month_bg.png"];
     monthBg.frame = CGRectMake(0, 0, 75, 98);
     [monthBgView addSubview:monthBg];
-    [monthBg release];
     
     _tableViewMonth = [[UITableView alloc] initWithFrame:CGRectMake(135, 335, 75, 98) style:UITableViewStylePlain];
     _tableViewMonth.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableViewMonth.backgroundView = monthBgView;
     [self.view addSubview:_tableViewMonth];
+    [_tableViewMonth release];
     
     [monthBgView release];
     
@@ -150,12 +162,12 @@
     UIImageView *dayBg = [UIImageView imageViewWithFile:@"date_picker_month_bg.png"];
     dayBg.frame = CGRectMake(0, 0, 75, 98);
     [dayBgView addSubview:dayBg];
-    [dayBg release];
     
-    _tableViewMonth = [[UITableView alloc] initWithFrame:CGRectMake(218, 335, 75, 98) style:UITableViewStylePlain];
-    _tableViewMonth.separatorStyle = UITableViewCellSeparatorStyleNone;
-    _tableViewMonth.backgroundView = dayBgView;
-    [self.view addSubview:_tableViewMonth];
+    _tableViewDay = [[UITableView alloc] initWithFrame:CGRectMake(218, 335, 75, 98) style:UITableViewStylePlain];
+    _tableViewDay.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _tableViewDay.backgroundView = dayBgView;
+    [self.view addSubview:_tableViewDay];
+    [_tableViewDay release];
     
     [dayBgView release];
 }
@@ -180,6 +192,10 @@
     [_tableViewYear release];
     [_tableViewMonth release];
     [_tableViewDay release];
+    
+    [_arrayYear release];
+    [_arrayMonth release];
+    [_arrayDay release];
     
     [super dealloc];
 }

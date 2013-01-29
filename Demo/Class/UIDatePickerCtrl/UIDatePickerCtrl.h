@@ -13,6 +13,10 @@
     UITableView         *_tableViewYear;
     UITableView         *_tableViewMonth;
     UITableView         *_tableViewDay;
+    
+    NSMutableArray      *_arrayYear;
+    NSMutableArray      *_arrayMonth;
+    NSMutableArray      *_arrayDay;
 }
 
 - (void)showDatePicker:(UIView *)FParentView;
