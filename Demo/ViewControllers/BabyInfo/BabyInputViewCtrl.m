@@ -436,9 +436,6 @@
 
 - (void)updateDate:(NSString *)date
 {
-//    NSInteger year = [date intValue] / 100 / 100 % 10000;
-//    NSInteger month = [date intValue] / 100 % 100;
-//    NSInteger day = [date intValue] % 100;
     int year = 0, month = 0, day = 0;
     [self dateFromDateString:date year:&year month:&month day:&day];
     
@@ -454,12 +451,6 @@
     } else if (_babyDateType == BabyDateTypeLastMenses) {
         // 最后月经时间
         NSString *strPreBirthDate = [self addDays:279 fromYear:year month:month day:day andFormat:YES];
-//        strPreBirthDate = [strPreBirthDate stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
-//        
-//        _preBirthYear = [strPreBirthDate intValue] / 1000 / 1000 % 10000;
-//        _preBirthMonth = [strPreBirthDate intValue] / 1000 % 1000;
-//        _preBirthDay = [strPreBirthDate intValue] % 1000;
-        
         strPreBirthDate = [strPreBirthDate stringByReplacingOccurrencesOfString:@"-" withString:@""];
         [self dateFromDateString:strPreBirthDate year:&_preBirthYear month:&_preBirthMonth day:&_preBirthDay];
         
@@ -487,10 +478,6 @@
     if (_isLastMensesDate) {
         //最后月经
         NSString *strLastMensesDate = [self addDays:-279 fromYear:_preBirthYear month:_preBirthMonth day:_preBirthDay andFormat:YES];
-//        strLastMensesDate = [strLastMensesDate stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
-//        NSInteger nLastMYear = [strLastMensesDate intValue] / 1000 / 1000 % 10000;
-//        NSInteger nLastMMonth = [strLastMensesDate intValue] / 1000 % 1000;
-//        NSInteger nLastMDay = [strLastMensesDate intValue] % 1000;
         
         int nLastMensesYear = 0;
         int nLastMensesMonth = 0;
@@ -549,7 +536,6 @@
             [alert release];
             return NO;
         }
-        
         
         if (day < 0)
         {

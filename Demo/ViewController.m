@@ -11,6 +11,8 @@
 #import "ASIHttpDemoViewCtrl.h"
 #import "TableViewDemoCtrl.h"
 #import "KalCalendar/Kal.h"
+#import "UIVCCalendarSetDay.h"
+#import "UIDatePickerCtrl.h"
 //#import "CarouselDemoViewController.h"
 
 @interface ViewController ()
@@ -28,7 +30,9 @@
                   @"BabyInfo", 
                   @"ASIHttpRequest", 
                   @"TableView", 
-                  @"KalCalendar", 
+                  @"KalCalendar",
+                  @"UIVCCalendarSetDay",
+                  @"UIDatePicker",
 //                  @"Carousel", 
                   nil];
     
@@ -37,6 +41,8 @@
                             NSStringFromClass([ASIHttpDemoViewCtrl class]),
                             NSStringFromClass([TableViewDemoCtrl class]),
                             NSStringFromClass([KalViewController class]),
+                            NSStringFromClass([UIVCCalendarSetDay class]),
+                            NSStringFromClass([UIDatePickerCtrl class]),
 //                            NSStringFromClass([CarouselDemoViewController class]),
                             nil];
     
@@ -60,16 +66,45 @@
 //    NSLog(@"ViewController ---------- viewDidAppear:");
 }
 
+#pragma mark -
+
+- (void)updateDate:(NSString *)date
+{
+    NSLog(@"select date:%@, size:%@", date, NSStringFromCGSize([[UIScreen mainScreen] currentMode].size));
+}
+
 #pragma mark -------------------- delegate --------------------
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (indexPath.row < [_arrayViewController count]) {
-        id object = NSClassFromString([_arrayViewController objectAtIndex:indexPath.row]);
-        UIViewController *ctrl = [[[object alloc] init] autorelease];
-        [self.navigationController pushViewController:ctrl animated:YES];
+    if (indexPath.row < [_arrayViewController count])
+    {
+        NSString *strClass = [_arrayViewController objectAtIndex:indexPath.row];
+        id object = NSClassFromString(strClass);
+        if ([strClass isEqualToString:@"UIVCCalendarSetDay"])
+        {
+            NSCalendar *calendar = [NSCalendar currentCalendar];
+            NSDateComponents *components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:[NSDate date]];
+            [[UIVCCalendarSetDay getInstance] showSetSpecDay:1
+                                                        year:components.year
+                                                       month:components.month
+                                                         day:components.day
+                                                  parentView:self.view
+                                                 parentClass:self
+                                              responseMethod:@selector(updateDate:)];
+        }
+        else if ([strClass isEqualToString:@"UIDatePickerCtrl"])
+        {
+            UIDatePickerCtrl *ctrl = [[UIDatePickerCtrl alloc] init];
+            [ctrl showDatePicker:self.view];
+        }
+        else
+        {
+            UIViewController *ctrl = [[[object alloc] init] autorelease];
+            [self.navigationController pushViewController:ctrl animated:YES];
+        }
     }
 }
 

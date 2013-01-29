@@ -84,7 +84,6 @@ static BOOL isGongLi = YES;
 					  nCurDay,
 					  week
 					  ];
-
 	if (isGongLi)
 	{
 		[btnGongli setBackgroundImage:[UIImage imageNamed:@"gongnong-2.png"] forState:UIControlStateNormal]; 
@@ -216,12 +215,10 @@ const char *cMonName[]  = {"*","正月","二月","三月","四月","五月","六
 			parentClass: (NSObject*) FParentClass
 		 responseMethod: (SEL) FResponseMethod
 {
-    
 	nCurRili = _nCurRili;
 	class_func_owner = FParentClass;
 	class_func_responseData = FResponseMethod;
-    [FParentView addSubview:self.view];	
-    
+    [FParentView addSubview:self.view];
 	
 	if (nCurRili == 1)
 	{
@@ -247,7 +244,7 @@ const char *cMonName[]  = {"*","正月","二月","三月","四月","五月","六
 	[tabYear reloadData];
 	[tabMonth reloadData];
 	
-	[self InitDay];	
+	[self InitDay];
 	[self showDateInfo];
 }
 
@@ -594,14 +591,10 @@ const char *cMonName[]  = {"*","正月","二月","三月","四月","五月","六
 		}
 	}
 	
-	
 	if (visibleCells.count>=3)
 	{
 		[self tableView:tableView didSelectRowAtIndexPath:indexPath];
 	}
-	
-	
-	
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
