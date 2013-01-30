@@ -239,7 +239,7 @@
 		79D4469D16B6701500C3F952 /* FZY4JW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469C16B6701500C3F952 /* FZY4JW.TTF */; };
 		79D446BD16B6742B00C3F952 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469F16B6742B00C3F952 /* Kal.bundle */; };
 		79D446CF16B675B000C3F952 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D446CE16B675AA00C3F952 /* libKal.a */; };
-		79D8CADC16B76700002BD388 /* UIDatePickerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D8CADB16B76700002BD388 /* UIDatePickerCtrl.m */; };
+		79D8CADC16B76700002BD388 /* UIDatePickerCtrl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */; };
 		79D8CAE116B77F99002BD388 /* date_picker_clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D8CAE016B77F99002BD388 /* date_picker_clock.png */; };
 		79D8CAF116B7BE51002BD388 /* date_picker_month_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D8CAEF16B7BE51002BD388 /* date_picker_month_bg.png */; };
 		79D8CAF216B7BE51002BD388 /* date_picker_year_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D8CAF016B7BE51002BD388 /* date_picker_year_bg.png */; };
@@ -601,7 +601,7 @@
 		79D446A116B6742B00C3F952 /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kal.xcodeproj; sourceTree = "<group>"; };
 		79D446CE16B675AA00C3F952 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "Demo/KalCalendar/build/Debug-iphonesimulator/libKal.a"; sourceTree = "<group>"; };
 		79D8CADA16B76700002BD388 /* UIDatePickerCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerCtrl.h; sourceTree = "<group>"; };
-		79D8CADB16B76700002BD388 /* UIDatePickerCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerCtrl.m; sourceTree = "<group>"; };
+		79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIDatePickerCtrl.mm; sourceTree = "<group>"; };
 		79D8CAE016B77F99002BD388 /* date_picker_clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_picker_clock.png; sourceTree = "<group>"; };
 		79D8CAEF16B7BE51002BD388 /* date_picker_month_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_picker_month_bg.png; sourceTree = "<group>"; };
 		79D8CAF016B7BE51002BD388 /* date_picker_year_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_picker_year_bg.png; sourceTree = "<group>"; };
@@ -1204,7 +1204,7 @@
 			children = (
 				79D8CADD16B77F69002BD388 /* res */,
 				79D8CADA16B76700002BD388 /* UIDatePickerCtrl.h */,
-				79D8CADB16B76700002BD388 /* UIDatePickerCtrl.m */,
+				79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */,
 			);
 			path = UIDatePickerCtrl;
 			sourceTree = "<group>";
@@ -1520,7 +1520,7 @@
 				79D4469716B669D700C3F952 /* CustomHeaderView.m in Sources */,
 				79D4469816B669D700C3F952 /* TableViewDemoCommon.m in Sources */,
 				79D4469916B669D700C3F952 /* TableViewDemoCtrl.m in Sources */,
-				79D8CADC16B76700002BD388 /* UIDatePickerCtrl.m in Sources */,
+				79D8CADC16B76700002BD388 /* UIDatePickerCtrl.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

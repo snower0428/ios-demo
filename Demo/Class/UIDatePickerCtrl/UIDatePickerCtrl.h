@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIDatePickerCtrl : UIViewController
+@interface UIDatePickerCtrl : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     UITableView         *_tableViewYear;
     UITableView         *_tableViewMonth;
@@ -17,6 +17,16 @@
     NSMutableArray      *_arrayYear;
     NSMutableArray      *_arrayMonth;
     NSMutableArray      *_arrayDay;
+    
+    BOOL                _isSolar;       //是否为阳历，默认为YES
+    
+    NSInteger           _solarYear;     //阳历年、月、日
+    NSInteger           _solarMonth;
+    NSInteger           _solarDay;
+    
+    NSInteger           _lunarYear;     //阴历年、月、日
+    NSInteger           _lunarMonth;
+    NSInteger           _lunarDay;
 }
 
 - (void)showDatePicker:(UIView *)FParentView;

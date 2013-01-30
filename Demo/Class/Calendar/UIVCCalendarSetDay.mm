@@ -369,8 +369,8 @@ const char *cMonName[]  = {"*","正月","二月","三月","四月","五月","六
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    btnGongli.hidden = YES;
-    btnNongli.hidden = YES;
+//    btnGongli.hidden = YES;
+//    btnNongli.hidden = YES;
     [super viewDidLoad];
 }
 
