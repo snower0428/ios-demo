@@ -389,15 +389,13 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
-    UIView *view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-    view.backgroundColor = [UIColor clearColor];
+    //View
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_HEIGHT)];
+    view.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.3];
     self.view = view;
     [view release];
     
-    self.view.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.3];
-    self.view.frame = CGRectMake(0, 0, 320, APP_HEIGHT);
-    
-    //背景
+    //DatePicker背景
     UIImageView *bg = [[UIImageView alloc] initWithFrame:CGRectMake(0, APP_HEIGHT-235, 320, 240)];
     bg.backgroundColor = [UIColor colorWithRed:218.0/255.0 green:221.0/255.0 blue:226.0/255.0 alpha:1.0];
     bg.layer.cornerRadius = 5;
@@ -442,7 +440,8 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     [seperator release];
     
     //时钟
-    UIImageView *clock = [UIImageView imageViewWithFile:@"date_picker_clock.png" atPostion:CGPointMake(10, 295)];
+    UIImageView *clock = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_clock.png" 
+                                              atPostion:CGPointMake(10, 295)];
     [self.view addSubview:clock];
     
     UILabel *labelDate = [UILabel labelWithName:@"2013年1月29日" 
@@ -464,7 +463,7 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     
     //年
     UIView *yearBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 98, TABLE_VIEW_HEIGHT)];
-    UIImageView *yearBg = [UIImageView imageViewWithFile:@"date_picker_year_bg.png"];
+    UIImageView *yearBg = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_year_bg.png"];
     yearBg.frame = CGRectMake(0, 0, 98, TABLE_VIEW_HEIGHT);
     [yearBgView addSubview:yearBg];
     
@@ -478,13 +477,13 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     
     [yearBgView release];
     
-    UIImageView *yearSelect = [UIImageView imageViewWithFile:@"date_picker_select.png"];
+    UIImageView *yearSelect = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_select.png"];
     yearSelect.frame = CGRectMake(25, 335+33, 98, 33);
     [self.view addSubview:yearSelect];
     
     //月
     UIView *monthBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 75, TABLE_VIEW_HEIGHT)];
-    UIImageView *monthBg = [UIImageView imageViewWithFile:@"date_picker_month_bg.png"];
+    UIImageView *monthBg = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_month_bg.png"];
     monthBg.frame = CGRectMake(0, 0, 75, TABLE_VIEW_HEIGHT);
     [monthBgView addSubview:monthBg];
     
@@ -498,13 +497,13 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     
     [monthBgView release];
     
-    UIImageView *monthSelect = [UIImageView imageViewWithFile:@"date_picker_select.png"];
+    UIImageView *monthSelect = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_select.png"];
     monthSelect.frame = CGRectMake(135, 335+33, 75, 33);
     [self.view addSubview:monthSelect];
     
     //日
     UIView *dayBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 75, TABLE_VIEW_HEIGHT)];
-    UIImageView *dayBg = [UIImageView imageViewWithFile:@"date_picker_month_bg.png"];
+    UIImageView *dayBg = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_month_bg.png"];
     dayBg.frame = CGRectMake(0, 0, 75, 98);
     [dayBgView addSubview:dayBg];
     
@@ -518,7 +517,7 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     
     [dayBgView release];
     
-    UIImageView *daySelect = [UIImageView imageViewWithFile:@"date_picker_select.png"];
+    UIImageView *daySelect = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_select.png"];
     daySelect.frame = CGRectMake(218, 335+33, 75, 33);
     [self.view addSubview:daySelect];
     

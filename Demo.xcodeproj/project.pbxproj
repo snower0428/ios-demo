@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79152C7A16BB9D66002A4257 /* date_picker_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 79152C7916BB9D66002A4257 /* date_picker_select.png */; };
 		79BC7C1716BBC46400529663 /* Calendar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79BC7C1416BBC46400529663 /* Calendar.cpp */; };
 		79C9CF1216B14502006A03F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1116B14502006A03F4 /* UIKit.framework */; };
 		79C9CF1416B14502006A03F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1316B14502006A03F4 /* Foundation.framework */; };
@@ -231,10 +230,9 @@
 		79D446BD16B6742B00C3F952 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469F16B6742B00C3F952 /* Kal.bundle */; };
 		79D446CF16B675B000C3F952 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D446CE16B675AA00C3F952 /* libKal.a */; };
 		79D8CADC16B76700002BD388 /* UIDatePickerCtrl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */; };
-		79D8CAE116B77F99002BD388 /* date_picker_clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D8CAE016B77F99002BD388 /* date_picker_clock.png */; };
-		79D8CAF116B7BE51002BD388 /* date_picker_month_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D8CAEF16B7BE51002BD388 /* date_picker_month_bg.png */; };
-		79D8CAF216B7BE51002BD388 /* date_picker_year_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D8CAF016B7BE51002BD388 /* date_picker_year_bg.png */; };
 		79E6FF4516B42C890075CAAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FF4416B42C880075CAAF /* README.md */; };
+		79F6651D16BBF85200937CAD /* DatePickerDemoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */; };
+		79F6656316BC278300937CAD /* DatePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79F6656216BC278300937CAD /* DatePicker.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,7 +253,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		79152C7916BB9D66002A4257 /* date_picker_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_picker_select.png; sourceTree = "<group>"; };
 		79BC7C1416BBC46400529663 /* Calendar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Calendar.cpp; sourceTree = "<group>"; };
 		79BC7C1516BBC46400529663 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
 		79BC7C1616BBC46400529663 /* DateTypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTypeDef.h; sourceTree = "<group>"; };
@@ -583,10 +580,10 @@
 		79D446CE16B675AA00C3F952 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "Demo/KalCalendar/build/Debug-iphonesimulator/libKal.a"; sourceTree = "<group>"; };
 		79D8CADA16B76700002BD388 /* UIDatePickerCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerCtrl.h; sourceTree = "<group>"; };
 		79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIDatePickerCtrl.mm; sourceTree = "<group>"; };
-		79D8CAE016B77F99002BD388 /* date_picker_clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_picker_clock.png; sourceTree = "<group>"; };
-		79D8CAEF16B7BE51002BD388 /* date_picker_month_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_picker_month_bg.png; sourceTree = "<group>"; };
-		79D8CAF016B7BE51002BD388 /* date_picker_year_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_picker_year_bg.png; sourceTree = "<group>"; };
 		79E6FF4416B42C880075CAAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		79F6651B16BBF85200937CAD /* DatePickerDemoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerDemoViewCtrl.h; sourceTree = "<group>"; };
+		79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerDemoViewCtrl.m; sourceTree = "<group>"; };
+		79F6656216BC278300937CAD /* DatePicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DatePicker.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1052,6 +1049,8 @@
 			children = (
 				79D4465416B666D400C3F952 /* ASIHttpDemoViewCtrl.h */,
 				79D4465516B666D400C3F952 /* ASIHttpDemoViewCtrl.m */,
+				79F6651B16BBF85200937CAD /* DatePickerDemoViewCtrl.h */,
+				79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */,
 				79D4468A16B669D600C3F952 /* TableView */,
 				79D4465616B666D400C3F952 /* BabyInfo */,
 			);
@@ -1153,7 +1152,7 @@
 		79D8CAD916B766E5002BD388 /* UIDatePickerCtrl */ = {
 			isa = PBXGroup;
 			children = (
-				79D8CADD16B77F69002BD388 /* res */,
+				79F6656216BC278300937CAD /* DatePicker.bundle */,
 				79BC7C1416BBC46400529663 /* Calendar.cpp */,
 				79BC7C1516BBC46400529663 /* Calendar.h */,
 				79BC7C1616BBC46400529663 /* DateTypeDef.h */,
@@ -1161,17 +1160,6 @@
 				79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */,
 			);
 			path = UIDatePickerCtrl;
-			sourceTree = "<group>";
-		};
-		79D8CADD16B77F69002BD388 /* res */ = {
-			isa = PBXGroup;
-			children = (
-				79152C7916BB9D66002A4257 /* date_picker_select.png */,
-				79D8CAEF16B7BE51002BD388 /* date_picker_month_bg.png */,
-				79D8CAF016B7BE51002BD388 /* date_picker_year_bg.png */,
-				79D8CAE016B77F99002BD388 /* date_picker_clock.png */,
-			);
-			path = res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1362,10 +1350,7 @@
 				79D4452C16B62F9D00C3F952 /* baby_info_bg@2x.png in Resources */,
 				79D4469D16B6701500C3F952 /* FZY4JW.TTF in Resources */,
 				79D446BD16B6742B00C3F952 /* Kal.bundle in Resources */,
-				79D8CAE116B77F99002BD388 /* date_picker_clock.png in Resources */,
-				79D8CAF116B7BE51002BD388 /* date_picker_month_bg.png in Resources */,
-				79D8CAF216B7BE51002BD388 /* date_picker_year_bg.png in Resources */,
-				79152C7A16BB9D66002A4257 /* date_picker_select.png in Resources */,
+				79F6656316BC278300937CAD /* DatePicker.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1467,6 +1452,7 @@
 				79D4469916B669D700C3F952 /* TableViewDemoCtrl.m in Sources */,
 				79D8CADC16B76700002BD388 /* UIDatePickerCtrl.mm in Sources */,
 				79BC7C1716BBC46400529663 /* Calendar.cpp in Sources */,
+				79F6651D16BBF85200937CAD /* DatePickerDemoViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

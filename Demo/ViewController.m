@@ -11,7 +11,7 @@
 #import "ASIHttpDemoViewCtrl.h"
 #import "TableViewDemoCtrl.h"
 #import "KalCalendar/Kal.h"
-#import "UIDatePickerCtrl.h"
+#import "DatePickerDemoViewCtrl.h"
 //#import "CarouselDemoViewController.h"
 
 @interface ViewController ()
@@ -30,7 +30,7 @@
                   @"ASIHttpRequest", 
                   @"TableView", 
                   @"KalCalendar",
-                  @"UIDatePicker",
+                  @"DatePicker",
 //                  @"Carousel", 
                   nil];
     
@@ -39,7 +39,7 @@
                             NSStringFromClass([ASIHttpDemoViewCtrl class]),
                             NSStringFromClass([TableViewDemoCtrl class]),
                             NSStringFromClass([KalViewController class]),
-                            NSStringFromClass([UIDatePickerCtrl class]),
+                            NSStringFromClass([DatePickerDemoViewCtrl class]),
 //                            NSStringFromClass([CarouselDemoViewController class]),
                             nil];
     
@@ -63,20 +63,6 @@
 //    NSLog(@"ViewController ---------- viewDidAppear:");
 }
 
-#pragma mark -
-
-- (void)updateDate:(NSString *)date
-{
-    NSString *selectDate = [NSString stringWithFormat:@"Select date:%@", date];
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Date" 
-                                                        message:selectDate 
-                                                       delegate:nil 
-                                              cancelButtonTitle:@"OK" 
-                                              otherButtonTitles:nil, nil];
-    [alertView show];
-    [alertView release];
-}
-
 #pragma mark -------------------- delegate --------------------
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -87,15 +73,9 @@
     {
         NSString *strClass = [_arrayViewController objectAtIndex:indexPath.row];
         id object = NSClassFromString(strClass);
-        if ([strClass isEqualToString:@"UIDatePickerCtrl"])
-        {
-            [[UIDatePickerCtrl shareInstance] showDatePicker:YES date:[NSDate date] parent:self.view delegate:self selector:@selector(updateDate:)];
-        }
-        else
-        {
-            UIViewController *ctrl = [[[object alloc] init] autorelease];
-            [self.navigationController pushViewController:ctrl animated:YES];
-        }
+        
+        UIViewController *ctrl = [[[object alloc] init] autorelease];
+        [self.navigationController pushViewController:ctrl animated:YES];
     }
 }
 
