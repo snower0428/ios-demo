@@ -61,6 +61,7 @@ static NSString *kUDID = nil;
 	} else {
 		kUDID = [udid retain];
 	}
+    NSLog(@"udid:%@", udid);
     
 	return kUDID;
 }

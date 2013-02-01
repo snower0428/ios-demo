@@ -31,6 +31,7 @@
 		m_audioRecorder=[[AVAudioRecorder alloc]initWithURL:fileURL settings:recordSettings error:nil];
 		m_audioRecorder.delegate = self;
 		[m_audioRecorder recordForDuration:DERUATION_FOR_RECORD];
+        [fileURL release];
 		
 		[recordSettings release];
 	}

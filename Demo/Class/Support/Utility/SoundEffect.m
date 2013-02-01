@@ -34,7 +34,7 @@ static SoundEffect *kInstance = nil;
 }
 
 - (id)init{
-	if (self == [super init]) {
+	if (self = [super init]) {
 		NSString *path = [RES_DIRECTORY stringByAppendingPathComponent:@"sound.plist"];
 		m_soundEffectSource = [[PlistParser dictionaryWithContentsOfFile:path key:AES_KEY] retain];
 		m_soundEffectPlayers = [[NSMutableDictionary alloc] init];

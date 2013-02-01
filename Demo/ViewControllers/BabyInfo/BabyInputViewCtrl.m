@@ -9,7 +9,7 @@
 #import "BabyInputViewCtrl.h"
 #import "BBAnimation.h"
 #import "BabyCompleteViewController.h"
-#import "UIVCCalendarSetDay.h"
+#import "UIDatePickerCtrl.h"
 
 @interface BabyInputViewCtrl ()
 - (void)initPregnancyView;
@@ -271,6 +271,8 @@
 //        [_btnDate setTitle:strDate forState:UIControlStateNormal];
 //    }
     
+    NSLog(@"strDate:%@", strDate);
+    
     [self initDateLabelWithFrame:_imageViewDateBg.frame];
 }
 
@@ -417,21 +419,17 @@
         nDateMonth = components.month;
         nDateDay = components.day;
     }
-    [[UIVCCalendarSetDay getInstance] showSetSpecDay: 1 //nRili
-                                                year: nDateYear
-                                               month: nDateMonth
-                                                 day: nDateDay
-                                          parentView: self.view
-                                         parentClass: self
-                                      responseMethod:@selector(updateDate:)];
-    [UIVCCalendarSetDay getInstance].view.alpha = 0;
+    
+    [[UIDatePickerCtrl shareInstance] showDatePicker:YES date:[NSDate date] parent:self.view delegate:self selector:@selector(updateDate:)];
+    [UIDatePickerCtrl shareInstance].view.alpha = 0;
     [UIView animateWithDuration:0.5
                           delay:0
                         options:UIViewAnimationCurveEaseInOut
                      animations:^(void){
-                         [UIVCCalendarSetDay getInstance].view.alpha = 1;
+                         [UIDatePickerCtrl shareInstance].view.alpha = 1;
                      }
-                     completion:^(BOOL finished){}];
+                     completion:^(BOOL finished){
+                     }];
 }
 
 - (void)updateDate:(NSString *)date

@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+#define TABLE_VIEW_HEIGHT       99
+#define CLICK_CLOSE             0   //点击其它地方关闭
+
+typedef enum
+{
+    DPActionTypeOk      = 100,  //确定
+    DPActionTypeCacel   = 101,  //取消
+    DPActionTypeToday   = 102,  //今日
+    DPActionTypeSolor   = 103,  //阳历
+    DPActionTypeLunar   = 104,  //农历
+}DPActionType;
+
 @interface UIDatePickerCtrl : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     UITableView         *_tableViewYear;
@@ -27,8 +39,15 @@
     NSInteger           _lunarYear;     //阴历年、月、日
     NSInteger           _lunarMonth;
     NSInteger           _lunarDay;
+    
+    CGFloat             _lastTableViewYContentOffset;
+    
+    id                  _delegate;
+    SEL                 _selector;
 }
 
-- (void)showDatePicker:(UIView *)FParentView;
++ (UIDatePickerCtrl *)shareInstance;
++ (void)exitInstance;
+- (void)showDatePicker:(BOOL)isSolar date:(NSDate *)date parent:(UIView *)parent delegate:(id)delegate selector:(SEL)selector;
 
 @end
