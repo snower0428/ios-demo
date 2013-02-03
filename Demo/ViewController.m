@@ -12,6 +12,7 @@
 #import "TableViewDemoCtrl.h"
 #import "KalCalendar/Kal.h"
 #import "DatePickerDemoViewCtrl.h"
+#import "EGORefreshTableViewCtrl.h"
 //#import "CarouselDemoViewController.h"
 
 @interface ViewController ()
@@ -31,6 +32,7 @@
                   @"TableView", 
                   @"KalCalendar",
                   @"DatePicker",
+                  @"EGORefreshTableView",
 //                  @"Carousel", 
                   nil];
     
@@ -40,6 +42,7 @@
                             NSStringFromClass([TableViewDemoCtrl class]),
                             NSStringFromClass([KalViewController class]),
                             NSStringFromClass([DatePickerDemoViewCtrl class]),
+                            NSStringFromClass([EGORefreshTableViewCtrl class]),
 //                            NSStringFromClass([CarouselDemoViewController class]),
                             nil];
     
@@ -50,7 +53,7 @@
     
 //    NSLog(@"ViewController ---------- viewDidLoad");
     
-    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated

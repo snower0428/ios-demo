@@ -171,7 +171,6 @@
 		79D4460716B64DDE00C3F952 /* JumpText.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4459216B64DDE00C3F952 /* JumpText.m */; };
 		79D4460816B64DDE00C3F952 /* LogInAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4459416B64DDE00C3F952 /* LogInAlertView.m */; };
 		79D4460916B64DDE00C3F952 /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4459616B64DDE00C3F952 /* MaskView.m */; };
-		79D4460A16B64DDE00C3F952 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4459816B64DDE00C3F952 /* MBProgressHUD.m */; };
 		79D4460B16B64DDE00C3F952 /* MoveableImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79D4459A16B64DDE00C3F952 /* MoveableImageView.mm */; };
 		79D4460C16B64DDE00C3F952 /* MultiSwitchAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4459C16B64DDE00C3F952 /* MultiSwitchAnimationView.m */; };
 		79D4460D16B64DDE00C3F952 /* MultiSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4459E16B64DDE00C3F952 /* MultiSwitchView.m */; };
@@ -233,6 +232,17 @@
 		79E6FF4516B42C890075CAAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FF4416B42C880075CAAF /* README.md */; };
 		79F6651D16BBF85200937CAD /* DatePickerDemoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */; };
 		79F6656316BC278300937CAD /* DatePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79F6656216BC278300937CAD /* DatePicker.bundle */; };
+		79F6656D16BCBD4500937CAD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6656C16BCBD4500937CAD /* MBProgressHUD.m */; };
+		79F6657516BCD82000937CAD /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6657416BCD82000937CAD /* EGORefreshTableHeaderView.m */; };
+		79F6657816BCD8B800937CAD /* EGORefreshTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6657716BCD8B800937CAD /* EGORefreshTableViewCtrl.m */; };
+		79F6658216BCE41300937CAD /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657A16BCE41300937CAD /* blackArrow.png */; };
+		79F6658316BCE41300937CAD /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657B16BCE41300937CAD /* blackArrow@2x.png */; };
+		79F6658416BCE41300937CAD /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657C16BCE41300937CAD /* blueArrow.png */; };
+		79F6658516BCE41300937CAD /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657D16BCE41300937CAD /* blueArrow@2x.png */; };
+		79F6658616BCE41300937CAD /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657E16BCE41300937CAD /* grayArrow.png */; };
+		79F6658716BCE41300937CAD /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657F16BCE41300937CAD /* grayArrow@2x.png */; };
+		79F6658816BCE41300937CAD /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6658016BCE41300937CAD /* whiteArrow.png */; };
+		79F6658916BCE41300937CAD /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6658116BCE41300937CAD /* whiteArrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -462,8 +472,6 @@
 		79D4459416B64DDE00C3F952 /* LogInAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInAlertView.m; sourceTree = "<group>"; };
 		79D4459516B64DDE00C3F952 /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
 		79D4459616B64DDE00C3F952 /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
-		79D4459716B64DDE00C3F952 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		79D4459816B64DDE00C3F952 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		79D4459916B64DDE00C3F952 /* MoveableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveableImageView.h; sourceTree = "<group>"; };
 		79D4459A16B64DDE00C3F952 /* MoveableImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MoveableImageView.mm; sourceTree = "<group>"; };
 		79D4459B16B64DDE00C3F952 /* MultiSwitchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSwitchAnimationView.h; sourceTree = "<group>"; };
@@ -584,6 +592,20 @@
 		79F6651B16BBF85200937CAD /* DatePickerDemoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerDemoViewCtrl.h; sourceTree = "<group>"; };
 		79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerDemoViewCtrl.m; sourceTree = "<group>"; };
 		79F6656216BC278300937CAD /* DatePicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DatePicker.bundle; sourceTree = "<group>"; };
+		79F6656B16BCBD4500937CAD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		79F6656C16BCBD4500937CAD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		79F6657316BCD82000937CAD /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		79F6657416BCD82000937CAD /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		79F6657616BCD8B800937CAD /* EGORefreshTableViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableViewCtrl.h; sourceTree = "<group>"; };
+		79F6657716BCD8B800937CAD /* EGORefreshTableViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableViewCtrl.m; sourceTree = "<group>"; };
+		79F6657A16BCE41300937CAD /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		79F6657B16BCE41300937CAD /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		79F6657C16BCE41300937CAD /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		79F6657D16BCE41300937CAD /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		79F6657E16BCE41300937CAD /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		79F6657F16BCE41300937CAD /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		79F6658016BCE41300937CAD /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		79F6658116BCE41300937CAD /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -679,6 +701,7 @@
 		79D4443816B62E0C00C3F952 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				79F6657916BCE41300937CAD /* Arrows */,
 				79D4469B16B6701100C3F952 /* Font */,
 				79D4443916B62E0C00C3F952 /* BabyInfo */,
 			);
@@ -852,6 +875,7 @@
 		79D4453016B64DDE00C3F952 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				79F6657216BCD82000937CAD /* RefreshTableHeaderView */,
 				79D8CAD916B766E5002BD388 /* UIDatePickerCtrl */,
 				79D4466116B6673900C3F952 /* ASIHTTPRequest */,
 				79D4454A16B64DDE00C3F952 /* Support */,
@@ -961,8 +985,8 @@
 				79D4459416B64DDE00C3F952 /* LogInAlertView.m */,
 				79D4459516B64DDE00C3F952 /* MaskView.h */,
 				79D4459616B64DDE00C3F952 /* MaskView.m */,
-				79D4459716B64DDE00C3F952 /* MBProgressHUD.h */,
-				79D4459816B64DDE00C3F952 /* MBProgressHUD.m */,
+				79F6656B16BCBD4500937CAD /* MBProgressHUD.h */,
+				79F6656C16BCBD4500937CAD /* MBProgressHUD.m */,
 				79D4459916B64DDE00C3F952 /* MoveableImageView.h */,
 				79D4459A16B64DDE00C3F952 /* MoveableImageView.mm */,
 				79D4459B16B64DDE00C3F952 /* MultiSwitchAnimationView.h */,
@@ -1051,6 +1075,8 @@
 				79D4465516B666D400C3F952 /* ASIHttpDemoViewCtrl.m */,
 				79F6651B16BBF85200937CAD /* DatePickerDemoViewCtrl.h */,
 				79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */,
+				79F6657616BCD8B800937CAD /* EGORefreshTableViewCtrl.h */,
+				79F6657716BCD8B800937CAD /* EGORefreshTableViewCtrl.m */,
 				79D4468A16B669D600C3F952 /* TableView */,
 				79D4465616B666D400C3F952 /* BabyInfo */,
 			);
@@ -1160,6 +1186,30 @@
 				79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */,
 			);
 			path = UIDatePickerCtrl;
+			sourceTree = "<group>";
+		};
+		79F6657216BCD82000937CAD /* RefreshTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				79F6657316BCD82000937CAD /* EGORefreshTableHeaderView.h */,
+				79F6657416BCD82000937CAD /* EGORefreshTableHeaderView.m */,
+			);
+			path = RefreshTableHeaderView;
+			sourceTree = "<group>";
+		};
+		79F6657916BCE41300937CAD /* Arrows */ = {
+			isa = PBXGroup;
+			children = (
+				79F6657A16BCE41300937CAD /* blackArrow.png */,
+				79F6657B16BCE41300937CAD /* blackArrow@2x.png */,
+				79F6657C16BCE41300937CAD /* blueArrow.png */,
+				79F6657D16BCE41300937CAD /* blueArrow@2x.png */,
+				79F6657E16BCE41300937CAD /* grayArrow.png */,
+				79F6657F16BCE41300937CAD /* grayArrow@2x.png */,
+				79F6658016BCE41300937CAD /* whiteArrow.png */,
+				79F6658116BCE41300937CAD /* whiteArrow@2x.png */,
+			);
+			path = Arrows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1351,6 +1401,14 @@
 				79D4469D16B6701500C3F952 /* FZY4JW.TTF in Resources */,
 				79D446BD16B6742B00C3F952 /* Kal.bundle in Resources */,
 				79F6656316BC278300937CAD /* DatePicker.bundle in Resources */,
+				79F6658216BCE41300937CAD /* blackArrow.png in Resources */,
+				79F6658316BCE41300937CAD /* blackArrow@2x.png in Resources */,
+				79F6658416BCE41300937CAD /* blueArrow.png in Resources */,
+				79F6658516BCE41300937CAD /* blueArrow@2x.png in Resources */,
+				79F6658616BCE41300937CAD /* grayArrow.png in Resources */,
+				79F6658716BCE41300937CAD /* grayArrow@2x.png in Resources */,
+				79F6658816BCE41300937CAD /* whiteArrow.png in Resources */,
+				79F6658916BCE41300937CAD /* whiteArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1399,7 +1457,6 @@
 				79D4460716B64DDE00C3F952 /* JumpText.m in Sources */,
 				79D4460816B64DDE00C3F952 /* LogInAlertView.m in Sources */,
 				79D4460916B64DDE00C3F952 /* MaskView.m in Sources */,
-				79D4460A16B64DDE00C3F952 /* MBProgressHUD.m in Sources */,
 				79D4460B16B64DDE00C3F952 /* MoveableImageView.mm in Sources */,
 				79D4460C16B64DDE00C3F952 /* MultiSwitchAnimationView.m in Sources */,
 				79D4460D16B64DDE00C3F952 /* MultiSwitchView.m in Sources */,
@@ -1453,6 +1510,9 @@
 				79D8CADC16B76700002BD388 /* UIDatePickerCtrl.mm in Sources */,
 				79BC7C1716BBC46400529663 /* Calendar.cpp in Sources */,
 				79F6651D16BBF85200937CAD /* DatePickerDemoViewCtrl.m in Sources */,
+				79F6656D16BCBD4500937CAD /* MBProgressHUD.m in Sources */,
+				79F6657516BCD82000937CAD /* EGORefreshTableHeaderView.m in Sources */,
+				79F6657816BCD8B800937CAD /* EGORefreshTableViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1497,7 +1557,13 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1515,8 +1581,14 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
