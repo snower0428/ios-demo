@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "CMPopTipView.h"
 
+#define TEST_POP_VIEW       0
+
 @interface CMPopTipViewCtrl : UIViewController <CMPopTipViewDelegate>
 {
     NSMutableArray      *_visiblePopTipViews;

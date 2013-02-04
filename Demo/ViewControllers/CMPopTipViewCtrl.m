@@ -223,14 +223,16 @@
     btnReturn.alpha = 0.3;
     [self.view addSubview:btnReturn];
     [btnReturn handleControlEvents:UIControlEventTouchUpInside withBlock:^(void){
-//        [_self onBack];
-        
+#if TEST_POP_VIEW
         // Test
         CMPopTipView *popTipView = [[[CMPopTipView alloc] initWithMessage:@"Just for test..."] autorelease];
         popTipView.dismissTapAnywhere = YES;
-//        popTipView.animation = 1;
-//        [popTipView autoDismissAnimated:YES atTimeInterval:2.0];
+        popTipView.animation = 1;
+        [popTipView autoDismissAnimated:YES atTimeInterval:2.0];
         [popTipView presentPointingAtView:btnReturn inView:self.view animated:YES];
+#else
+        [_self onBack];
+#endif
     }];
 }
 

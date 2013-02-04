@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7917496216BFCA7A002A527F /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917495E16BFCA7A002A527F /* CMPopTipView.m */; };
+		7917496316BFCA7A002A527F /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917496116BFCA7A002A527F /* EGORefreshTableHeaderView.m */; };
 		79BC7C1716BBC46400529663 /* Calendar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79BC7C1416BBC46400529663 /* Calendar.cpp */; };
 		79C9CF1216B14502006A03F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1116B14502006A03F4 /* UIKit.framework */; };
 		79C9CF1416B14502006A03F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1316B14502006A03F4 /* Foundation.framework */; };
@@ -229,13 +231,11 @@
 		79D446BD16B6742B00C3F952 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469F16B6742B00C3F952 /* Kal.bundle */; };
 		79D446CF16B675B000C3F952 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D446CE16B675AA00C3F952 /* libKal.a */; };
 		79D77BAF16BF909300953ECE /* CMPopTipViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D77BAE16BF909200953ECE /* CMPopTipViewCtrl.m */; };
-		79D77BB316BFA4A300953ECE /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D77BB216BFA4A300953ECE /* CMPopTipView.m */; };
 		79D8CADC16B76700002BD388 /* UIDatePickerCtrl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */; };
 		79E6FF4516B42C890075CAAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FF4416B42C880075CAAF /* README.md */; };
 		79F6651D16BBF85200937CAD /* DatePickerDemoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */; };
 		79F6656316BC278300937CAD /* DatePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79F6656216BC278300937CAD /* DatePicker.bundle */; };
 		79F6656D16BCBD4500937CAD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6656C16BCBD4500937CAD /* MBProgressHUD.m */; };
-		79F6657516BCD82000937CAD /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6657416BCD82000937CAD /* EGORefreshTableHeaderView.m */; };
 		79F6657816BCD8B800937CAD /* EGORefreshTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6657716BCD8B800937CAD /* EGORefreshTableViewCtrl.m */; };
 		79F6658216BCE41300937CAD /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657A16BCE41300937CAD /* blackArrow.png */; };
 		79F6658316BCE41300937CAD /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657B16BCE41300937CAD /* blackArrow@2x.png */; };
@@ -265,6 +265,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7917495D16BFCA7A002A527F /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
+		7917495E16BFCA7A002A527F /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
+		7917496016BFCA7A002A527F /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		7917496116BFCA7A002A527F /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		79BC7C1416BBC46400529663 /* Calendar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Calendar.cpp; sourceTree = "<group>"; };
 		79BC7C1516BBC46400529663 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
 		79BC7C1616BBC46400529663 /* DateTypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTypeDef.h; sourceTree = "<group>"; };
@@ -590,8 +594,6 @@
 		79D446CE16B675AA00C3F952 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "Demo/KalCalendar/build/Debug-iphonesimulator/libKal.a"; sourceTree = "<group>"; };
 		79D77BAD16BF909200953ECE /* CMPopTipViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipViewCtrl.h; sourceTree = "<group>"; };
 		79D77BAE16BF909200953ECE /* CMPopTipViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipViewCtrl.m; sourceTree = "<group>"; };
-		79D77BB116BFA4A300953ECE /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
-		79D77BB216BFA4A300953ECE /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
 		79D8CADA16B76700002BD388 /* UIDatePickerCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerCtrl.h; sourceTree = "<group>"; };
 		79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIDatePickerCtrl.mm; sourceTree = "<group>"; };
 		79E6FF4416B42C880075CAAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -600,8 +602,6 @@
 		79F6656216BC278300937CAD /* DatePicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DatePicker.bundle; sourceTree = "<group>"; };
 		79F6656B16BCBD4500937CAD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		79F6656C16BCBD4500937CAD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		79F6657316BCD82000937CAD /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
-		79F6657416BCD82000937CAD /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		79F6657616BCD8B800937CAD /* EGORefreshTableViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableViewCtrl.h; sourceTree = "<group>"; };
 		79F6657716BCD8B800937CAD /* EGORefreshTableViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableViewCtrl.m; sourceTree = "<group>"; };
 		79F6657A16BCE41300937CAD /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
@@ -637,6 +637,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7917495B16BFCA7A002A527F /* CommView */ = {
+			isa = PBXGroup;
+			children = (
+				7917495C16BFCA7A002A527F /* CMPopTipView */,
+				7917495F16BFCA7A002A527F /* RefreshTableHeaderView */,
+			);
+			path = CommView;
+			sourceTree = "<group>";
+		};
+		7917495C16BFCA7A002A527F /* CMPopTipView */ = {
+			isa = PBXGroup;
+			children = (
+				7917495D16BFCA7A002A527F /* CMPopTipView.h */,
+				7917495E16BFCA7A002A527F /* CMPopTipView.m */,
+			);
+			path = CMPopTipView;
+			sourceTree = "<group>";
+		};
+		7917495F16BFCA7A002A527F /* RefreshTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				7917496016BFCA7A002A527F /* EGORefreshTableHeaderView.h */,
+				7917496116BFCA7A002A527F /* EGORefreshTableHeaderView.m */,
+			);
+			path = RefreshTableHeaderView;
+			sourceTree = "<group>";
+		};
 		79C9CF0216B14502006A03F4 = {
 			isa = PBXGroup;
 			children = (
@@ -677,6 +704,7 @@
 		79C9CF1716B14502006A03F4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				7917495B16BFCA7A002A527F /* CommView */,
 				79D4469E16B6742100C3F952 /* KalCalendar */,
 				79D4465316B666BF00C3F952 /* ViewControllers */,
 				79D4453016B64DDE00C3F952 /* Class */,
@@ -881,8 +909,6 @@
 		79D4453016B64DDE00C3F952 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				79D77BB016BFA4A300953ECE /* CMPopTipView */,
-				79F6657216BCD82000937CAD /* RefreshTableHeaderView */,
 				79D8CAD916B766E5002BD388 /* UIDatePickerCtrl */,
 				79D4466116B6673900C3F952 /* ASIHTTPRequest */,
 				79D4454A16B64DDE00C3F952 /* Support */,
@@ -1184,15 +1210,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		79D77BB016BFA4A300953ECE /* CMPopTipView */ = {
-			isa = PBXGroup;
-			children = (
-				79D77BB116BFA4A300953ECE /* CMPopTipView.h */,
-				79D77BB216BFA4A300953ECE /* CMPopTipView.m */,
-			);
-			path = CMPopTipView;
-			sourceTree = "<group>";
-		};
 		79D8CAD916B766E5002BD388 /* UIDatePickerCtrl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1204,15 +1221,6 @@
 				79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */,
 			);
 			path = UIDatePickerCtrl;
-			sourceTree = "<group>";
-		};
-		79F6657216BCD82000937CAD /* RefreshTableHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				79F6657316BCD82000937CAD /* EGORefreshTableHeaderView.h */,
-				79F6657416BCD82000937CAD /* EGORefreshTableHeaderView.m */,
-			);
-			path = RefreshTableHeaderView;
 			sourceTree = "<group>";
 		};
 		79F6657916BCE41300937CAD /* Arrows */ = {
@@ -1529,10 +1537,10 @@
 				79BC7C1716BBC46400529663 /* Calendar.cpp in Sources */,
 				79F6651D16BBF85200937CAD /* DatePickerDemoViewCtrl.m in Sources */,
 				79F6656D16BCBD4500937CAD /* MBProgressHUD.m in Sources */,
-				79F6657516BCD82000937CAD /* EGORefreshTableHeaderView.m in Sources */,
 				79F6657816BCD8B800937CAD /* EGORefreshTableViewCtrl.m in Sources */,
 				79D77BAF16BF909300953ECE /* CMPopTipViewCtrl.m in Sources */,
-				79D77BB316BFA4A300953ECE /* CMPopTipView.m in Sources */,
+				7917496216BFCA7A002A527F /* CMPopTipView.m in Sources */,
+				7917496316BFCA7A002A527F /* EGORefreshTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
