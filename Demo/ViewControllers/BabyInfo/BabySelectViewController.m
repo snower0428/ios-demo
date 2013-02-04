@@ -109,6 +109,8 @@
                      }];
     
 //    [self updateButtonState];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 // 初始化怀孕期按钮

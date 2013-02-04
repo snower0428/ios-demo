@@ -112,6 +112,12 @@ typedef void(^ButtonBlock)(void);
 #define	STATUSBAR_HEIGHT		20
 #define	NAVIGATIONBAR_HEIGHT	44
 #define	TABBAR_HEIGHT			50
+#define TOOLBAR_HEIGHT          44
+
+/**
+ * 产生随机数: 0.0 ~ 1.0
+ */
+#define foo4random()            (1.0 * (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX)
 
 //
 //语言类型

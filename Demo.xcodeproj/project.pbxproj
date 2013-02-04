@@ -228,6 +228,8 @@
 		79D4469D16B6701500C3F952 /* FZY4JW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469C16B6701500C3F952 /* FZY4JW.TTF */; };
 		79D446BD16B6742B00C3F952 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469F16B6742B00C3F952 /* Kal.bundle */; };
 		79D446CF16B675B000C3F952 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D446CE16B675AA00C3F952 /* libKal.a */; };
+		79D77BAF16BF909300953ECE /* CMPopTipViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D77BAE16BF909200953ECE /* CMPopTipViewCtrl.m */; };
+		79D77BB316BFA4A300953ECE /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D77BB216BFA4A300953ECE /* CMPopTipView.m */; };
 		79D8CADC16B76700002BD388 /* UIDatePickerCtrl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */; };
 		79E6FF4516B42C890075CAAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FF4416B42C880075CAAF /* README.md */; };
 		79F6651D16BBF85200937CAD /* DatePickerDemoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */; };
@@ -586,6 +588,10 @@
 		79D4469F16B6742B00C3F952 /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Kal.bundle; sourceTree = "<group>"; };
 		79D446A116B6742B00C3F952 /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kal.xcodeproj; sourceTree = "<group>"; };
 		79D446CE16B675AA00C3F952 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "Demo/KalCalendar/build/Debug-iphonesimulator/libKal.a"; sourceTree = "<group>"; };
+		79D77BAD16BF909200953ECE /* CMPopTipViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipViewCtrl.h; sourceTree = "<group>"; };
+		79D77BAE16BF909200953ECE /* CMPopTipViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipViewCtrl.m; sourceTree = "<group>"; };
+		79D77BB116BFA4A300953ECE /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
+		79D77BB216BFA4A300953ECE /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
 		79D8CADA16B76700002BD388 /* UIDatePickerCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerCtrl.h; sourceTree = "<group>"; };
 		79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIDatePickerCtrl.mm; sourceTree = "<group>"; };
 		79E6FF4416B42C880075CAAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -875,6 +881,7 @@
 		79D4453016B64DDE00C3F952 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				79D77BB016BFA4A300953ECE /* CMPopTipView */,
 				79F6657216BCD82000937CAD /* RefreshTableHeaderView */,
 				79D8CAD916B766E5002BD388 /* UIDatePickerCtrl */,
 				79D4466116B6673900C3F952 /* ASIHTTPRequest */,
@@ -1073,6 +1080,8 @@
 			children = (
 				79D4465416B666D400C3F952 /* ASIHttpDemoViewCtrl.h */,
 				79D4465516B666D400C3F952 /* ASIHttpDemoViewCtrl.m */,
+				79D77BAD16BF909200953ECE /* CMPopTipViewCtrl.h */,
+				79D77BAE16BF909200953ECE /* CMPopTipViewCtrl.m */,
 				79F6651B16BBF85200937CAD /* DatePickerDemoViewCtrl.h */,
 				79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */,
 				79F6657616BCD8B800937CAD /* EGORefreshTableViewCtrl.h */,
@@ -1173,6 +1182,15 @@
 				79D446CA16B6742B00C3F952 /* libKal.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		79D77BB016BFA4A300953ECE /* CMPopTipView */ = {
+			isa = PBXGroup;
+			children = (
+				79D77BB116BFA4A300953ECE /* CMPopTipView.h */,
+				79D77BB216BFA4A300953ECE /* CMPopTipView.m */,
+			);
+			path = CMPopTipView;
 			sourceTree = "<group>";
 		};
 		79D8CAD916B766E5002BD388 /* UIDatePickerCtrl */ = {
@@ -1513,6 +1531,8 @@
 				79F6656D16BCBD4500937CAD /* MBProgressHUD.m in Sources */,
 				79F6657516BCD82000937CAD /* EGORefreshTableHeaderView.m in Sources */,
 				79F6657816BCD8B800937CAD /* EGORefreshTableViewCtrl.m in Sources */,
+				79D77BAF16BF909300953ECE /* CMPopTipViewCtrl.m in Sources */,
+				79D77BB316BFA4A300953ECE /* CMPopTipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,6 +27,11 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (void)onBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - View lifecycle
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
@@ -37,6 +42,10 @@
     self.view = view;
     [view release];
     
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(onBack)];
+    self.navigationItem.leftBarButtonItem = item;
+    [item release];
+#if 0
     // Return
     __block __typeof(self) _self = self;
     UIButton *btnReturn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -48,9 +57,9 @@
     [btnReturn handleControlEvents:UIControlEventTouchUpInside withBlock:^(void){
         [_self.navigationController popViewControllerAnimated:YES];
     }];
-    
+#endif
     // Add table view
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 30, 320, APP_HEIGHT-30)];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_HEIGHT)];
     tableView.dataSource = self;
     tableView.delegate = self;
     [self.view addSubview:tableView];
@@ -59,7 +68,7 @@
     
     // Add refresh header view
     if (_refreshHeaderView == nil) {
-        CGRect refreshHeaderViewFrame = CGRectMake(0, 0-(APP_HEIGHT-30), 320, APP_HEIGHT-30);
+        CGRect refreshHeaderViewFrame = CGRectMake(0, 0-APP_HEIGHT, 320, APP_HEIGHT);
 		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:refreshHeaderViewFrame];
 		view.delegate = self;
 		[_tableView addSubview:view];

@@ -75,7 +75,7 @@
 @protocol KalViewDelegate
 
 @optional
-- (void)onReturn;
+//- (void)onReturn;
 - (void)showPreviousMonth;
 - (void)showFollowingMonth;
 - (void)didSelectDate:(KalDate *)date;

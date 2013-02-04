@@ -30,8 +30,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    // Return
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(onBack)];
+    self.navigationItem.leftBarButtonItem = item;
+    [item release];
+    
     __block __typeof(self) _self = self;
+#if 0
+    // Return
     UIButton *btnReturn = [UIButton buttonWithType:UIButtonTypeCustom];
     btnReturn.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.1];
     btnReturn.frame = CGRectMake(0, 0, 100, 30);
@@ -41,7 +46,7 @@
     [btnReturn handleControlEvents:UIControlEventTouchUpInside withBlock:^(void){
         [_self.navigationController popViewControllerAnimated:YES];
     }];
-    
+#endif
     // Synchronous
     UIButton *btnSync = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btnSync.frame = CGRectMake(10, 100, 200, 50);
@@ -61,6 +66,11 @@
     [btnAsync handleControlEvents:UIControlEventTouchUpInside withBlock:^(void){
         [_self onASynchronous];
     }];
+}
+
+- (void)onBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)onSynchronous

@@ -13,6 +13,7 @@
 #import "KalCalendar/Kal.h"
 #import "DatePickerDemoViewCtrl.h"
 #import "EGORefreshTableViewCtrl.h"
+#import "CMPopTipViewCtrl.h"
 //#import "CarouselDemoViewController.h"
 
 @interface ViewController ()
@@ -33,6 +34,7 @@
                   @"KalCalendar",
                   @"DatePicker",
                   @"EGORefreshTableView",
+                  @"CMPopTipView",
 //                  @"Carousel", 
                   nil];
     
@@ -43,6 +45,7 @@
                             NSStringFromClass([KalViewController class]),
                             NSStringFromClass([DatePickerDemoViewCtrl class]),
                             NSStringFromClass([EGORefreshTableViewCtrl class]),
+                            NSStringFromClass([CMPopTipViewCtrl class]),
 //                            NSStringFromClass([CarouselDemoViewController class]),
                             nil];
     
@@ -51,14 +54,14 @@
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
     
-//    NSLog(@"ViewController ---------- viewDidLoad");
-    
-    self.navigationController.navigationBarHidden = NO;
+    self.title = @"RootViewController";
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
 //    NSLog(@"ViewController ---------- viewWillAppear:");
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated

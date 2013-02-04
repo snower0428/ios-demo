@@ -187,6 +187,10 @@ NSString *const KalDataSourceChangedNotification = @"KalDataSourceChangedNotific
 {
     [super loadView];
     
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(onReturn:)];
+    self.navigationItem.leftBarButtonItem = item;
+    [item release];
+    
     if (!self.title) {
         self.title = @"Calendar";
     }

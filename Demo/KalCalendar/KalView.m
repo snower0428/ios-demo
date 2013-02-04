@@ -31,20 +31,20 @@ static const CGFloat kMonthLabelHeight = 17.f;
         self.autoresizesSubviews = YES;
         self.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         self.backgroundColor = [UIColor grayColor];
-        
+#if 0
         UIButton *btnReturn = [UIButton buttonWithType:UIButtonTypeCustom];
         btnReturn.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.1];
         btnReturn.frame = CGRectMake(0, 0, 100, 30);
         [btnReturn setTitle:@"返回" forState:UIControlStateNormal];
         [self addSubview:btnReturn];
         [btnReturn addTarget:self action:@selector(onReturn:) forControlEvents:UIControlEventTouchUpInside];
-        
-        UIView *headerView = [[[UIView alloc] initWithFrame:CGRectMake(0.f, 30.f, frame.size.width, kHeaderHeight)] autorelease];
+#endif
+        UIView *headerView = [[[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, frame.size.width, kHeaderHeight)] autorelease];
         headerView.backgroundColor = [UIColor grayColor];
         [self addSubviewsToHeaderView:headerView];
         [self addSubview:headerView];
         
-        UIView *contentView = [[[UIView alloc] initWithFrame:CGRectMake(0.f, 30+kHeaderHeight, frame.size.width, frame.size.height - kHeaderHeight)] autorelease];
+        UIView *contentView = [[[UIView alloc] initWithFrame:CGRectMake(0.f, kHeaderHeight, frame.size.width, frame.size.height - kHeaderHeight)] autorelease];
         contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         [self addSubviewsToContentView:contentView];
         [self addSubview:contentView];
@@ -59,12 +59,12 @@ static const CGFloat kMonthLabelHeight = 17.f;
   return nil;
 }
 
-- (void)onReturn:(id)sender
-{
-    if (_target) {
-        [_target onReturn:sender];
-    }
-}
+//- (void)onReturn:(id)sender
+//{
+//    if (_target) {
+//        [_target onReturn:sender];
+//    }
+//}
 
 - (void)redrawEntireMonth { [self jumpToSelectedMonth]; }
 

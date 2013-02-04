@@ -84,7 +84,7 @@
     // 小背景
     _imageViewBg = [UIImageView imageViewWithFile:@"complete_bg.png" atPostion:CGPointMake(12, 80)];
     _imageViewBg.layer.anchorPoint = CGPointMake(0, 1);
-    _imageViewBg.frame = CGRectOffset(_imageViewBg.frame, -_imageViewBg.frame.size.width/2, _imageViewBg.frame.size.height/2);
+    _imageViewBg.frame = CGRectOffset(_imageViewBg.frame, - _imageViewBg.frame.size.width/2, _imageViewBg.frame.size.height/2);
     
     // 小背景上半部view
     CGRect topFrame = CGRectMake(_imageViewBg.frame.origin.x, _imageViewBg.frame.origin.y,
@@ -235,9 +235,11 @@
 
 - (void)onComplete
 {
-//    if (_animationBox && [_animationBox isAnimating]) {
-//        [_animationBox stopAnimating];
-//    }
+    [_imageViewBg.layer removeAllAnimations];
+    [_imageViewPortrait.layer removeAllAnimations];
+    [_imageViewLove.layer removeAllAnimations];
+    [_imageViewSun.layer removeAllAnimations];
+    [_btnComplete.layer removeAllAnimations];
     
     if (_animationBox) {
         [_animationBox stopAnimating];

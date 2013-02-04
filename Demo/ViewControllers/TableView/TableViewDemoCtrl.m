@@ -52,13 +52,11 @@
 {
     [super viewWillAppear:animated];
     
-    self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.tintColor = [UIColor darkGrayColor];
 }
 
 - (void)onBack
 {
-    self.navigationController.navigationBarHidden = YES;
     [self.navigationController popViewControllerAnimated:YES];
 }
 

@@ -40,6 +40,11 @@
     [alertView release];
 }
 
+- (void)onBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - View lifecycle
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
@@ -50,6 +55,10 @@
     self.view = view;
     [view release];
     
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(onBack)];
+    self.navigationItem.leftBarButtonItem = item;
+    [item release];
+#if 0
     // Return
     __block __typeof(self) _self = self;
     UIButton *btnReturn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -61,7 +70,7 @@
     [btnReturn handleControlEvents:UIControlEventTouchUpInside withBlock:^(void){
         [_self.navigationController popViewControllerAnimated:YES];
     }];
-    
+#endif
     // Show DatePicker
     UIButton *btnDatePicker = [UIButton buttonWithType:UIButtonTypeCustom];
     btnDatePicker.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.1];
