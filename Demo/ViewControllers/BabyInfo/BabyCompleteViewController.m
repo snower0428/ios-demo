@@ -235,6 +235,14 @@
 
 - (void)onComplete
 {
+//    if (_animationBox && [_animationBox isAnimating]) {
+//        [_animationBox stopAnimating];
+//    }
+    
+    if (_animationBox) {
+        [_animationBox stopAnimating];
+    }
+    
     [UIView animateWithDuration:0.5
                           delay:0
                         options:UIViewAnimationCurveEaseInOut
@@ -290,9 +298,6 @@
 
 - (void)dealloc
 {
-    if (_animationBox && [_animationBox isAnimating]) {
-        [_animationBox stopAnimating];
-    }
     [super dealloc];
 }
 
