@@ -230,6 +230,8 @@
 		79D4469D16B6701500C3F952 /* FZY4JW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469C16B6701500C3F952 /* FZY4JW.TTF */; };
 		79D446BD16B6742B00C3F952 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469F16B6742B00C3F952 /* Kal.bundle */; };
 		79D446CF16B675B000C3F952 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D446CE16B675AA00C3F952 /* libKal.a */; };
+		79D7683616E0BFE0009539FB /* PHCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D7683516E0BFDF009539FB /* PHCycleScrollView.m */; };
+		79D7683C16E0C05D009539FB /* CycleScrollViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D7683B16E0C05D009539FB /* CycleScrollViewCtrl.m */; };
 		79D77BAF16BF909300953ECE /* CMPopTipViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D77BAE16BF909200953ECE /* CMPopTipViewCtrl.m */; };
 		79D8CADC16B76700002BD388 /* UIDatePickerCtrl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */; };
 		79E6FF4516B42C890075CAAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FF4416B42C880075CAAF /* README.md */; };
@@ -592,6 +594,10 @@
 		79D4469F16B6742B00C3F952 /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Kal.bundle; sourceTree = "<group>"; };
 		79D446A116B6742B00C3F952 /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kal.xcodeproj; sourceTree = "<group>"; };
 		79D446CE16B675AA00C3F952 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "Demo/KalCalendar/build/Debug-iphonesimulator/libKal.a"; sourceTree = "<group>"; };
+		79D7683416E0BFDF009539FB /* PHCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCycleScrollView.h; sourceTree = "<group>"; };
+		79D7683516E0BFDF009539FB /* PHCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCycleScrollView.m; sourceTree = "<group>"; };
+		79D7683A16E0C05D009539FB /* CycleScrollViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollViewCtrl.h; sourceTree = "<group>"; };
+		79D7683B16E0C05D009539FB /* CycleScrollViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollViewCtrl.m; sourceTree = "<group>"; };
 		79D77BAD16BF909200953ECE /* CMPopTipViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipViewCtrl.h; sourceTree = "<group>"; };
 		79D77BAE16BF909200953ECE /* CMPopTipViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipViewCtrl.m; sourceTree = "<group>"; };
 		79D8CADA16B76700002BD388 /* UIDatePickerCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerCtrl.h; sourceTree = "<group>"; };
@@ -640,6 +646,7 @@
 		7917495B16BFCA7A002A527F /* CommView */ = {
 			isa = PBXGroup;
 			children = (
+				79D7683316E0BFDF009539FB /* CycleScrollView */,
 				7917495C16BFCA7A002A527F /* CMPopTipView */,
 				7917495F16BFCA7A002A527F /* RefreshTableHeaderView */,
 			);
@@ -1114,6 +1121,8 @@
 				79F6657716BCD8B800937CAD /* EGORefreshTableViewCtrl.m */,
 				79D4468A16B669D600C3F952 /* TableView */,
 				79D4465616B666D400C3F952 /* BabyInfo */,
+				79D7683A16E0C05D009539FB /* CycleScrollViewCtrl.h */,
+				79D7683B16E0C05D009539FB /* CycleScrollViewCtrl.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1208,6 +1217,15 @@
 				79D446CA16B6742B00C3F952 /* libKal.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		79D7683316E0BFDF009539FB /* CycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				79D7683416E0BFDF009539FB /* PHCycleScrollView.h */,
+				79D7683516E0BFDF009539FB /* PHCycleScrollView.m */,
+			);
+			path = CycleScrollView;
 			sourceTree = "<group>";
 		};
 		79D8CAD916B766E5002BD388 /* UIDatePickerCtrl */ = {
@@ -1541,6 +1559,8 @@
 				79D77BAF16BF909300953ECE /* CMPopTipViewCtrl.m in Sources */,
 				7917496216BFCA7A002A527F /* CMPopTipView.m in Sources */,
 				7917496316BFCA7A002A527F /* EGORefreshTableHeaderView.m in Sources */,
+				79D7683616E0BFE0009539FB /* PHCycleScrollView.m in Sources */,
+				79D7683C16E0C05D009539FB /* CycleScrollViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

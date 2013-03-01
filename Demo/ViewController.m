@@ -14,6 +14,7 @@
 #import "DatePickerDemoViewCtrl.h"
 #import "EGORefreshTableViewCtrl.h"
 #import "CMPopTipViewCtrl.h"
+#import "CycleScrollViewCtrl.h"
 //#import "CarouselDemoViewController.h"
 
 @interface ViewController ()
@@ -35,6 +36,7 @@
                   @"DatePicker",
                   @"EGORefreshTableView",
                   @"CMPopTipView",
+                  @"CycleScrollView",
 //                  @"Carousel", 
                   nil];
     
@@ -46,6 +48,7 @@
                             NSStringFromClass([DatePickerDemoViewCtrl class]),
                             NSStringFromClass([EGORefreshTableViewCtrl class]),
                             NSStringFromClass([CMPopTipViewCtrl class]),
+                            NSStringFromClass([CycleScrollViewCtrl class]),
 //                            NSStringFromClass([CarouselDemoViewController class]),
                             nil];
     
