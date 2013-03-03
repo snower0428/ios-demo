@@ -34,7 +34,7 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_HEIGHT)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_VIEW_HEIGH)];
     view.backgroundColor = [UIColor grayColor];
     self.view = view;
     [view release];
@@ -72,7 +72,7 @@
     label.backgroundColor = [UIColor clearColor];
     label.text = [NSString stringWithFormat:@"%d", index];
     label.textColor = [UIColor blueColor];
-    label.font = [UIFont systemFontOfSize:35];
+    label.font = [UIFont boldSystemFontOfSize:100];
     label.textAlignment = UITextAlignmentCenter;
     
     return label;
@@ -81,10 +81,10 @@
 - (void)didClickPage:(PHCycleScrollView *)csView atIndex:(NSInteger)index
 {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Prompt" 
-                                                        message:[NSString stringWithFormat:@"You are click in %d page!"] 
+                                                        message:[NSString stringWithFormat:@"You are click in %d page!", index] 
                                                        delegate:self 
-                                              cancelButtonTitle:@"Calcel" 
-                                              otherButtonTitles:@"Ok", nil];
+                                              cancelButtonTitle:@"OK" 
+                                              otherButtonTitles:nil, nil];
     [alertView show];
     [alertView release];
 }
