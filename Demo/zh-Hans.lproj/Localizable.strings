@@ -5,3 +5,9 @@
   Created by lei hui on 13-3-4.
   Copyright (c) 2013年 __MyCompanyName__. All rights reserved.
 */
+
+"Pull down to refresh..." = "拉下立即更新...";
+"Pull up to refresh..." = "上拉立即更新...";
+"Release to refresh..." = "松开立即更新...";
+"Loading..." = "正在加载数据...";
+"Last Updated" = "最后更新";
