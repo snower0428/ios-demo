@@ -20,9 +20,6 @@
 //按钮执行的block
 typedef void(^ButtonBlock)(void);
 
-//本地化字符串
-#define  _(string)   NSLocalizedString(string, nil)
-
 //res目录
 //#define RES_DIRECTORY  [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"res"]
 #define RES_DIRECTORY  [[NSBundle mainBundle] bundlePath]
@@ -118,6 +115,13 @@ typedef void(^ButtonBlock)(void);
  * 产生随机数: 0.0 ~ 1.0
  */
 #define foo4random()            (1.0 * (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX)
+
+//本地化字符串
+#define  _(string)              NSLocalizedString(string, nil)
+
+//
+//================================================================================
+//
 
 //
 //语言类型

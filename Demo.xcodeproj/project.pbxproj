@@ -13,7 +13,6 @@
 		79C9CF1216B14502006A03F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1116B14502006A03F4 /* UIKit.framework */; };
 		79C9CF1416B14502006A03F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1316B14502006A03F4 /* Foundation.framework */; };
 		79C9CF1616B14502006A03F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1516B14502006A03F4 /* CoreGraphics.framework */; };
-		79C9CF1C16B14502006A03F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79C9CF1A16B14502006A03F4 /* InfoPlist.strings */; };
 		79C9CF1E16B14502006A03F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C9CF1D16B14502006A03F4 /* main.m */; };
 		79C9CF2216B14502006A03F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C9CF2116B14502006A03F4 /* AppDelegate.m */; };
 		79C9CF3716B14777006A03F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C9CF3616B14777006A03F4 /* ViewController.m */; };
@@ -230,6 +229,7 @@
 		79D4469D16B6701500C3F952 /* FZY4JW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469C16B6701500C3F952 /* FZY4JW.TTF */; };
 		79D446BD16B6742B00C3F952 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469F16B6742B00C3F952 /* Kal.bundle */; };
 		79D446CF16B675B000C3F952 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D446CE16B675AA00C3F952 /* libKal.a */; };
+		79D507CD16E46AAC001D7529 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79D507CF16E46AAC001D7529 /* Localizable.strings */; };
 		79D7683616E0BFE0009539FB /* PHCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D7683516E0BFDF009539FB /* PHCycleScrollView.m */; };
 		79D7683C16E0C05D009539FB /* CycleScrollViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D7683B16E0C05D009539FB /* CycleScrollViewCtrl.m */; };
 		79D77BAF16BF909300953ECE /* CMPopTipViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D77BAE16BF909200953ECE /* CMPopTipViewCtrl.m */; };
@@ -278,8 +278,7 @@
 		79C9CF1116B14502006A03F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79C9CF1316B14502006A03F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79C9CF1516B14502006A03F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		79C9CF1916B14502006A03F4 /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
-		79C9CF1B16B14502006A03F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79C9CF1916B14502006A03F4 /* Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
 		79C9CF1D16B14502006A03F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		79C9CF1F16B14502006A03F4 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		79C9CF2016B14502006A03F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -594,6 +593,8 @@
 		79D4469F16B6742B00C3F952 /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Kal.bundle; sourceTree = "<group>"; };
 		79D446A116B6742B00C3F952 /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kal.xcodeproj; sourceTree = "<group>"; };
 		79D446CE16B675AA00C3F952 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "Demo/KalCalendar/build/Debug-iphonesimulator/libKal.a"; sourceTree = "<group>"; };
+		79D507CE16E46AAC001D7529 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D507D016E46AC2001D7529 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		79D7683416E0BFDF009539FB /* PHCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCycleScrollView.h; sourceTree = "<group>"; };
 		79D7683516E0BFDF009539FB /* PHCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCycleScrollView.m; sourceTree = "<group>"; };
 		79D7683A16E0C05D009539FB /* CycleScrollViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollViewCtrl.h; sourceTree = "<group>"; };
@@ -732,9 +733,9 @@
 			isa = PBXGroup;
 			children = (
 				79C9CF1916B14502006A03F4 /* Demo-Info.plist */,
-				79C9CF1A16B14502006A03F4 /* InfoPlist.strings */,
 				79C9CF1D16B14502006A03F4 /* main.m */,
 				79C9CF1F16B14502006A03F4 /* Demo-Prefix.pch */,
+				79D507CF16E46AAC001D7529 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1291,6 +1292,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 79C9CF0216B14502006A03F4;
 			productRefGroup = 79C9CF0E16B14502006A03F4 /* Products */;
@@ -1323,7 +1325,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79C9CF1C16B14502006A03F4 /* InfoPlist.strings in Resources */,
 				79E6FF4516B42C890075CAAF /* README.md in Resources */,
 				79D444B416B62E0C00C3F952 /* baby_complete.plist in Resources */,
 				79D444B516B62E0C00C3F952 /* box0001.png in Resources */,
@@ -1453,6 +1454,7 @@
 				79F6658716BCE41300937CAD /* grayArrow@2x.png in Resources */,
 				79F6658816BCE41300937CAD /* whiteArrow.png in Resources */,
 				79F6658916BCE41300937CAD /* whiteArrow@2x.png in Resources */,
+				79D507CD16E46AAC001D7529 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1575,12 +1577,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		79C9CF1A16B14502006A03F4 /* InfoPlist.strings */ = {
+		79D507CF16E46AAC001D7529 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				79C9CF1B16B14502006A03F4 /* en */,
+				79D507CE16E46AAC001D7529 /* en */,
+				79D507D016E46AC2001D7529 /* zh-Hans */,
 			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

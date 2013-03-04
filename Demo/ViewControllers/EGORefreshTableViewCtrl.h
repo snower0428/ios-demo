@@ -13,6 +13,7 @@
 {
     UITableView                 *_tableView;
     EGORefreshTableHeaderView   *_refreshHeaderView;
+    EGORefreshTableHeaderView   *_refreshFooterView;
     
     // Reloading var should really be your tableviews datasource
 	// Putting it here for demo purposes 

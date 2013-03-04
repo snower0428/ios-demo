@@ -37,7 +37,7 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_HEIGHT)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_VIEW_HEIGH)];
     view.backgroundColor = [UIColor grayColor];
     self.view = view;
     [view release];
@@ -59,7 +59,7 @@
     }];
 #endif
     // Add table view
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_HEIGHT)];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_VIEW_HEIGH)];
     tableView.dataSource = self;
     tableView.delegate = self;
     [self.view addSubview:tableView];
@@ -68,16 +68,29 @@
     
     // Add refresh header view
     if (_refreshHeaderView == nil) {
-        CGRect refreshHeaderViewFrame = CGRectMake(0, 0-APP_HEIGHT, 320, APP_HEIGHT);
+        CGRect refreshHeaderViewFrame = CGRectMake(0, 0-APP_VIEW_HEIGH, 320, APP_VIEW_HEIGH);
 		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:refreshHeaderViewFrame];
 		view.delegate = self;
 		[_tableView addSubview:view];
 		_refreshHeaderView = view;
 		[view release];
 	}
-	
-	//  update the last update date
+    
+    //  update the last update date
 	[_refreshHeaderView refreshLastUpdatedDate];
+	
+	if (_refreshFooterView == nil) {
+        EGORefreshTableHeaderView *refreshView = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectZero];
+        refreshView.pullUpToRefresh = YES;
+        NSLog(@"%@", NSStringFromCGRect(refreshView.frame));
+        refreshView.delegate = self;
+        [_tableView addSubview:refreshView];
+        _refreshFooterView = refreshView;
+        [refreshView release];
+    }
+    
+    //  update the last update date
+	[_refreshFooterView refreshLastUpdatedDate];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -91,6 +104,18 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    _refreshFooterView.frame = CGRectMake(0.0f, _tableView.contentSize.height, 320, 650);
 }
 
 #pragma mark -
@@ -108,6 +133,7 @@
 	// model should call this when its done loading
 	_reloading = NO;
 	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:_tableView];
+    [_refreshFooterView egoRefreshScrollViewDataSourceDidFinishedLoading:_tableView];
 }
 
 #pragma mark -
@@ -115,7 +141,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 10;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -163,12 +189,18 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    NSString *contentOffset = NSStringFromUIEdgeInsets(scrollView.contentInset);
+    NSString *contentInset = NSStringFromUIEdgeInsets(scrollView.contentInset);
+    NSLog(@"contentOffset:%@ ========== contentInset:%@", contentOffset, contentInset);
+    
 	[_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
+    [_refreshFooterView egoRefreshScrollViewDidScroll:scrollView];
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
 	[_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
+    [_refreshFooterView egoRefreshScrollViewDidEndDragging:scrollView];
 }
 
 #pragma mark -
