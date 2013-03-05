@@ -10,7 +10,7 @@
 #import "BabySelectViewController.h"
 #import "ASIHttpDemoViewCtrl.h"
 #import "TableViewDemoCtrl.h"
-#import "KalCalendar/Kal.h"
+#import "Kal.h"
 #import "DatePickerDemoViewCtrl.h"
 #import "EGORefreshTableViewCtrl.h"
 #import "CMPopTipViewCtrl.h"

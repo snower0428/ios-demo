@@ -82,7 +82,6 @@
 	if (_refreshFooterView == nil) {
         EGORefreshTableHeaderView *refreshView = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectZero];
         refreshView.pullUpToRefresh = YES;
-        NSLog(@"%@", NSStringFromCGRect(refreshView.frame));
         refreshView.delegate = self;
         [_tableView addSubview:refreshView];
         _refreshFooterView = refreshView;
@@ -189,9 +188,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSString *contentOffset = NSStringFromUIEdgeInsets(scrollView.contentInset);
-    NSString *contentInset = NSStringFromUIEdgeInsets(scrollView.contentInset);
-    NSLog(@"contentOffset:%@ ========== contentInset:%@", contentOffset, contentInset);
+//    NSString *contentOffset = NSStringFromUIEdgeInsets(scrollView.contentInset);
+//    NSString *contentInset = NSStringFromUIEdgeInsets(scrollView.contentInset);
+//    NSLog(@"contentOffset:%@ ========== contentInset:%@", contentOffset, contentInset);
     
 	[_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
     [_refreshFooterView egoRefreshScrollViewDidScroll:scrollView];

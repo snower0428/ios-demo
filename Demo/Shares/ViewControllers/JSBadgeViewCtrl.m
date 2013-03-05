@@ -86,6 +86,7 @@
         
         JSBadgeView *badgeView = [[JSBadgeView alloc] initWithParentView:rectangle alignment:JSBadgeViewAlignmentTopRight];
         badgeView.badgeText = [NSString stringWithFormat:@"%d", i];
+        [badgeView release];
         
         [scrollView addSubview:rectangle];
         [scrollView sendSubviewToBack:rectangle];
