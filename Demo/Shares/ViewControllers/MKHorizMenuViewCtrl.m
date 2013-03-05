@@ -1,14 +1,14 @@
 //
-//  MKHorizMenuCtrl.m
+//  MKHorizMenuViewCtrl.m
 //  Demo
 //
 //  Created by lei hui on 13-3-5.
 //  Copyright (c) 2013年 __MyCompanyName__. All rights reserved.
 //
 
-#import "MKHorizMenuCtrl.h"
+#import "MKHorizMenuViewCtrl.h"
 
-@implementation MKHorizMenuCtrl
+@implementation MKHorizMenuViewCtrl
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

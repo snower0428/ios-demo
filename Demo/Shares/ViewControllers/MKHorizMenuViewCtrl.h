@@ -1,5 +1,5 @@
 //
-//  MKHorizMenuCtrl.h
+//  MKHorizMenuViewCtrl.h
 //  Demo
 //
 //  Created by lei hui on 13-3-5.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MKHorizMenu.h"
 
-@interface MKHorizMenuCtrl : UIViewController <MKHorizMenuDataSource, MKHorizMenuDelegate>
+@interface MKHorizMenuViewCtrl : UIViewController <MKHorizMenuDataSource, MKHorizMenuDelegate>
 {
     NSArray         *_items;
     UILabel         *_label;

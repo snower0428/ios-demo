@@ -15,8 +15,10 @@
 #import "EGORefreshTableViewCtrl.h"
 #import "CMPopTipViewCtrl.h"
 #import "CycleScrollViewCtrl.h"
-#import "MKHorizMenuCtrl.h"
+#import "MKHorizMenuViewCtrl.h"
 #import "JSBadgeViewCtrl.h"
+#import "LKBadgeViewCtrl.h"
+#import "SDWebImageViewCtrl.h"
 //#import "CarouselDemoViewController.h"
 
 @interface ViewController ()
@@ -43,6 +45,8 @@
                   @"CycleScrollView",
                   @"MKHorizMenu",
                   @"JSBadgeView",
+                  @"LKBadgeView",
+                  @"SDWebImage",
 //                  @"Carousel", 
                   nil];
     
@@ -55,8 +59,10 @@
                             NSStringFromClass([EGORefreshTableViewCtrl class]),
                             NSStringFromClass([CMPopTipViewCtrl class]),
                             NSStringFromClass([CycleScrollViewCtrl class]),
-                            NSStringFromClass([MKHorizMenuCtrl class]),
+                            NSStringFromClass([MKHorizMenuViewCtrl class]),
                             NSStringFromClass([JSBadgeViewCtrl class]),
+                            NSStringFromClass([LKBadgeViewCtrl class]),
+                            NSStringFromClass([SDWebImageViewCtrl class]),
 //                            NSStringFromClass([CarouselDemoViewController class]),
                             nil];
     

@@ -45,3 +45,8 @@ ios-demo description
  *  2. add font name to "Fonts provided by application" items;
  */
 
+/**************************************************
+ *  How to add SDWebImage:
+ *  1. add SDWebImage files
+ *  2. add ImageIO.framework and MapKit.framework
+ */
