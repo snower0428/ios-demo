@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7917496216BFCA7A002A527F /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917495E16BFCA7A002A527F /* CMPopTipView.m */; };
-		7917496316BFCA7A002A527F /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917496116BFCA7A002A527F /* EGORefreshTableHeaderView.m */; };
 		79BC7C1716BBC46400529663 /* Calendar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79BC7C1416BBC46400529663 /* Calendar.cpp */; };
+		79C6696F16E5E61A009FA008 /* MKHorizMenuCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6696E16E5E61A009FA008 /* MKHorizMenuCtrl.m */; };
+		79C6698216E5F313009FA008 /* JSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6698116E5F313009FA008 /* JSBadgeView.m */; };
+		79C6698516E5F3B3009FA008 /* JSBadgeViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6698416E5F3B3009FA008 /* JSBadgeViewCtrl.m */; };
 		79C9CF1216B14502006A03F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1116B14502006A03F4 /* UIKit.framework */; };
 		79C9CF1416B14502006A03F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1316B14502006A03F4 /* Foundation.framework */; };
 		79C9CF1616B14502006A03F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1516B14502006A03F4 /* CoreGraphics.framework */; };
@@ -230,11 +231,17 @@
 		79D446BD16B6742B00C3F952 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469F16B6742B00C3F952 /* Kal.bundle */; };
 		79D446CF16B675B000C3F952 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D446CE16B675AA00C3F952 /* libKal.a */; };
 		79D507CD16E46AAC001D7529 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79D507CF16E46AAC001D7529 /* Localizable.strings */; };
-		79D7683616E0BFE0009539FB /* PHCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D7683516E0BFDF009539FB /* PHCycleScrollView.m */; };
 		79D7683C16E0C05D009539FB /* CycleScrollViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D7683B16E0C05D009539FB /* CycleScrollViewCtrl.m */; };
 		79D77BAF16BF909300953ECE /* CMPopTipViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D77BAE16BF909200953ECE /* CMPopTipViewCtrl.m */; };
 		79D8CADC16B76700002BD388 /* UIDatePickerCtrl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */; };
 		79E6FF4516B42C890075CAAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FF4416B42C880075CAAF /* README.md */; };
+		79E8D8D916E5E3C500B91659 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8D8D416E5E3C500B91659 /* CMPopTipView.m */; };
+		79E8D8DA16E5E3C500B91659 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8D8D616E5E3C500B91659 /* EGORefreshTableHeaderView.m */; };
+		79E8D8DB16E5E3C500B91659 /* PHCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8D8D816E5E3C500B91659 /* PHCycleScrollView.m */; };
+		79E8D8E216E5E42100B91659 /* ButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E8D8DD16E5E42100B91659 /* ButtonSelected.png */; };
+		79E8D8E316E5E42100B91659 /* MenuBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E8D8DE16E5E42100B91659 /* MenuBar.png */; };
+		79E8D8E416E5E42100B91659 /* MenuBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E8D8DF16E5E42100B91659 /* MenuBar@2x.png */; };
+		79E8D8E516E5E42100B91659 /* MKHorizMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8D8E116E5E42100B91659 /* MKHorizMenu.m */; };
 		79F6651D16BBF85200937CAD /* DatePickerDemoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */; };
 		79F6656316BC278300937CAD /* DatePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79F6656216BC278300937CAD /* DatePicker.bundle */; };
 		79F6656D16BCBD4500937CAD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6656C16BCBD4500937CAD /* MBProgressHUD.m */; };
@@ -267,13 +274,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7917495D16BFCA7A002A527F /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
-		7917495E16BFCA7A002A527F /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
-		7917496016BFCA7A002A527F /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
-		7917496116BFCA7A002A527F /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		79BC7C1416BBC46400529663 /* Calendar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Calendar.cpp; sourceTree = "<group>"; };
 		79BC7C1516BBC46400529663 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
 		79BC7C1616BBC46400529663 /* DateTypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTypeDef.h; sourceTree = "<group>"; };
+		79C6696D16E5E61A009FA008 /* MKHorizMenuCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHorizMenuCtrl.h; sourceTree = "<group>"; };
+		79C6696E16E5E61A009FA008 /* MKHorizMenuCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHorizMenuCtrl.m; sourceTree = "<group>"; };
+		79C6698016E5F313009FA008 /* JSBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBadgeView.h; sourceTree = "<group>"; };
+		79C6698116E5F313009FA008 /* JSBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBadgeView.m; sourceTree = "<group>"; };
+		79C6698316E5F3B3009FA008 /* JSBadgeViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBadgeViewCtrl.h; sourceTree = "<group>"; };
+		79C6698416E5F3B3009FA008 /* JSBadgeViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBadgeViewCtrl.m; sourceTree = "<group>"; };
 		79C9CF0D16B14502006A03F4 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C9CF1116B14502006A03F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79C9CF1316B14502006A03F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -595,8 +604,6 @@
 		79D446CE16B675AA00C3F952 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "Demo/KalCalendar/build/Debug-iphonesimulator/libKal.a"; sourceTree = "<group>"; };
 		79D507CE16E46AAC001D7529 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		79D507D016E46AC2001D7529 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		79D7683416E0BFDF009539FB /* PHCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCycleScrollView.h; sourceTree = "<group>"; };
-		79D7683516E0BFDF009539FB /* PHCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCycleScrollView.m; sourceTree = "<group>"; };
 		79D7683A16E0C05D009539FB /* CycleScrollViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollViewCtrl.h; sourceTree = "<group>"; };
 		79D7683B16E0C05D009539FB /* CycleScrollViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollViewCtrl.m; sourceTree = "<group>"; };
 		79D77BAD16BF909200953ECE /* CMPopTipViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipViewCtrl.h; sourceTree = "<group>"; };
@@ -604,6 +611,17 @@
 		79D8CADA16B76700002BD388 /* UIDatePickerCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerCtrl.h; sourceTree = "<group>"; };
 		79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIDatePickerCtrl.mm; sourceTree = "<group>"; };
 		79E6FF4416B42C880075CAAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		79E8D8D316E5E3C500B91659 /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
+		79E8D8D416E5E3C500B91659 /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
+		79E8D8D516E5E3C500B91659 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		79E8D8D616E5E3C500B91659 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		79E8D8D716E5E3C500B91659 /* PHCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHCycleScrollView.h; sourceTree = "<group>"; };
+		79E8D8D816E5E3C500B91659 /* PHCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHCycleScrollView.m; sourceTree = "<group>"; };
+		79E8D8DD16E5E42100B91659 /* ButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonSelected.png; sourceTree = "<group>"; };
+		79E8D8DE16E5E42100B91659 /* MenuBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBar.png; sourceTree = "<group>"; };
+		79E8D8DF16E5E42100B91659 /* MenuBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuBar@2x.png"; sourceTree = "<group>"; };
+		79E8D8E016E5E42100B91659 /* MKHorizMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHorizMenu.h; sourceTree = "<group>"; };
+		79E8D8E116E5E42100B91659 /* MKHorizMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHorizMenu.m; sourceTree = "<group>"; };
 		79F6651B16BBF85200937CAD /* DatePickerDemoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerDemoViewCtrl.h; sourceTree = "<group>"; };
 		79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerDemoViewCtrl.m; sourceTree = "<group>"; };
 		79F6656216BC278300937CAD /* DatePicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DatePicker.bundle; sourceTree = "<group>"; };
@@ -647,29 +665,17 @@
 		7917495B16BFCA7A002A527F /* CommView */ = {
 			isa = PBXGroup;
 			children = (
-				79D7683316E0BFDF009539FB /* CycleScrollView */,
-				7917495C16BFCA7A002A527F /* CMPopTipView */,
-				7917495F16BFCA7A002A527F /* RefreshTableHeaderView */,
+				79E8D8DC16E5E42100B91659 /* MKHorizMenu */,
+				79C6698016E5F313009FA008 /* JSBadgeView.h */,
+				79C6698116E5F313009FA008 /* JSBadgeView.m */,
+				79E8D8D316E5E3C500B91659 /* CMPopTipView.h */,
+				79E8D8D416E5E3C500B91659 /* CMPopTipView.m */,
+				79E8D8D516E5E3C500B91659 /* EGORefreshTableHeaderView.h */,
+				79E8D8D616E5E3C500B91659 /* EGORefreshTableHeaderView.m */,
+				79E8D8D716E5E3C500B91659 /* PHCycleScrollView.h */,
+				79E8D8D816E5E3C500B91659 /* PHCycleScrollView.m */,
 			);
 			path = CommView;
-			sourceTree = "<group>";
-		};
-		7917495C16BFCA7A002A527F /* CMPopTipView */ = {
-			isa = PBXGroup;
-			children = (
-				7917495D16BFCA7A002A527F /* CMPopTipView.h */,
-				7917495E16BFCA7A002A527F /* CMPopTipView.m */,
-			);
-			path = CMPopTipView;
-			sourceTree = "<group>";
-		};
-		7917495F16BFCA7A002A527F /* RefreshTableHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				7917496016BFCA7A002A527F /* EGORefreshTableHeaderView.h */,
-				7917496116BFCA7A002A527F /* EGORefreshTableHeaderView.m */,
-			);
-			path = RefreshTableHeaderView;
 			sourceTree = "<group>";
 		};
 		79C9CF0216B14502006A03F4 = {
@@ -1112,6 +1118,8 @@
 		79D4465316B666BF00C3F952 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				79D4468A16B669D600C3F952 /* TableView */,
+				79D4465616B666D400C3F952 /* BabyInfo */,
 				79D4465416B666D400C3F952 /* ASIHttpDemoViewCtrl.h */,
 				79D4465516B666D400C3F952 /* ASIHttpDemoViewCtrl.m */,
 				79D77BAD16BF909200953ECE /* CMPopTipViewCtrl.h */,
@@ -1120,10 +1128,12 @@
 				79F6651C16BBF85200937CAD /* DatePickerDemoViewCtrl.m */,
 				79F6657616BCD8B800937CAD /* EGORefreshTableViewCtrl.h */,
 				79F6657716BCD8B800937CAD /* EGORefreshTableViewCtrl.m */,
-				79D4468A16B669D600C3F952 /* TableView */,
-				79D4465616B666D400C3F952 /* BabyInfo */,
 				79D7683A16E0C05D009539FB /* CycleScrollViewCtrl.h */,
 				79D7683B16E0C05D009539FB /* CycleScrollViewCtrl.m */,
+				79C6696D16E5E61A009FA008 /* MKHorizMenuCtrl.h */,
+				79C6696E16E5E61A009FA008 /* MKHorizMenuCtrl.m */,
+				79C6698316E5F3B3009FA008 /* JSBadgeViewCtrl.h */,
+				79C6698416E5F3B3009FA008 /* JSBadgeViewCtrl.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1220,15 +1230,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		79D7683316E0BFDF009539FB /* CycleScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				79D7683416E0BFDF009539FB /* PHCycleScrollView.h */,
-				79D7683516E0BFDF009539FB /* PHCycleScrollView.m */,
-			);
-			path = CycleScrollView;
-			sourceTree = "<group>";
-		};
 		79D8CAD916B766E5002BD388 /* UIDatePickerCtrl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1240,6 +1241,18 @@
 				79D8CADB16B76700002BD388 /* UIDatePickerCtrl.mm */,
 			);
 			path = UIDatePickerCtrl;
+			sourceTree = "<group>";
+		};
+		79E8D8DC16E5E42100B91659 /* MKHorizMenu */ = {
+			isa = PBXGroup;
+			children = (
+				79E8D8DD16E5E42100B91659 /* ButtonSelected.png */,
+				79E8D8DE16E5E42100B91659 /* MenuBar.png */,
+				79E8D8DF16E5E42100B91659 /* MenuBar@2x.png */,
+				79E8D8E016E5E42100B91659 /* MKHorizMenu.h */,
+				79E8D8E116E5E42100B91659 /* MKHorizMenu.m */,
+			);
+			path = MKHorizMenu;
 			sourceTree = "<group>";
 		};
 		79F6657916BCE41300937CAD /* Arrows */ = {
@@ -1455,6 +1468,9 @@
 				79F6658816BCE41300937CAD /* whiteArrow.png in Resources */,
 				79F6658916BCE41300937CAD /* whiteArrow@2x.png in Resources */,
 				79D507CD16E46AAC001D7529 /* Localizable.strings in Resources */,
+				79E8D8E216E5E42100B91659 /* ButtonSelected.png in Resources */,
+				79E8D8E316E5E42100B91659 /* MenuBar.png in Resources */,
+				79E8D8E416E5E42100B91659 /* MenuBar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1559,10 +1575,14 @@
 				79F6656D16BCBD4500937CAD /* MBProgressHUD.m in Sources */,
 				79F6657816BCD8B800937CAD /* EGORefreshTableViewCtrl.m in Sources */,
 				79D77BAF16BF909300953ECE /* CMPopTipViewCtrl.m in Sources */,
-				7917496216BFCA7A002A527F /* CMPopTipView.m in Sources */,
-				7917496316BFCA7A002A527F /* EGORefreshTableHeaderView.m in Sources */,
-				79D7683616E0BFE0009539FB /* PHCycleScrollView.m in Sources */,
 				79D7683C16E0C05D009539FB /* CycleScrollViewCtrl.m in Sources */,
+				79E8D8D916E5E3C500B91659 /* CMPopTipView.m in Sources */,
+				79E8D8DA16E5E3C500B91659 /* EGORefreshTableHeaderView.m in Sources */,
+				79E8D8DB16E5E3C500B91659 /* PHCycleScrollView.m in Sources */,
+				79E8D8E516E5E42100B91659 /* MKHorizMenu.m in Sources */,
+				79C6696F16E5E61A009FA008 /* MKHorizMenuCtrl.m in Sources */,
+				79C6698216E5F313009FA008 /* JSBadgeView.m in Sources */,
+				79C6698516E5F3B3009FA008 /* JSBadgeViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

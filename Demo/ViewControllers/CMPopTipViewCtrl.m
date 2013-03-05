@@ -234,6 +234,7 @@
         [_self onBack];
 #endif
     }];
+    [btnReturn release];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
