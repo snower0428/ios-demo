@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseViewController.h"
 #import "PHCycleScrollView.h"
 
-@interface CycleScrollViewCtrl : UIViewController <PHCycleScrollViewDataSource, PHCycleScrollViewDelegate>
+@interface CycleScrollViewCtrl : LHBaseViewController <PHCycleScrollViewDataSource, PHCycleScrollViewDelegate>
 
 @end

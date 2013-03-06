@@ -47,6 +47,8 @@
     self.view = view;
     [view release];
     
+    [self addBackButton];
+    
 //    self.view.backgroundColor = kViewBackgroundColor;
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];

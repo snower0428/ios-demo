@@ -1,17 +1,14 @@
 //
-//  SDWebImageDetailViewCtrl.m
+//  LHBaseViewController.m
 //  Demo
 //
-//  Created by lei hui on 13-3-5.
+//  Created by lei hui on 13-3-6.
 //  Copyright (c) 2013年 __MyCompanyName__. All rights reserved.
 //
 
-#import "SDWebImageDetailViewCtrl.h"
-#import "UIImageView+WebCache.h"
+#import "LHBaseViewController.h"
 
-@implementation SDWebImageDetailViewCtrl
-
-@synthesize imageURL = _imageURL;
+@implementation LHBaseViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,44 +27,18 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)configureView
-{
-    if (self.imageURL)
-    {
-        [_imageView setImageWithURL:self.imageURL placeholderImage:nil options:SDWebImageProgressiveDownload];
-    }
-}
-
-- (void)setImageURL:(NSURL *)imageURL
-{
-    if (_imageURL != imageURL)
-    {
-        _imageURL = imageURL;
-        [self configureView];
-    }
-}
-
 #pragma mark - View lifecycle
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_VIEW_HEIGH)];
-    view.backgroundColor = [UIColor grayColor];
-    self.view = view;
-    [view release];
-    
-    _imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    _imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.view addSubview:_imageView];
+    [super loadView];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self configureView];
 }
 
 - (void)viewDidUnload
@@ -83,12 +54,24 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark -
+
+- (void)addBackButton
+{
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:_(@"Back") style:UIBarButtonItemStylePlain target:self action:@selector(onBack)];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    [leftItem release];
+}
+
+- (void)onBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - dealloc
 
 - (void)dealloc
 {
-    [_imageView release];
-    
     [super dealloc];
 }
 

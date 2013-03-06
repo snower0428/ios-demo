@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseViewController.h"
 #import "MKHorizMenu.h"
 
-@interface MKHorizMenuViewCtrl : UIViewController <MKHorizMenuDataSource, MKHorizMenuDelegate>
+@interface MKHorizMenuViewCtrl : LHBaseViewController <MKHorizMenuDataSource, MKHorizMenuDelegate>
 {
     NSArray         *_items;
     UILabel         *_label;

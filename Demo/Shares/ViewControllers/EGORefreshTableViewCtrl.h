@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseViewController.h"
 #import "EGORefreshTableHeaderView.h"
 
-@interface EGORefreshTableViewCtrl : UIViewController <UITableViewDataSource, UITableViewDelegate, EGORefreshTableHeaderDelegate>
+@interface EGORefreshTableViewCtrl : LHBaseViewController <UITableViewDataSource, UITableViewDelegate, EGORefreshTableHeaderDelegate>
 {
     UITableView                 *_tableView;
     EGORefreshTableHeaderView   *_refreshHeaderView;

@@ -39,6 +39,8 @@
     self.view = view;
     [view release];
     
+    [self addBackButton];
+    
     PHCycleScrollView *cycleScrollView = [[PHCycleScrollView alloc] initWithFrame:self.view.bounds];
     cycleScrollView.dataSource = self;
     cycleScrollView.delegate = self;

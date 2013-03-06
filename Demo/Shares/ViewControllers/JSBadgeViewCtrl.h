@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseViewController.h"
 
-@interface JSBadgeViewCtrl : UIViewController
+@interface JSBadgeViewCtrl : LHBaseViewController
 
 @end

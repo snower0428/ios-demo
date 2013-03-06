@@ -42,22 +42,8 @@
     self.view = view;
     [view release];
     
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(onBack)];
-    self.navigationItem.leftBarButtonItem = item;
-    [item release];
-#if 0
-    // Return
-    __block __typeof(self) _self = self;
-    UIButton *btnReturn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnReturn.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.1];
-    btnReturn.frame = CGRectMake(0, 0, 100, 30);
-    [btnReturn setTitle:@"返回" forState:UIControlStateNormal];
-    [self.view addSubview:btnReturn];
+    [self addBackButton];
     
-    [btnReturn handleControlEvents:UIControlEventTouchUpInside withBlock:^(void){
-        [_self.navigationController popViewControllerAnimated:YES];
-    }];
-#endif
     // Add table view
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_VIEW_HEIGH)];
     tableView.dataSource = self;

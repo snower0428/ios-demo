@@ -1,17 +1,14 @@
 //
-//  SDWebImageDetailViewCtrl.m
+//  MTStatusBarOverlayViewCtrl.m
 //  Demo
 //
-//  Created by lei hui on 13-3-5.
+//  Created by lei hui on 13-3-6.
 //  Copyright (c) 2013年 __MyCompanyName__. All rights reserved.
 //
 
-#import "SDWebImageDetailViewCtrl.h"
-#import "UIImageView+WebCache.h"
+#import "MTStatusBarOverlayViewCtrl.h"
 
-@implementation SDWebImageDetailViewCtrl
-
-@synthesize imageURL = _imageURL;
+@implementation MTStatusBarOverlayViewCtrl
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,23 +27,6 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)configureView
-{
-    if (self.imageURL)
-    {
-        [_imageView setImageWithURL:self.imageURL placeholderImage:nil options:SDWebImageProgressiveDownload];
-    }
-}
-
-- (void)setImageURL:(NSURL *)imageURL
-{
-    if (_imageURL != imageURL)
-    {
-        _imageURL = imageURL;
-        [self configureView];
-    }
-}
-
 #pragma mark - View lifecycle
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
@@ -57,17 +37,27 @@
     self.view = view;
     [view release];
     
-    _imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    _imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.view addSubview:_imageView];
+    [self addBackButton];
+    
+    MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
+    overlay.animation = MTStatusBarOverlayAnimationFallDown;
+    overlay.detailViewMode = MTDetailViewModeHistory;         // enable automatic history-tracking and show in detail-view
+    overlay.delegate = self;
+    overlay.progress = 0.0;
+    [overlay postMessage:@"Following @myell0w on Twitter…"];
+    overlay.progress = 0.1;
+    // ...
+    [overlay postMessage:@"Following myell0w on Github…" animated:NO];
+    overlay.progress = 0.5;
+    // ...
+    [overlay postImmediateFinishMessage:@"Following was a good idea!" duration:2.0 animated:YES];
+    overlay.progress = 1.0;
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self configureView];
 }
 
 - (void)viewDidUnload
@@ -87,8 +77,6 @@
 
 - (void)dealloc
 {
-    [_imageView release];
-    
     [super dealloc];
 }
 

@@ -10,6 +10,7 @@
 #import "BabySelectViewController.h"
 #import "ASIHttpDemoViewCtrl.h"
 #import "TableViewDemoCtrl.h"
+#import "LivelyTableViewCtrl.h"
 #import "Kal.h"
 #import "DatePickerDemoViewCtrl.h"
 #import "EGORefreshTableViewCtrl.h"
@@ -19,7 +20,8 @@
 #import "JSBadgeViewCtrl.h"
 #import "LKBadgeViewCtrl.h"
 #import "SDWebImageViewCtrl.h"
-//#import "CarouselDemoViewController.h"
+#import "MTStatusBarOverlayViewCtrl.h"
+#import "CarouselViewCtrl.h"
 
 @interface ViewController ()
 
@@ -35,9 +37,10 @@
     [view release];
     
     _arrayName = [[NSArray alloc] initWithObjects:
-                  @"BabyInfo", 
-                  @"ASIHttpRequest", 
-                  @"TableView", 
+                  @"BabyInfo",
+                  @"ASIHttpRequest",
+                  @"TableView",
+                  @"LivelyTableView",
                   @"KalCalendar",
                   @"DatePicker",
                   @"EGORefreshTableView",
@@ -47,13 +50,15 @@
                   @"JSBadgeView",
                   @"LKBadgeView",
                   @"SDWebImage",
-//                  @"Carousel", 
+                  @"MTStatusBarOverlay",
+                  @"Carousel", 
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
                             NSStringFromClass([BabySelectViewController class]),
                             NSStringFromClass([ASIHttpDemoViewCtrl class]),
                             NSStringFromClass([TableViewDemoCtrl class]),
+                            NSStringFromClass([LivelyTableViewCtrl class]),
                             NSStringFromClass([KalViewController class]),
                             NSStringFromClass([DatePickerDemoViewCtrl class]),
                             NSStringFromClass([EGORefreshTableViewCtrl class]),
@@ -63,7 +68,8 @@
                             NSStringFromClass([JSBadgeViewCtrl class]),
                             NSStringFromClass([LKBadgeViewCtrl class]),
                             NSStringFromClass([SDWebImageViewCtrl class]),
-//                            NSStringFromClass([CarouselDemoViewController class]),
+                            NSStringFromClass([MTStatusBarOverlayViewCtrl class]),
+                            NSStringFromClass([CarouselViewCtrl class]),
                             nil];
     
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];

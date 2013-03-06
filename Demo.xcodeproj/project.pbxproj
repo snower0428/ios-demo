@@ -127,6 +127,18 @@
 		79C66C8616E600C5009FA008 /* TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C66C4116E600C4009FA008 /* TimerManager.m */; };
 		79C66C8716E600C5009FA008 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C66C4316E600C4009FA008 /* Utility.m */; };
 		79C66C8816E600C5009FA008 /* XMLParse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79C66C4516E600C4009FA008 /* XMLParse.mm */; };
+		79C7572416E7193E00DF23E0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C7572216E7193E00DF23E0 /* icon.png */; };
+		79C7572516E7193E00DF23E0 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C7572316E7193E00DF23E0 /* icon@2x.png */; };
+		79C7572816E71A1F00DF23E0 /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C7572716E71A1F00DF23E0 /* MTStatusBarOverlay.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79C7572B16E71AE400DF23E0 /* MTStatusBarOverlayViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C7572A16E71AE400DF23E0 /* MTStatusBarOverlayViewCtrl.m */; };
+		79C7574216E73B6900DF23E0 /* ADLivelyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C7574116E73B6800DF23E0 /* ADLivelyTableView.m */; };
+		79C7574516E73BC200DF23E0 /* LivelyTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C7574416E73BC200DF23E0 /* LivelyTableViewCtrl.m */; };
+		79C7574816E73FF000DF23E0 /* LHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C7574716E73FEF00DF23E0 /* LHBaseViewController.m */; };
+		79C7575016E747FF00DF23E0 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C7574F16E747FF00DF23E0 /* iCarousel.m */; };
+		79C7575716E74BF000DF23E0 /* CarouselViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C7575616E74BE900DF23E0 /* CarouselViewCtrl.m */; };
+		79C7575B16E752CB00DF23E0 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C7575816E752CB00DF23E0 /* page.png */; };
+		79C7575C16E752CB00DF23E0 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C7575916E752CB00DF23E0 /* placeholder.png */; };
+		79C7575D16E752CB00DF23E0 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C7575A16E752CB00DF23E0 /* placeholder@2x.png */; };
 		79C9CF1216B14502006A03F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1116B14502006A03F4 /* UIKit.framework */; };
 		79C9CF1416B14502006A03F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1316B14502006A03F4 /* Foundation.framework */; };
 		79C9CF1616B14502006A03F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9CF1516B14502006A03F4 /* CoreGraphics.framework */; };
@@ -536,6 +548,25 @@
 		79C66C4316E600C4009FA008 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		79C66C4416E600C4009FA008 /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParse.h; sourceTree = "<group>"; };
 		79C66C4516E600C4009FA008 /* XMLParse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XMLParse.mm; sourceTree = "<group>"; };
+		79C7572216E7193E00DF23E0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		79C7572316E7193E00DF23E0 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		79C7572616E71A1F00DF23E0 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlay.h; sourceTree = "<group>"; };
+		79C7572716E71A1F00DF23E0 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlay.m; sourceTree = "<group>"; };
+		79C7572916E71AE300DF23E0 /* MTStatusBarOverlayViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlayViewCtrl.h; sourceTree = "<group>"; };
+		79C7572A16E71AE400DF23E0 /* MTStatusBarOverlayViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlayViewCtrl.m; sourceTree = "<group>"; };
+		79C7574016E73B6800DF23E0 /* ADLivelyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLivelyTableView.h; sourceTree = "<group>"; };
+		79C7574116E73B6800DF23E0 /* ADLivelyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLivelyTableView.m; sourceTree = "<group>"; };
+		79C7574316E73BC200DF23E0 /* LivelyTableViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivelyTableViewCtrl.h; sourceTree = "<group>"; };
+		79C7574416E73BC200DF23E0 /* LivelyTableViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivelyTableViewCtrl.m; sourceTree = "<group>"; };
+		79C7574616E73FEE00DF23E0 /* LHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBaseViewController.h; sourceTree = "<group>"; };
+		79C7574716E73FEF00DF23E0 /* LHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBaseViewController.m; sourceTree = "<group>"; };
+		79C7574E16E747FF00DF23E0 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		79C7574F16E747FF00DF23E0 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		79C7575516E74BE300DF23E0 /* CarouselViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselViewCtrl.h; sourceTree = "<group>"; };
+		79C7575616E74BE900DF23E0 /* CarouselViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselViewCtrl.m; sourceTree = "<group>"; };
+		79C7575816E752CB00DF23E0 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
+		79C7575916E752CB00DF23E0 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		79C7575A16E752CB00DF23E0 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
 		79C9CF0D16B14502006A03F4 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C9CF1116B14502006A03F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79C9CF1316B14502006A03F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -832,8 +863,13 @@
 		79C66A4216E5FFAF009FA008 /* CommView */ = {
 			isa = PBXGroup;
 			children = (
+				79C7574D16E747FF00DF23E0 /* iCarousel_v1.6.1 */,
 				79A31C6516E610FE00E02260 /* BadgeView */,
 				79C66A4916E5FFB0009FA008 /* MKHorizMenu */,
+				79C7574016E73B6800DF23E0 /* ADLivelyTableView.h */,
+				79C7574116E73B6800DF23E0 /* ADLivelyTableView.m */,
+				79C7572616E71A1F00DF23E0 /* MTStatusBarOverlay.h */,
+				79C7572716E71A1F00DF23E0 /* MTStatusBarOverlay.m */,
 				79C66A4316E5FFAF009FA008 /* CMPopTipView.h */,
 				79C66A4416E5FFAF009FA008 /* CMPopTipView.m */,
 				79C66A4516E5FFAF009FA008 /* EGORefreshTableHeaderView.h */,
@@ -942,6 +978,14 @@
 				79C66ADF16E5FFB0009FA008 /* JSBadgeViewCtrl.m */,
 				79A31C6C16E6111D00E02260 /* LKBadgeViewCtrl.h */,
 				79A31C6D16E6111D00E02260 /* LKBadgeViewCtrl.m */,
+				79C7572916E71AE300DF23E0 /* MTStatusBarOverlayViewCtrl.h */,
+				79C7572A16E71AE400DF23E0 /* MTStatusBarOverlayViewCtrl.m */,
+				79C7574316E73BC200DF23E0 /* LivelyTableViewCtrl.h */,
+				79C7574416E73BC200DF23E0 /* LivelyTableViewCtrl.m */,
+				79C7574616E73FEE00DF23E0 /* LHBaseViewController.h */,
+				79C7574716E73FEF00DF23E0 /* LHBaseViewController.m */,
+				79C7575516E74BE300DF23E0 /* CarouselViewCtrl.h */,
+				79C7575616E74BE900DF23E0 /* CarouselViewCtrl.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -979,9 +1023,9 @@
 		79C66BB616E600C4009FA008 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				79C66BE116E600C4009FA008 /* CommDefines.h */,
 				79C66BB716E600C4009FA008 /* Base64 */,
 				79C66BBB16E600C4009FA008 /* Category */,
-				79C66BE116E600C4009FA008 /* CommDefines.h */,
 				79C66BE216E600C4009FA008 /* CustomView */,
 				79C66C1716E600C4009FA008 /* JSON */,
 				79C66C2516E600C4009FA008 /* Utility */,
@@ -1161,6 +1205,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		79C7574D16E747FF00DF23E0 /* iCarousel_v1.6.1 */ = {
+			isa = PBXGroup;
+			children = (
+				79C7574E16E747FF00DF23E0 /* iCarousel.h */,
+				79C7574F16E747FF00DF23E0 /* iCarousel.m */,
+			);
+			path = iCarousel_v1.6.1;
+			sourceTree = "<group>";
+		};
 		79C9CF0216B14502006A03F4 = {
 			isa = PBXGroup;
 			children = (
@@ -1213,6 +1266,8 @@
 		79C9CF1816B14502006A03F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				79C7572216E7193E00DF23E0 /* icon.png */,
+				79C7572316E7193E00DF23E0 /* icon@2x.png */,
 				79C9CF1916B14502006A03F4 /* Demo-Info.plist */,
 				79C9CF1D16B14502006A03F4 /* main.m */,
 				79C9CF1F16B14502006A03F4 /* Demo-Prefix.pch */,
@@ -1224,6 +1279,9 @@
 		79D4443816B62E0C00C3F952 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				79C7575816E752CB00DF23E0 /* page.png */,
+				79C7575916E752CB00DF23E0 /* placeholder.png */,
+				79C7575A16E752CB00DF23E0 /* placeholder@2x.png */,
 				79F6657916BCE41300937CAD /* Arrows */,
 				79D4469B16B6701100C3F952 /* Font */,
 				79D4443916B62E0C00C3F952 /* BabyInfo */,
@@ -1619,6 +1677,11 @@
 				79C66B4916E5FFB0009FA008 /* MenuBar.png in Resources */,
 				79C66B4A16E5FFB0009FA008 /* MenuBar@2x.png in Resources */,
 				79C66B8E16E5FFB0009FA008 /* Kal.bundle in Resources */,
+				79C7572416E7193E00DF23E0 /* icon.png in Resources */,
+				79C7572516E7193E00DF23E0 /* icon@2x.png in Resources */,
+				79C7575B16E752CB00DF23E0 /* page.png in Resources */,
+				79C7575C16E752CB00DF23E0 /* placeholder.png in Resources */,
+				79C7575D16E752CB00DF23E0 /* placeholder@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1743,6 +1806,13 @@
 				79A31CA316E6192000E02260 /* SDWebImageViewCtrl.m in Sources */,
 				79A31CA616E6194D00E02260 /* MKHorizMenuViewCtrl.m in Sources */,
 				79A31CAF16E6217900E02260 /* SDWebImageDetailViewCtrl.m in Sources */,
+				79C7572816E71A1F00DF23E0 /* MTStatusBarOverlay.m in Sources */,
+				79C7572B16E71AE400DF23E0 /* MTStatusBarOverlayViewCtrl.m in Sources */,
+				79C7574216E73B6900DF23E0 /* ADLivelyTableView.m in Sources */,
+				79C7574516E73BC200DF23E0 /* LivelyTableViewCtrl.m in Sources */,
+				79C7574816E73FF000DF23E0 /* LHBaseViewController.m in Sources */,
+				79C7575016E747FF00DF23E0 /* iCarousel.m in Sources */,
+				79C7575716E74BF000DF23E0 /* CarouselViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

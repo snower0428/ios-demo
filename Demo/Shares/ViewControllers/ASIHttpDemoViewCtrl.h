@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseViewController.h"
 #import "ASINetworkQueue.h"
 
-@interface ASIHttpDemoViewCtrl : UIViewController <ASIProgressDelegate, ASIHTTPRequestDelegate>
+@interface ASIHttpDemoViewCtrl : LHBaseViewController <ASIProgressDelegate, ASIHTTPRequestDelegate>
 {
     ASINetworkQueue         *_networkQueue;
 }

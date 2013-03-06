@@ -39,6 +39,8 @@
     self.view = view;
     [view release];
     
+    [self addBackButton];
+    
     self.title = @"SDWebImage";
     _objects = [[NSArray arrayWithObjects:
                 @"http://static2.dmcdn.net/static/video/451/838/44838154:jpeg_preview_small.jpg?20120509163826",

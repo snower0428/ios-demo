@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseViewController.h"
 
-@interface LKBadgeViewCtrl : UIViewController
+@interface LKBadgeViewCtrl : LHBaseViewController
 
 @end

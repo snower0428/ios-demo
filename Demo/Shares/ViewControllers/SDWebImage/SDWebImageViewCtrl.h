@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseViewController.h"
 
-@interface SDWebImageViewCtrl : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface SDWebImageViewCtrl : LHBaseViewController <UITableViewDataSource, UITableViewDelegate>
 {
     NSArray         *_objects;
     UITableView     *_tableView;

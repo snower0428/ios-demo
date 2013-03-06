@@ -46,7 +46,13 @@ ios-demo description
  */
 
 /**************************************************
- *  How to add SDWebImage:
+ *  How to add SDWebImage(the version is 2.0, support ios<5.0, the version 3.0 support ios>=5.0):
  *  1. add SDWebImage files
  *  2. add ImageIO.framework and MapKit.framework
+ */
+
+/**************************************************
+ *  How to add MTStatusBarOverlay
+ *  1. If you use MTStatusBarOverlay in a non-ARC project
+    2. add "-fobjc-arc" to the Compiler Flags of MTStatusBarOverlay.m in your target's "Build Phases" tab under Compile Sources.
  */

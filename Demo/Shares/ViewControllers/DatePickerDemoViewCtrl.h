@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseViewController.h"
 
-@interface DatePickerDemoViewCtrl : UIViewController
+@interface DatePickerDemoViewCtrl : LHBaseViewController
 
 @end

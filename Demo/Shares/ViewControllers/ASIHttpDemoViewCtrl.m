@@ -30,9 +30,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(onBack)];
-    self.navigationItem.leftBarButtonItem = item;
-    [item release];
+    [self addBackButton];
     
     __block __typeof(self) _self = self;
 #if 0
@@ -66,11 +64,6 @@
     [btnAsync handleControlEvents:UIControlEventTouchUpInside withBlock:^(void){
         [_self onASynchronous];
     }];
-}
-
-- (void)onBack
-{
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)onSynchronous
