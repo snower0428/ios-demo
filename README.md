@@ -31,6 +31,7 @@ ios-demo description
  *  The minimum supported version is 4.3 on Lion.
  *  If you want to run it on 4.2 (bearing in mind that Apple no longer accept apps to the app store that are built with 4.2) 
  *  you can download an older version from this page:
+ *  Older Version(https://github.com/nicklockwood/iCarousel/tags)
  *  https://github.com/nicklockwood/iCarousel/tags
  *
  *  I believe version 1.6.1 and earlier worked on 4.2, 
