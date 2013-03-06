@@ -3,8 +3,10 @@
 ios-demo description
 ====================
 
-/**************************************************
- *  How to use "support"
+
+How to use "support"
+--------------------
+
  *  1. add support directory (contain directory: CustomView,Utility,Base64,JSON and file: CommDefines.h)
  *  2. add frameworks: AVFoundation.framework, QuartzCore.framework, MediaPlayer.framework
  *  3. add lib: libxml2.dylib
@@ -22,9 +24,6 @@ ios-demo description
  *  4. if Kal.bundle does not in Copy Bundle Resources, drag into it
  *  5. add "-all_load" to Project/Target/Build Settings/Linking/Other Linker Flags
  */
-
-Test Title
-=====
 
 /**************************************************
  *  About iCarousel:
