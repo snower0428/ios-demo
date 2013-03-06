@@ -25,9 +25,11 @@ ios-demo description
  *  5. add "-all_load" to Project/Target/Build Settings/Linking/Other Linker Flags
  */
 
+Test Title
+=====
+
 /**************************************************
  *  About iCarousel:
- =====
  *  iCarousel doesn't support Xcode 4.2 or Snow Leopard any more. 
  *  The minimum supported version is 4.3 on Lion.
  *  If you want to run it on 4.2 (bearing in mind that Apple no longer accept apps to the app store that are built with 4.2) 
