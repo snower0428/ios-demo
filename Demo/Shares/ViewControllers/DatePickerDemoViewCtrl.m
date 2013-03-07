@@ -55,8 +55,6 @@
     self.view = view;
     [view release];
     
-    [self addBackButton];
-    
     // Show DatePicker
     UIButton *btnDatePicker = [UIButton buttonWithType:UIButtonTypeCustom];
     btnDatePicker.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.1];

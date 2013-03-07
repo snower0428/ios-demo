@@ -39,8 +39,6 @@
     self.view = view;
     [view release];
     
-    [self addBackButton];
-    
     self.title = @"SDWebImage";
     _objects = [[NSArray arrayWithObjects:
                 @"http://static2.dmcdn.net/static/video/451/838/44838154:jpeg_preview_small.jpg?20120509163826",
@@ -149,6 +147,12 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
+    
+    //BackItem
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+    backItem.title = _(@"Back");
+    self.navigationItem.backBarButtonItem = backItem;
+    [backItem release];
 }
  
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.

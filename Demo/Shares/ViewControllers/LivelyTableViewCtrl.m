@@ -37,8 +37,6 @@
     self.view = view;
     [view release];
     
-    [self addBackButton];
-    
     UIBarButtonItem *transitionButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(pickTransform:)];
     self.navigationItem.rightBarButtonItem = transitionButton;
     [transitionButton release];

@@ -44,8 +44,6 @@
     self.view = view;
     [view release];
     
-    [self addBackButton];
-    
     //set up data
     _items = [[NSMutableArray alloc] init];
     for (int i = 0; i < NUMBER_OF_ITEMS; i++)

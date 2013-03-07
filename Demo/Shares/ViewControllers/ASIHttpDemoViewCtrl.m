@@ -30,8 +30,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self addBackButton];
-    
     __block __typeof(self) _self = self;
 #if 0
     // Return

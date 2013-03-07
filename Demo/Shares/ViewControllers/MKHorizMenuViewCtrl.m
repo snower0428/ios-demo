@@ -37,8 +37,6 @@
     self.view = view;
     [view release];
     
-    [self addBackButton];
-    
     _items = [[NSArray arrayWithObjects:
               @"Headlines", 
               @"UK", 

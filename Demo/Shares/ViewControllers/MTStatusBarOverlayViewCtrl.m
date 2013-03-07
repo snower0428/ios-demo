@@ -37,8 +37,6 @@
     self.view = view;
     [view release];
     
-    [self addBackButton];
-    
     MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
     overlay.animation = MTStatusBarOverlayAnimationFallDown;
     overlay.detailViewMode = MTDetailViewModeHistory;         // enable automatic history-tracking and show in detail-view

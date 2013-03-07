@@ -42,8 +42,6 @@
     self.view = view;
     [view release];
     
-    [self addBackButton];
-    
     // Add table view
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_VIEW_HEIGH)];
     tableView.dataSource = self;

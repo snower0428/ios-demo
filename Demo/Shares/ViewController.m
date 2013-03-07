@@ -78,6 +78,12 @@
     [self.view addSubview:_tableView];
     
     self.title = @"RootViewController";
+    
+    //BackItem
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+    backItem.title = _(@"Back");
+    self.navigationItem.backBarButtonItem = backItem;
+    [backItem release];
 }
 
 - (void)viewDidLoad

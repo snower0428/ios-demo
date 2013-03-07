@@ -169,11 +169,6 @@ NSString *const KalDataSourceChangedNotification = @"KalDataSourceChangedNotific
   return [self.calendarView.selectedDate NSDate];
 }
 
-- (void)onReturn:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 // -----------------------------------------------------------------------------------
 #pragma mark UIViewController
 
@@ -186,10 +181,6 @@ NSString *const KalDataSourceChangedNotification = @"KalDataSourceChangedNotific
 - (void)loadView
 {
     [super loadView];
-    
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(onReturn:)];
-    self.navigationItem.leftBarButtonItem = item;
-    [item release];
     
     if (!self.title) {
         self.title = @"Calendar";

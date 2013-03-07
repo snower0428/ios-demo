@@ -38,8 +38,6 @@
     self.view = view;
     [view release];
     
-    [self addBackButton];
-    
     LKBadgeView *badgeView = [[LKBadgeView alloc] initWithFrame:CGRectMake(10, 10, 150, 25)];
     badgeView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.1];
     badgeView.text = @"LKBadgeView";
