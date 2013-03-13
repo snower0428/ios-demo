@@ -147,6 +147,18 @@
 		79CBB12916B22CC700B87161 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CBB12816B22CC700B87161 /* AVFoundation.framework */; };
 		79CBB12B16B22D1C00B87161 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CBB12A16B22D1C00B87161 /* QuartzCore.framework */; };
 		79CBB12D16B22D5500B87161 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CBB12C16B22D5500B87161 /* MediaPlayer.framework */; };
+		79D15A3716F063300056FC4C /* ControllablePageFlipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A2016F063300056FC4C /* ControllablePageFlipper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79D15A3816F063300056FC4C /* ImageFlipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A2216F063300056FC4C /* ImageFlipper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79D15A3916F063300056FC4C /* PageFlipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A2416F063300056FC4C /* PageFlipper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79D15A3A16F063300056FC4C /* RZCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A2716F063300056FC4C /* RZCircleLayer.m */; };
+		79D15A3B16F063300056FC4C /* RZCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A2916F063300056FC4C /* RZCircleView.m */; };
+		79D15A3C16F063300056FC4C /* RZHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A2B16F063300056FC4C /* RZHud.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79D15A3D16F063300056FC4C /* RZHudBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A2D16F063300056FC4C /* RZHudBoxView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		79D15A3E16F063300056FC4C /* UIBezierPath+CirclePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A3016F063300056FC4C /* UIBezierPath+CirclePath.m */; };
+		79D15A3F16F063300056FC4C /* UIImage+RetinaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A3216F063300056FC4C /* UIImage+RetinaUtils.m */; };
+		79D15A4016F063300056FC4C /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A3416F063300056FC4C /* UIView+Utils.m */; };
+		79D15A4116F063300056FC4C /* UIViewController+RZHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A3616F063300056FC4C /* UIViewController+RZHud.m */; };
+		79D15A4416F066620056FC4C /* FlipEffectsViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A4316F066620056FC4C /* FlipEffectsViewCtrl.m */; };
 		79D444B416B62E0C00C3F952 /* baby_complete.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79D4443B16B62E0C00C3F952 /* baby_complete.plist */; };
 		79D444B516B62E0C00C3F952 /* box0001.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D4443D16B62E0C00C3F952 /* box0001.png */; };
 		79D444B616B62E0C00C3F952 /* box0002.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D4443E16B62E0C00C3F952 /* box0002.png */; };
@@ -578,6 +590,30 @@
 		79CBB12816B22CC700B87161 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		79CBB12A16B22D1C00B87161 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		79CBB12C16B22D5500B87161 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		79D15A1F16F063300056FC4C /* ControllablePageFlipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllablePageFlipper.h; sourceTree = "<group>"; };
+		79D15A2016F063300056FC4C /* ControllablePageFlipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllablePageFlipper.m; sourceTree = "<group>"; };
+		79D15A2116F063300056FC4C /* ImageFlipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFlipper.h; sourceTree = "<group>"; };
+		79D15A2216F063300056FC4C /* ImageFlipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFlipper.m; sourceTree = "<group>"; };
+		79D15A2316F063300056FC4C /* PageFlipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageFlipper.h; sourceTree = "<group>"; };
+		79D15A2416F063300056FC4C /* PageFlipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageFlipper.m; sourceTree = "<group>"; };
+		79D15A2616F063300056FC4C /* RZCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZCircleLayer.h; sourceTree = "<group>"; };
+		79D15A2716F063300056FC4C /* RZCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZCircleLayer.m; sourceTree = "<group>"; };
+		79D15A2816F063300056FC4C /* RZCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZCircleView.h; sourceTree = "<group>"; };
+		79D15A2916F063300056FC4C /* RZCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZCircleView.m; sourceTree = "<group>"; };
+		79D15A2A16F063300056FC4C /* RZHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZHud.h; sourceTree = "<group>"; };
+		79D15A2B16F063300056FC4C /* RZHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZHud.m; sourceTree = "<group>"; };
+		79D15A2C16F063300056FC4C /* RZHudBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZHudBoxView.h; sourceTree = "<group>"; };
+		79D15A2D16F063300056FC4C /* RZHudBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZHudBoxView.m; sourceTree = "<group>"; };
+		79D15A2F16F063300056FC4C /* UIBezierPath+CirclePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+CirclePath.h"; sourceTree = "<group>"; };
+		79D15A3016F063300056FC4C /* UIBezierPath+CirclePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+CirclePath.m"; sourceTree = "<group>"; };
+		79D15A3116F063300056FC4C /* UIImage+RetinaUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RetinaUtils.h"; sourceTree = "<group>"; };
+		79D15A3216F063300056FC4C /* UIImage+RetinaUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RetinaUtils.m"; sourceTree = "<group>"; };
+		79D15A3316F063300056FC4C /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		79D15A3416F063300056FC4C /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		79D15A3516F063300056FC4C /* UIViewController+RZHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RZHud.h"; sourceTree = "<group>"; };
+		79D15A3616F063300056FC4C /* UIViewController+RZHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RZHud.m"; sourceTree = "<group>"; };
+		79D15A4216F066620056FC4C /* FlipEffectsViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipEffectsViewCtrl.h; sourceTree = "<group>"; };
+		79D15A4316F066620056FC4C /* FlipEffectsViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipEffectsViewCtrl.m; sourceTree = "<group>"; };
 		79D4443B16B62E0C00C3F952 /* baby_complete.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = baby_complete.plist; sourceTree = "<group>"; };
 		79D4443D16B62E0C00C3F952 /* box0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box0001.png; sourceTree = "<group>"; };
 		79D4443E16B62E0C00C3F952 /* box0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box0002.png; sourceTree = "<group>"; };
@@ -842,6 +878,7 @@
 		79C6699116E5FFAF009FA008 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				79D15A1D16F063300056FC4C /* FlipEffects */,
 				79C669A216E5FFAF009FA008 /* DatePicker */,
 			);
 			path = Class;
@@ -986,6 +1023,8 @@
 				79C7574716E73FEF00DF23E0 /* LHBaseViewController.m */,
 				79C7575516E74BE300DF23E0 /* CarouselViewCtrl.h */,
 				79C7575616E74BE900DF23E0 /* CarouselViewCtrl.m */,
+				79D15A4216F066620056FC4C /* FlipEffectsViewCtrl.h */,
+				79D15A4316F066620056FC4C /* FlipEffectsViewCtrl.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1274,6 +1313,59 @@
 				79D507CF16E46AAC001D7529 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79D15A1D16F063300056FC4C /* FlipEffects */ = {
+			isa = PBXGroup;
+			children = (
+				79D15A1E16F063300056FC4C /* Flip Animations */,
+				79D15A2516F063300056FC4C /* Loading HUDs */,
+				79D15A2E16F063300056FC4C /* Utils */,
+			);
+			path = FlipEffects;
+			sourceTree = "<group>";
+		};
+		79D15A1E16F063300056FC4C /* Flip Animations */ = {
+			isa = PBXGroup;
+			children = (
+				79D15A1F16F063300056FC4C /* ControllablePageFlipper.h */,
+				79D15A2016F063300056FC4C /* ControllablePageFlipper.m */,
+				79D15A2116F063300056FC4C /* ImageFlipper.h */,
+				79D15A2216F063300056FC4C /* ImageFlipper.m */,
+				79D15A2316F063300056FC4C /* PageFlipper.h */,
+				79D15A2416F063300056FC4C /* PageFlipper.m */,
+			);
+			path = "Flip Animations";
+			sourceTree = "<group>";
+		};
+		79D15A2516F063300056FC4C /* Loading HUDs */ = {
+			isa = PBXGroup;
+			children = (
+				79D15A2616F063300056FC4C /* RZCircleLayer.h */,
+				79D15A2716F063300056FC4C /* RZCircleLayer.m */,
+				79D15A2816F063300056FC4C /* RZCircleView.h */,
+				79D15A2916F063300056FC4C /* RZCircleView.m */,
+				79D15A2A16F063300056FC4C /* RZHud.h */,
+				79D15A2B16F063300056FC4C /* RZHud.m */,
+				79D15A2C16F063300056FC4C /* RZHudBoxView.h */,
+				79D15A2D16F063300056FC4C /* RZHudBoxView.m */,
+			);
+			path = "Loading HUDs";
+			sourceTree = "<group>";
+		};
+		79D15A2E16F063300056FC4C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				79D15A2F16F063300056FC4C /* UIBezierPath+CirclePath.h */,
+				79D15A3016F063300056FC4C /* UIBezierPath+CirclePath.m */,
+				79D15A3116F063300056FC4C /* UIImage+RetinaUtils.h */,
+				79D15A3216F063300056FC4C /* UIImage+RetinaUtils.m */,
+				79D15A3316F063300056FC4C /* UIView+Utils.h */,
+				79D15A3416F063300056FC4C /* UIView+Utils.m */,
+				79D15A3516F063300056FC4C /* UIViewController+RZHud.h */,
+				79D15A3616F063300056FC4C /* UIViewController+RZHud.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		79D4443816B62E0C00C3F952 /* Resource */ = {
@@ -1813,6 +1905,18 @@
 				79C7574816E73FF000DF23E0 /* LHBaseViewController.m in Sources */,
 				79C7575016E747FF00DF23E0 /* iCarousel.m in Sources */,
 				79C7575716E74BF000DF23E0 /* CarouselViewCtrl.m in Sources */,
+				79D15A3716F063300056FC4C /* ControllablePageFlipper.m in Sources */,
+				79D15A3816F063300056FC4C /* ImageFlipper.m in Sources */,
+				79D15A3916F063300056FC4C /* PageFlipper.m in Sources */,
+				79D15A3A16F063300056FC4C /* RZCircleLayer.m in Sources */,
+				79D15A3B16F063300056FC4C /* RZCircleView.m in Sources */,
+				79D15A3C16F063300056FC4C /* RZHud.m in Sources */,
+				79D15A3D16F063300056FC4C /* RZHudBoxView.m in Sources */,
+				79D15A3E16F063300056FC4C /* UIBezierPath+CirclePath.m in Sources */,
+				79D15A3F16F063300056FC4C /* UIImage+RetinaUtils.m in Sources */,
+				79D15A4016F063300056FC4C /* UIView+Utils.m in Sources */,
+				79D15A4116F063300056FC4C /* UIViewController+RZHud.m in Sources */,
+				79D15A4416F066620056FC4C /* FlipEffectsViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1859,7 +1963,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1883,7 +1987,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (

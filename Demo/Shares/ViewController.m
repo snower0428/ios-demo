@@ -22,6 +22,7 @@
 #import "SDWebImageViewCtrl.h"
 #import "MTStatusBarOverlayViewCtrl.h"
 #import "CarouselViewCtrl.h"
+#import "FlipEffectsViewCtrl.h"
 
 @interface ViewController ()
 
@@ -51,7 +52,8 @@
                   @"LKBadgeView",
                   @"SDWebImage",
                   @"MTStatusBarOverlay",
-                  @"Carousel", 
+                  @"Carousel",
+                  @"FlipEffects",
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
@@ -70,6 +72,7 @@
                             NSStringFromClass([SDWebImageViewCtrl class]),
                             NSStringFromClass([MTStatusBarOverlayViewCtrl class]),
                             NSStringFromClass([CarouselViewCtrl class]),
+                            NSStringFromClass([FlipEffectsViewCtrl class]),
                             nil];
     
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
@@ -84,6 +87,9 @@
     backItem.title = _(@"Back");
     self.navigationItem.backBarButtonItem = backItem;
     [backItem release];
+    
+    NSLog(@"__IPHONE_OS_VERSION_MIN_REQUIRED = %d", __IPHONE_OS_VERSION_MIN_REQUIRED);
+    NSLog(@"__IPHONE_OS_VERSION_MAX_ALLOWED = %d", __IPHONE_OS_VERSION_MAX_ALLOWED);
 }
 
 - (void)viewDidLoad

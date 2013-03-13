@@ -3,6 +3,9 @@
 ios-demo description
 ====================
 
+The project now must build in ios>=5.0(because add ARC files, ARC only support at above 5.0);
+* FlipEffects use ARC.
+
 
 How to use "support"
 --------------------

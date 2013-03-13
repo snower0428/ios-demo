@@ -29,8 +29,11 @@ static NSString *kUDID = nil;
 	if (kUDID) {
 		return kUDID;
 	}
-    
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < 50000
     NSString *udid = [self uniqueIdentifier];
+#else
+    NSString *udid = nil;
+#endif
     
 	if (udid == nil || [udid hasPrefix:@"5.0"] || [udid length] < 10) {
 		//wifi
