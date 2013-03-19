@@ -58,7 +58,7 @@
     // Show DatePicker
     UIButton *btnDatePicker = [UIButton buttonWithType:UIButtonTypeCustom];
     btnDatePicker.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.1];
-    btnDatePicker.frame = CGRectMake(0, 50, 100, 30);
+    btnDatePicker.frame = CGRectMake(20, 10, 100, 30);
     [btnDatePicker setTitle:@"选择日期" forState:UIControlStateNormal];
     [self.view addSubview:btnDatePicker];
     

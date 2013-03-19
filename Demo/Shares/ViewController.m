@@ -7,22 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "BabySelectViewController.h"
-#import "ASIHttpDemoViewCtrl.h"
-#import "TableViewDemoCtrl.h"
-#import "LivelyTableViewCtrl.h"
-#import "Kal.h"
-#import "DatePickerDemoViewCtrl.h"
-#import "EGORefreshTableViewCtrl.h"
-#import "CMPopTipViewCtrl.h"
-#import "CycleScrollViewCtrl.h"
-#import "MKHorizMenuViewCtrl.h"
-#import "JSBadgeViewCtrl.h"
-#import "LKBadgeViewCtrl.h"
-#import "SDWebImageViewCtrl.h"
-#import "MTStatusBarOverlayViewCtrl.h"
-#import "CarouselViewCtrl.h"
-#import "FlipEffectsViewCtrl.h"
+#import "DemoViewCtrl.h"
 
 @interface ViewController ()
 
@@ -54,6 +39,8 @@
                   @"MTStatusBarOverlay",
                   @"Carousel",
                   @"FlipEffects",
+                  @"GCD",
+                  @"UIImageCategory",
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
@@ -73,6 +60,8 @@
                             NSStringFromClass([MTStatusBarOverlayViewCtrl class]),
                             NSStringFromClass([CarouselViewCtrl class]),
                             NSStringFromClass([FlipEffectsViewCtrl class]),
+                            NSStringFromClass([GCDDemoViewCtrl class]),
+                            NSStringFromClass([UIImageCategoryViewCtrl class]),
                             nil];
     
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];

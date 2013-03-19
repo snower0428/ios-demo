@@ -28,5 +28,8 @@
 #import "UIScrollView+Additions.h"
 #import "UILabel+Additions.h"
 #import "NSFileManager+Additions.h"
+#import "UIImage+Alpha.h"
+#import "UIImage+Resize.h"
+#import "UIImage+RoundedCorner.h"
 
 #endif
