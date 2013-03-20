@@ -44,6 +44,8 @@ typedef enum
     
     id                  _delegate;
     SEL                 _selector;
+    
+    UIView              *_parentView;
 }
 
 + (UIDatePickerCtrl *)shareInstance;

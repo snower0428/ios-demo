@@ -25,7 +25,7 @@
 
 - (void)loadView
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_HEIGHT)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_VIEW_HEIGH)];
     view.backgroundColor = [UIColor grayColor];
     self.view = view;
     [view release];

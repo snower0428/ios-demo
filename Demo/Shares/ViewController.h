@@ -7,12 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseTableViewCtrl.h"
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-{
-    NSArray             *_arrayName;
-    NSArray             *_arrayViewController;
-    UITableView         *_tableView;
-}
+@interface ViewController : LHBaseTableViewCtrl
 
 @end

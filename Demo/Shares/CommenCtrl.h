@@ -1,13 +1,13 @@
 //
-//  DemoViewCtrl.h
+//  CommenCtrl.h
 //  Demo
 //
-//  Created by leihui on 13-3-19.
+//  Created by leihui on 13-3-20.
 //
 //
 
-#ifndef Demo_DemoViewCtrl_h
-#define Demo_DemoViewCtrl_h
+#ifndef Demo_CommenCtrl_h
+#define Demo_CommenCtrl_h
 
 #import "BabySelectViewController.h"
 #import "ASIHttpDemoViewCtrl.h"
@@ -27,5 +27,10 @@
 #import "FlipEffectsViewCtrl.h"
 #import "GCDDemoViewCtrl.h"
 #import "UIImageCategoryViewCtrl.h"
+#import "TableViewCtrl.h"
+#import "CommenViewCtrl.h"
+#import "DockViewCtrl.h"
+#import "JADockViewCtrl.h"
+#import "DDMenuDockViewCtrl.h"
 
 #endif

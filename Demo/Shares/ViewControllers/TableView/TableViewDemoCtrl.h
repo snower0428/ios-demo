@@ -10,8 +10,10 @@
 
 @interface TableViewDemoCtrl : UITableViewController
 {
-    NSMutableArray          *_thingsToLearn;
-    NSMutableArray          *_thingsLearned;
+    NSMutableArray  *_thingsToLearn;
+    NSMutableArray  *_thingsLearned;
+    
+    UIColor         *_originTintColor;
 }
 
 @property(nonatomic, copy) NSMutableArray *thingsToLearn;

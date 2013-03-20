@@ -48,7 +48,15 @@
 {
     [super viewWillAppear:animated];
     
+    _originTintColor = self.navigationController.navigationBar.tintColor;
     self.navigationController.navigationBar.tintColor = [UIColor darkGrayColor];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    self.navigationController.navigationBar.tintColor = _originTintColor;
 }
 
 - (void)didReceiveMemoryWarning

@@ -30,17 +30,14 @@
     return self;
 }
 
-- (NSArray *)loadArray
+- (NSMutableArray *)loadArray
 {
-    if (!_array) {
-        NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:kMainCounter];
-        for (int i = 0; i < kMainCounter; i++) {
-            [array addObject:[NSNumber numberWithInt:i]];
-        }
-        _array = [array copy];
+    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:kMainCounter];
+    for (int i = 0; i < kMainCounter; i++) {
+        [array addObject:[NSNumber numberWithInt:i]];
     }
     
-    return  _array;
+    return array;
 }
 
 - (void)disableStartButtons
@@ -81,9 +78,9 @@
     self.view = view;
     [view release];
     
-    [self loadArray];
+    NSMutableArray *array = [self loadArray];
     
-    __block id _self = self;
+    __block __typeof(self) _self = self;
     
     UIButton *btnStartNoGCD = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btnStartNoGCD.frame = CGRectMake(10, 20, 120, 30);
@@ -169,7 +166,7 @@
         dispatch_async(serialQueue, ^(void){
             NSLog(@"startingSerialFirstBlock");
             NSDate *start = [NSDate date];
-            for (id obj in _array) {
+            for (id obj in array) {
                 for (int i = 0; i < kSubCounter; i++) {
                     //Do something
                 }
@@ -182,7 +179,7 @@
         dispatch_async(serialQueue, ^{
             NSLog(@"startingSerialSecondBlock");
             NSDate *start = [NSDate date];
-            [_array enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            [array enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 for (int i = 0; i < kSubCounter; i++) {
                     //Do something
                 }
@@ -196,7 +193,7 @@
         dispatch_async(concurrentQueue, ^{
             NSLog(@"startingConcurrentFirstBLock");
             NSDate *start = [NSDate date];
-            for (id obj in _array){
+            for (id obj in array){
                 for (int i = 0; i < kSubCounter; i++) {
                     //Do something
                 }
@@ -209,7 +206,7 @@
         dispatch_async(concurrentQueue, ^{
             NSLog(@"startingConcurrentSecondBlock");
             NSDate *start = [NSDate date];
-            [_array enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            [array enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 for (int i = 0; i < kSubCounter; i++) {
                     //Do something
                 }
@@ -247,9 +244,6 @@
 
 - (void)dealloc
 {
-    [_array release];
-    [_label release];
-    
     [super dealloc];
 }
 

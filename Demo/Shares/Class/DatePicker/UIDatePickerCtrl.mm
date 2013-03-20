@@ -218,6 +218,12 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     _delegate = delegate;
     _selector = selector;
     
+    if (_parentView) {
+        [_parentView release];
+        _parentView = nil;
+    }
+    _parentView = [parent retain];
+    
     if (parent != nil) {
         [parent addSubview:self.view];
     }
@@ -293,11 +299,13 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     }
     
     [self.view removeFromSuperview];
+    self.view = nil;
 }
 
 - (void)onCancel
 {
     [self.view removeFromSuperview];
+    self.view = nil;
 }
 
 - (void)onToday
@@ -389,27 +397,34 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
-    //View
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_HEIGHT)];
-    view.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.3];
+    CGRect frame = CGRectMake(0, 0, 320, APP_VIEW_HEIGH);
+    if (_parentView) {
+        frame = _parentView.bounds;
+    }
+    UIView *view = [[UIView alloc] initWithFrame:frame];
+    view.backgroundColor = [UIColor grayColor];
     self.view = view;
     [view release];
     
+    CGFloat bgViewTop = (self.view.frame.size.height - self.view.frame.origin.y) - 235;
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, bgViewTop, 320, 240)];
+    [self.view addSubview:bgView];
+    
     //DatePicker背景
-    UIImageView *bg = [[UIImageView alloc] initWithFrame:CGRectMake(0, APP_HEIGHT-235, 320, 240)];
+    UIImageView *bg = [[UIImageView alloc] initWithFrame:bgView.bounds];
     bg.backgroundColor = [UIColor colorWithRed:218.0/255.0 green:221.0/255.0 blue:226.0/255.0 alpha:1.0];
     bg.layer.cornerRadius = 5;
     bg.layer.shadowOffset = CGSizeMake(2, 2);
     bg.layer.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5].CGColor;
     bg.layer.borderWidth = 1.0;
     bg.layer.borderColor = [UIColor colorWithWhite:0.0 alpha:0.5].CGColor;
-    [self.view addSubview:bg];
+    [bgView addSubview:bg];
     [bg release];
     
 #if CLICK_CLOSE
     __block __typeof(self) _self = self;
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 0, 320, APP_HEIGHT);
+    btn.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
     btn.backgroundColor = [UIColor clearColor];
     [self.view addSubview:btn];
     [btn handleControlEvents:UIControlEventTouchUpInside withBlock:^(void) {
@@ -418,47 +433,47 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
 #endif
     
     //按钮：确定，今日，取消
-    UIButton *btnOK = [self customButtonWith:CGRectMake(11, 240, 96, 36) title:@"确定"];
+    UIButton *btnOK = [self customButtonWith:CGRectMake(11, 10, 96, 36) title:@"确定"];
     btnOK.tag = DPActionTypeOk;
-    [self.view addSubview:btnOK];
+    [bgView addSubview:btnOK];
     [btnOK addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *btnToday = [self customButtonWith:CGRectMake(113, 240, 96, 36) title:@"今日"];
+    UIButton *btnToday = [self customButtonWith:CGRectMake(113, 10, 96, 36) title:@"今日"];
     btnToday.tag = DPActionTypeToday;
-    [self.view addSubview:btnToday];
+    [bgView addSubview:btnToday];
     [btnToday addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *btnCancel = [self customButtonWith:CGRectMake(215, 240, 96, 36) title:@"取消"];
+    UIButton *btnCancel = [self customButtonWith:CGRectMake(215, 10, 96, 36) title:@"取消"];
     btnCancel.tag = DPActionTypeCacel;
-    [self.view addSubview:btnCancel];
+    [bgView addSubview:btnCancel];
     [btnCancel addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
     //分隔线
-    UIImageView *seperator = [[UIImageView alloc] initWithFrame:CGRectMake(10, 285, 300, 1)];
+    UIImageView *seperator = [[UIImageView alloc] initWithFrame:CGRectMake(10, 55, 300, 1)];
     seperator.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.2];
-    [self.view addSubview:seperator];
+    [bgView addSubview:seperator];
     [seperator release];
     
     //时钟
     UIImageView *clock = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_clock.png" 
-                                              atPostion:CGPointMake(10, 295)];
-    [self.view addSubview:clock];
+                                              atPostion:CGPointMake(10, 65)];
+    [bgView addSubview:clock];
     
     UILabel *labelDate = [UILabel labelWithName:@"2013年1月29日" 
                                            font:ARIAL_FONT(18) 
-                                          frame:CGRectMake(40,296,180,22)];
+                                          frame:CGRectMake(40,66,180,22)];
     labelDate.tag = LABEL_DATE_TAG;
-    [self.view addSubview:labelDate];
+    [bgView addSubview:labelDate];
     
     //按钮：公历，农历
-    UIButton *btnSolar = [self customButtonWith:CGRectMake(225, 290, 40, 36) title:@"公历"];
+    UIButton *btnSolar = [self customButtonWith:CGRectMake(225, 60, 40, 36) title:@"公历"];
     btnSolar.tag = DPActionTypeSolor;
-    [self.view addSubview:btnSolar];
+    [bgView addSubview:btnSolar];
     [btnSolar addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *btnLunar = [self customButtonWith:CGRectMake(270, 290, 40, 36) title:@"农历"];
+    UIButton *btnLunar = [self customButtonWith:CGRectMake(270, 60, 40, 36) title:@"农历"];
     btnLunar.tag = DPActionTypeLunar;
-    [self.view addSubview:btnLunar];
+    [bgView addSubview:btnLunar];
     [btnLunar addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
     //年
@@ -467,19 +482,19 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     yearBg.frame = CGRectMake(0, 0, 98, TABLE_VIEW_HEIGHT);
     [yearBgView addSubview:yearBg];
     
-    _tableViewYear = [[UITableView alloc] initWithFrame:CGRectMake(25, 335, 98, TABLE_VIEW_HEIGHT) style:UITableViewStylePlain];
+    _tableViewYear = [[UITableView alloc] initWithFrame:CGRectMake(25, 105, 98, TABLE_VIEW_HEIGHT) style:UITableViewStylePlain];
     _tableViewYear.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableViewYear.backgroundView = yearBgView;
     _tableViewYear.dataSource = self;
     _tableViewYear.delegate = self;
-    [self.view addSubview:_tableViewYear];
+    [bgView addSubview:_tableViewYear];
     [_tableViewYear release];
     
     [yearBgView release];
     
     UIImageView *yearSelect = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_select.png"];
-    yearSelect.frame = CGRectMake(25, 335+33, 98, 33);
-    [self.view addSubview:yearSelect];
+    yearSelect.frame = CGRectMake(25, 105+33, 98, 33);
+    [bgView addSubview:yearSelect];
     
     //月
     UIView *monthBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 75, TABLE_VIEW_HEIGHT)];
@@ -487,19 +502,19 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     monthBg.frame = CGRectMake(0, 0, 75, TABLE_VIEW_HEIGHT);
     [monthBgView addSubview:monthBg];
     
-    _tableViewMonth = [[UITableView alloc] initWithFrame:CGRectMake(135, 335, 75, TABLE_VIEW_HEIGHT) style:UITableViewStylePlain];
+    _tableViewMonth = [[UITableView alloc] initWithFrame:CGRectMake(135, 105, 75, TABLE_VIEW_HEIGHT) style:UITableViewStylePlain];
     _tableViewMonth.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableViewMonth.backgroundView = monthBgView;
     _tableViewMonth.dataSource = self;
     _tableViewMonth.delegate = self;
-    [self.view addSubview:_tableViewMonth];
+    [bgView addSubview:_tableViewMonth];
     [_tableViewMonth release];
     
     [monthBgView release];
     
     UIImageView *monthSelect = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_select.png"];
-    monthSelect.frame = CGRectMake(135, 335+33, 75, 33);
-    [self.view addSubview:monthSelect];
+    monthSelect.frame = CGRectMake(135, 105+33, 75, 33);
+    [bgView addSubview:monthSelect];
     
     //日
     UIView *dayBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 75, TABLE_VIEW_HEIGHT)];
@@ -507,38 +522,40 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     dayBg.frame = CGRectMake(0, 0, 75, 98);
     [dayBgView addSubview:dayBg];
     
-    _tableViewDay = [[UITableView alloc] initWithFrame:CGRectMake(218, 335, 75, TABLE_VIEW_HEIGHT) style:UITableViewStylePlain];
+    _tableViewDay = [[UITableView alloc] initWithFrame:CGRectMake(218, 105, 75, TABLE_VIEW_HEIGHT) style:UITableViewStylePlain];
     _tableViewDay.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableViewDay.backgroundView = dayBgView;
     _tableViewDay.dataSource = self;
     _tableViewDay.delegate = self;
-    [self.view addSubview:_tableViewDay];
+    [bgView addSubview:_tableViewDay];
     [_tableViewDay release];
     
     [dayBgView release];
     
     UIImageView *daySelect = [UIImageView imageViewWithFile:@"DatePicker.bundle/date_picker_select.png"];
-    daySelect.frame = CGRectMake(218, 335+33, 75, 33);
-    [self.view addSubview:daySelect];
+    daySelect.frame = CGRectMake(218, 105+33, 75, 33);
+    [bgView addSubview:daySelect];
     
     UILabel *labelYear = [UILabel labelWithName:@"年" 
                                            font:ARIAL_FONT(15) 
-                                          frame:CGRectMake(25, 435, 98, 20) 
+                                          frame:CGRectMake(25, 205, 98, 20)
                                           color:[UIColor blackColor] 
                                       alignment:UITextAlignmentCenter];
     UILabel *labelMonth = [UILabel labelWithName:@"月" 
                                             font:ARIAL_FONT(15) 
-                                           frame:CGRectMake(135, 435, 75, 20) 
+                                           frame:CGRectMake(135, 205, 75, 20) 
                                            color:[UIColor blackColor] 
                                        alignment:UITextAlignmentCenter];
     UILabel *labelDay = [UILabel labelWithName:@"日" 
                                           font:ARIAL_FONT(15) 
-                                         frame:CGRectMake(218, 435, 75, 20) 
+                                         frame:CGRectMake(218, 205, 75, 20) 
                                          color:[UIColor blackColor] 
                                      alignment:UITextAlignmentCenter];
-    [self.view addSubview:labelYear];
-    [self.view addSubview:labelMonth];
-    [self.view addSubview:labelDay];
+    [bgView addSubview:labelYear];
+    [bgView addSubview:labelMonth];
+    [bgView addSubview:labelDay];
+    
+    [bgView release];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -732,7 +749,6 @@ static UIDatePickerCtrl *kDatePickerCtrl = nil;
     NSLog(@"contentOffset: %f", scrollView.contentOffset.y);
 	_lastTableViewYContentOffset = scrollView.contentOffset.y;
 }
-
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {

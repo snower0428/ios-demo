@@ -24,6 +24,9 @@
     self.window.rootViewController = self.navCtrl;
     [self.window makeKeyAndVisible];
     
+    NSLog(@"__IPHONE_OS_VERSION_MIN_REQUIRED = %d", __IPHONE_OS_VERSION_MIN_REQUIRED);
+    NSLog(@"__IPHONE_OS_VERSION_MAX_ALLOWED = %d", __IPHONE_OS_VERSION_MAX_ALLOWED);
+    
     return YES;
 }
 

@@ -10,7 +10,6 @@
 
 @interface GCDDemoViewCtrl : UIViewController
 {
-    NSArray         *_array;
     BOOL            _stopFlag;
     UILabel         *_label;
 }

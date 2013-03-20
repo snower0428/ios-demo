@@ -77,13 +77,11 @@
     _btnNext.tag = BabySelectActionTypeNext;
 #if 1
     // 返回
-    UIButton *btnReturn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnReturn.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.1];
-    btnReturn.frame = CGRectMake(0, 0, 100, 30);
-    [btnReturn setTitle:@"返回" forState:UIControlStateNormal];
+    UIButton *btnReturn = [UIButton buttonWithBackgroundNormalFile:@"btn_return.png" downFile:@"btn_return_d.png"];
+    btnReturn.frame = CGRectMake(15, 418, btnReturn.frame.size.width, btnReturn.frame.size.height);
     [self.view addSubview:btnReturn];
     
-    [btnReturn handleControlEvents:UIControlEventTouchUpInside withBlock:^(void) {
+    [btnReturn handleControlEvents:UIControlEventTouchUpInside withBlock:^(void){
         [self.navigationController popViewControllerAnimated:YES];
     }];
 #endif

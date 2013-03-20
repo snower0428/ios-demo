@@ -50,7 +50,7 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_HEIGHT)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, APP_VIEW_HEIGH)];
     view.backgroundColor = [UIColor grayColor];
     self.view = view;
     [view release];
@@ -68,6 +68,16 @@
                                                   parent:self.view 
                                                 delegate:self 
                                                 selector:@selector(updateDate:)];
+        [UIDatePickerCtrl shareInstance].view.frame = view.frame;
+        [UIDatePickerCtrl shareInstance].view.alpha = 0;
+        [UIView animateWithDuration:0.5
+                              delay:0
+                            options:UIViewAnimationCurveEaseInOut
+                         animations:^(void){
+                             [UIDatePickerCtrl shareInstance].view.alpha = 1;
+                         }
+                         completion:^(BOOL finished){
+                         }];
     }];
 }
 
