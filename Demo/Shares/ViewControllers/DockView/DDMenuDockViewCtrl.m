@@ -7,9 +7,7 @@
 //
 
 #import "DDMenuDockViewCtrl.h"
-#import "CenterViewController.h"
-#import "LeftViewController.h"
-#import "RightViewController.h"
+#import "DockViewDefines.h"
 
 @interface DDMenuDockViewCtrl ()
 
@@ -33,9 +31,18 @@
     self.view = view;
     [view release];
     
-    self.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[CenterViewController alloc] init]];
-    self.leftViewController = [[LeftViewController alloc] init];
-    self.rightViewController = [[RightViewController alloc] init];
+    _leftCtrl = [[LeftViewController alloc] init];
+    _rightCtrl = [[RightViewController alloc] init];
+    _centerCtrl = [[CenterViewController alloc] init];
+    _navCtrl = [[UINavigationController alloc] initWithRootViewController:_centerCtrl];
+    
+    self.rootViewController = _navCtrl;
+    self.leftViewController = _leftCtrl;
+    self.rightViewController = _rightCtrl;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismissActionNotification:) name:kDismissActionNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLeftNotification:) name:kShowLeftNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showRightNotification:) name:kShowRightNotification object:nil];
 }
 
 - (void)viewDidLoad
@@ -50,10 +57,46 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark - Notification
+
+- (void)dismissActionNotification:(NSNotification *)notification
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)showLeftNotification:(NSNotification *)notification
+{
+    if (self.leftViewController) {
+        [self showLeftController:YES];
+        [_leftCtrl hideAllButton];
+    }
+}
+
+- (void)showRightNotification:(NSNotification *)notification
+{
+    if (self.rightViewController) {
+        [self showRightController:YES];
+        [_rightCtrl hideButtons];
+    }
+}
+
 #pragma mark - dealloc
 
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    [_leftCtrl release];
+    [_rightCtrl release];
+    [_centerCtrl release];
+    [_navCtrl release];
+    
     [super dealloc];
 }
 

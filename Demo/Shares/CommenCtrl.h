@@ -32,5 +32,8 @@
 #import "DockViewCtrl.h"
 #import "JADockViewCtrl.h"
 #import "DDMenuDockViewCtrl.h"
+#import "AnimationsViewCtrl.h"
+#import "HMGLTransitionViewCtrl.h"
+#import "EmojiViewCtrl.h"
 
 #endif

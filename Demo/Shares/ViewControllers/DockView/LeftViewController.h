@@ -18,4 +18,7 @@
     UIButton        *_btnChangeCenterPanel;
 }
 
+- (void)hideButtons;
+- (void)hideAllButton;
+
 @end

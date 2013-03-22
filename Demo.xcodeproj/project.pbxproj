@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		794ADF2016F9C3450043E6DC /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794ADF1F16F9C3450043E6DC /* DDMenuController.m */; };
 		794ADF2316F9C3EE0043E6DC /* DDMenuDockViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 794ADF2216F9C3ED0043E6DC /* DDMenuDockViewCtrl.m */; };
+		795D421516FBF3C2007524F4 /* EmojiViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 795D421416FBF3C2007524F4 /* EmojiViewCtrl.m */; };
 		79710CAF16F8428100AAC9A4 /* GCDDemoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79710CAE16F8428100AAC9A4 /* GCDDemoViewCtrl.m */; };
 		7985E13C16F86B3E0024BA1E /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7985E13B16F86B3E0024BA1E /* test.jpg */; };
 		79896E5916F98D5500861A26 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896E5816F98D5500861A26 /* CenterViewController.m */; };
@@ -177,6 +178,22 @@
 		79D15A3F16F063300056FC4C /* UIImage+RetinaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A3216F063300056FC4C /* UIImage+RetinaUtils.m */; };
 		79D15A4016F063300056FC4C /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A3416F063300056FC4C /* UIView+Utils.m */; };
 		79D15A4116F063300056FC4C /* UIViewController+RZHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D15A3616F063300056FC4C /* UIViewController+RZHud.m */; };
+		79D3365816FAD4E3007B1AE5 /* AnimationsViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3365716FAD4E3007B1AE5 /* AnimationsViewCtrl.m */; };
+		79D3365B16FAD63A007B1AE5 /* HMGLTransitionViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3365A16FAD63A007B1AE5 /* HMGLTransitionViewCtrl.m */; };
+		79D3366D16FAD783007B1AE5 /* ClothTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3365E16FAD783007B1AE5 /* ClothTransition.m */; };
+		79D3366E16FAD783007B1AE5 /* DoorsTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3366016FAD783007B1AE5 /* DoorsTransition.m */; };
+		79D3366F16FAD783007B1AE5 /* FlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3366216FAD783007B1AE5 /* FlipTransition.m */; };
+		79D3367016FAD783007B1AE5 /* HMGLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3366416FAD783007B1AE5 /* HMGLTransition.m */; };
+		79D3367116FAD783007B1AE5 /* HMGLTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3366616FAD783007B1AE5 /* HMGLTransitionManager.m */; };
+		79D3367216FAD783007B1AE5 /* HMGLTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3366816FAD783007B1AE5 /* HMGLTransitionView.m */; };
+		79D3367316FAD783007B1AE5 /* RotateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3366A16FAD783007B1AE5 /* RotateTransition.m */; };
+		79D3367416FAD783007B1AE5 /* Switch3DTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3366C16FAD783007B1AE5 /* Switch3DTransition.m */; };
+		79D3367716FAD7E8007B1AE5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D3367516FAD7DB007B1AE5 /* OpenGLES.framework */; };
+		79D3370A16FB1F8C007B1AE5 /* Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3370116FB1F8C007B1AE5 /* Emoji.m */; };
+		79D3370B16FB1F8C007B1AE5 /* EmojiEmoticons.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3370316FB1F8C007B1AE5 /* EmojiEmoticons.m */; };
+		79D3370C16FB1F8C007B1AE5 /* EmojiMapSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3370516FB1F8C007B1AE5 /* EmojiMapSymbols.m */; };
+		79D3370D16FB1F8C007B1AE5 /* EmojiPictographs.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3370716FB1F8C007B1AE5 /* EmojiPictographs.m */; };
+		79D3370E16FB1F8C007B1AE5 /* EmojiTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3370916FB1F8C007B1AE5 /* EmojiTransport.m */; };
 		79D444B416B62E0C00C3F952 /* baby_complete.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79D4443B16B62E0C00C3F952 /* baby_complete.plist */; };
 		79D444B516B62E0C00C3F952 /* box0001.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D4443D16B62E0C00C3F952 /* box0001.png */; };
 		79D444B616B62E0C00C3F952 /* box0002.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D4443E16B62E0C00C3F952 /* box0002.png */; };
@@ -334,6 +351,8 @@
 		794ADF1F16F9C3450043E6DC /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
 		794ADF2116F9C3ED0043E6DC /* DDMenuDockViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuDockViewCtrl.h; sourceTree = "<group>"; };
 		794ADF2216F9C3ED0043E6DC /* DDMenuDockViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuDockViewCtrl.m; sourceTree = "<group>"; };
+		795D421316FBF3C2007524F4 /* EmojiViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiViewCtrl.h; sourceTree = "<group>"; };
+		795D421416FBF3C2007524F4 /* EmojiViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiViewCtrl.m; sourceTree = "<group>"; };
 		79710CAD16F8428100AAC9A4 /* GCDDemoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDemoViewCtrl.h; sourceTree = "<group>"; };
 		79710CAE16F8428100AAC9A4 /* GCDDemoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDDemoViewCtrl.m; sourceTree = "<group>"; };
 		7985E13B16F86B3E0024BA1E /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
@@ -668,6 +687,38 @@
 		79D15A3416F063300056FC4C /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
 		79D15A3516F063300056FC4C /* UIViewController+RZHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RZHud.h"; sourceTree = "<group>"; };
 		79D15A3616F063300056FC4C /* UIViewController+RZHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RZHud.m"; sourceTree = "<group>"; };
+		79D3364C16FAA151007B1AE5 /* DockViewDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DockViewDefines.h; sourceTree = "<group>"; };
+		79D3365616FAD4E3007B1AE5 /* AnimationsViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsViewCtrl.h; sourceTree = "<group>"; };
+		79D3365716FAD4E3007B1AE5 /* AnimationsViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsViewCtrl.m; sourceTree = "<group>"; };
+		79D3365916FAD63A007B1AE5 /* HMGLTransitionViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitionViewCtrl.h; sourceTree = "<group>"; };
+		79D3365A16FAD63A007B1AE5 /* HMGLTransitionViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransitionViewCtrl.m; sourceTree = "<group>"; };
+		79D3365D16FAD783007B1AE5 /* ClothTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothTransition.h; sourceTree = "<group>"; };
+		79D3365E16FAD783007B1AE5 /* ClothTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothTransition.m; sourceTree = "<group>"; };
+		79D3365F16FAD783007B1AE5 /* DoorsTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoorsTransition.h; sourceTree = "<group>"; };
+		79D3366016FAD783007B1AE5 /* DoorsTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoorsTransition.m; sourceTree = "<group>"; };
+		79D3366116FAD783007B1AE5 /* FlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTransition.h; sourceTree = "<group>"; };
+		79D3366216FAD783007B1AE5 /* FlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTransition.m; sourceTree = "<group>"; };
+		79D3366316FAD783007B1AE5 /* HMGLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransition.h; sourceTree = "<group>"; };
+		79D3366416FAD783007B1AE5 /* HMGLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransition.m; sourceTree = "<group>"; };
+		79D3366516FAD783007B1AE5 /* HMGLTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitionManager.h; sourceTree = "<group>"; };
+		79D3366616FAD783007B1AE5 /* HMGLTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransitionManager.m; sourceTree = "<group>"; };
+		79D3366716FAD783007B1AE5 /* HMGLTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitionView.h; sourceTree = "<group>"; };
+		79D3366816FAD783007B1AE5 /* HMGLTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransitionView.m; sourceTree = "<group>"; };
+		79D3366916FAD783007B1AE5 /* RotateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateTransition.h; sourceTree = "<group>"; };
+		79D3366A16FAD783007B1AE5 /* RotateTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateTransition.m; sourceTree = "<group>"; };
+		79D3366B16FAD783007B1AE5 /* Switch3DTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Switch3DTransition.h; sourceTree = "<group>"; };
+		79D3366C16FAD783007B1AE5 /* Switch3DTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Switch3DTransition.m; sourceTree = "<group>"; };
+		79D3367516FAD7DB007B1AE5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		79D3370016FB1F8C007B1AE5 /* Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emoji.h; sourceTree = "<group>"; };
+		79D3370116FB1F8C007B1AE5 /* Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emoji.m; sourceTree = "<group>"; };
+		79D3370216FB1F8C007B1AE5 /* EmojiEmoticons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiEmoticons.h; sourceTree = "<group>"; };
+		79D3370316FB1F8C007B1AE5 /* EmojiEmoticons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiEmoticons.m; sourceTree = "<group>"; };
+		79D3370416FB1F8C007B1AE5 /* EmojiMapSymbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiMapSymbols.h; sourceTree = "<group>"; };
+		79D3370516FB1F8C007B1AE5 /* EmojiMapSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiMapSymbols.m; sourceTree = "<group>"; };
+		79D3370616FB1F8C007B1AE5 /* EmojiPictographs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiPictographs.h; sourceTree = "<group>"; };
+		79D3370716FB1F8C007B1AE5 /* EmojiPictographs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiPictographs.m; sourceTree = "<group>"; };
+		79D3370816FB1F8C007B1AE5 /* EmojiTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiTransport.h; sourceTree = "<group>"; };
+		79D3370916FB1F8C007B1AE5 /* EmojiTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiTransport.m; sourceTree = "<group>"; };
 		79D4443B16B62E0C00C3F952 /* baby_complete.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = baby_complete.plist; sourceTree = "<group>"; };
 		79D4443D16B62E0C00C3F952 /* box0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box0001.png; sourceTree = "<group>"; };
 		79D4443E16B62E0C00C3F952 /* box0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box0002.png; sourceTree = "<group>"; };
@@ -809,6 +860,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D3367716FAD7E8007B1AE5 /* OpenGLES.framework in Frameworks */,
 				79A31CAC16E61B4000E02260 /* MapKit.framework in Frameworks */,
 				79A31CA916E61B0200E02260 /* ImageIO.framework in Frameworks */,
 				79D446CF16B675B000C3F952 /* libKal.a in Frameworks */,
@@ -836,6 +888,15 @@
 				794ADF1F16F9C3450043E6DC /* DDMenuController.m */,
 			);
 			path = DDMenu;
+			sourceTree = "<group>";
+		};
+		795D421216FBF3C2007524F4 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				795D421316FBF3C2007524F4 /* EmojiViewCtrl.h */,
+				795D421416FBF3C2007524F4 /* EmojiViewCtrl.m */,
+			);
+			path = Emoji;
 			sourceTree = "<group>";
 		};
 		79896E6316F9902500861A26 /* JASidePanel */ = {
@@ -955,6 +1016,8 @@
 		79C6699116E5FFAF009FA008 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				79D336FF16FB1F8C007B1AE5 /* Emoji */,
+				79D3365C16FAD781007B1AE5 /* HMGLTransitions */,
 				794ADF1D16F9C3450043E6DC /* DDMenu */,
 				79896E6316F9902500861A26 /* JASidePanel */,
 				79D15A1D16F063300056FC4C /* FlipEffects */,
@@ -1075,6 +1138,8 @@
 		79C66ACC16E5FFB0009FA008 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				795D421216FBF3C2007524F4 /* Emoji */,
+				79D3365516FAD4AC007B1AE5 /* Animations */,
 				79C9E5D516F98AC200C9C2EB /* DockView */,
 				79C9E5B216F984E600C9C2EB /* CommenView */,
 				79A31CA016E618F100E02260 /* SDWebImage */,
@@ -1349,6 +1414,7 @@
 		79C9CF1016B14502006A03F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79D3367516FAD7DB007B1AE5 /* OpenGLES.framework */,
 				79A31CAA16E61B3900E02260 /* MapKit.framework */,
 				79A31CA716E61AF500E02260 /* ImageIO.framework */,
 				79D446CE16B675AA00C3F952 /* libKal.a */,
@@ -1432,6 +1498,7 @@
 				79896E6116F98E3700861A26 /* JADockViewCtrl.m */,
 				794ADF2116F9C3ED0043E6DC /* DDMenuDockViewCtrl.h */,
 				794ADF2216F9C3ED0043E6DC /* DDMenuDockViewCtrl.m */,
+				79D3364C16FAA151007B1AE5 /* DockViewDefines.h */,
 			);
 			path = DockView;
 			sourceTree = "<group>";
@@ -1487,6 +1554,57 @@
 				79D15A3616F063300056FC4C /* UIViewController+RZHud.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		79D3365516FAD4AC007B1AE5 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				79D3365616FAD4E3007B1AE5 /* AnimationsViewCtrl.h */,
+				79D3365716FAD4E3007B1AE5 /* AnimationsViewCtrl.m */,
+				79D3365916FAD63A007B1AE5 /* HMGLTransitionViewCtrl.h */,
+				79D3365A16FAD63A007B1AE5 /* HMGLTransitionViewCtrl.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		79D3365C16FAD781007B1AE5 /* HMGLTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				79D3365D16FAD783007B1AE5 /* ClothTransition.h */,
+				79D3365E16FAD783007B1AE5 /* ClothTransition.m */,
+				79D3365F16FAD783007B1AE5 /* DoorsTransition.h */,
+				79D3366016FAD783007B1AE5 /* DoorsTransition.m */,
+				79D3366116FAD783007B1AE5 /* FlipTransition.h */,
+				79D3366216FAD783007B1AE5 /* FlipTransition.m */,
+				79D3366916FAD783007B1AE5 /* RotateTransition.h */,
+				79D3366A16FAD783007B1AE5 /* RotateTransition.m */,
+				79D3366B16FAD783007B1AE5 /* Switch3DTransition.h */,
+				79D3366C16FAD783007B1AE5 /* Switch3DTransition.m */,
+				79D3366316FAD783007B1AE5 /* HMGLTransition.h */,
+				79D3366416FAD783007B1AE5 /* HMGLTransition.m */,
+				79D3366516FAD783007B1AE5 /* HMGLTransitionManager.h */,
+				79D3366616FAD783007B1AE5 /* HMGLTransitionManager.m */,
+				79D3366716FAD783007B1AE5 /* HMGLTransitionView.h */,
+				79D3366816FAD783007B1AE5 /* HMGLTransitionView.m */,
+			);
+			path = HMGLTransitions;
+			sourceTree = "<group>";
+		};
+		79D336FF16FB1F8C007B1AE5 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				79D3370016FB1F8C007B1AE5 /* Emoji.h */,
+				79D3370116FB1F8C007B1AE5 /* Emoji.m */,
+				79D3370216FB1F8C007B1AE5 /* EmojiEmoticons.h */,
+				79D3370316FB1F8C007B1AE5 /* EmojiEmoticons.m */,
+				79D3370416FB1F8C007B1AE5 /* EmojiMapSymbols.h */,
+				79D3370516FB1F8C007B1AE5 /* EmojiMapSymbols.m */,
+				79D3370616FB1F8C007B1AE5 /* EmojiPictographs.h */,
+				79D3370716FB1F8C007B1AE5 /* EmojiPictographs.m */,
+				79D3370816FB1F8C007B1AE5 /* EmojiTransport.h */,
+				79D3370916FB1F8C007B1AE5 /* EmojiTransport.m */,
+			);
+			path = Emoji;
 			sourceTree = "<group>";
 		};
 		79D4443816B62E0C00C3F952 /* Resource */ = {
@@ -2057,6 +2175,22 @@
 				79896E6916F9902500861A26 /* UIViewController+JASidePanel.m in Sources */,
 				794ADF2016F9C3450043E6DC /* DDMenuController.m in Sources */,
 				794ADF2316F9C3EE0043E6DC /* DDMenuDockViewCtrl.m in Sources */,
+				79D3365816FAD4E3007B1AE5 /* AnimationsViewCtrl.m in Sources */,
+				79D3365B16FAD63A007B1AE5 /* HMGLTransitionViewCtrl.m in Sources */,
+				79D3366D16FAD783007B1AE5 /* ClothTransition.m in Sources */,
+				79D3366E16FAD783007B1AE5 /* DoorsTransition.m in Sources */,
+				79D3366F16FAD783007B1AE5 /* FlipTransition.m in Sources */,
+				79D3367016FAD783007B1AE5 /* HMGLTransition.m in Sources */,
+				79D3367116FAD783007B1AE5 /* HMGLTransitionManager.m in Sources */,
+				79D3367216FAD783007B1AE5 /* HMGLTransitionView.m in Sources */,
+				79D3367316FAD783007B1AE5 /* RotateTransition.m in Sources */,
+				79D3367416FAD783007B1AE5 /* Switch3DTransition.m in Sources */,
+				79D3370A16FB1F8C007B1AE5 /* Emoji.m in Sources */,
+				79D3370B16FB1F8C007B1AE5 /* EmojiEmoticons.m in Sources */,
+				79D3370C16FB1F8C007B1AE5 /* EmojiMapSymbols.m in Sources */,
+				79D3370D16FB1F8C007B1AE5 /* EmojiPictographs.m in Sources */,
+				79D3370E16FB1F8C007B1AE5 /* EmojiTransport.m in Sources */,
+				795D421516FBF3C2007524F4 /* EmojiViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

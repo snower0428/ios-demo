@@ -1,19 +1,19 @@
 //
-//  DockViewCtrl.m
+//  AnimationsViewCtrl.m
 //  Demo
 //
-//  Created by leihui on 13-3-20.
+//  Created by leihui on 13-3-21.
 //
 //
 
-#import "DockViewCtrl.h"
+#import "AnimationsViewCtrl.h"
 #import "CommenCtrl.h"
 
-@interface DockViewCtrl ()
+@interface AnimationsViewCtrl ()
 
 @end
 
-@implementation DockViewCtrl
+@implementation AnimationsViewCtrl
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,16 +29,14 @@
     [super loadView];
     
     _arrayName = [[NSArray alloc] initWithObjects:
-                  @"JADockView",
-                  @"DDMemu",
+                  @"HMGLTransition",
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
-                            NSStringFromClass([JADockViewCtrl class]),
-                            NSStringFromClass([DDMenuDockViewCtrl class]),
+                            NSStringFromClass([HMGLTransitionViewCtrl class]),
                             nil];
     
-    self.title = @"DockView";
+    self.title = @"Animations";
 }
 
 - (void)viewDidLoad

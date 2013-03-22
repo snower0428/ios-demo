@@ -23,24 +23,28 @@
                   @"TableView",
                   @"CommenView",
                   @"DockView",
+                  @"Animations",
                   @"BabyInfo",
                   @"ASIHttpRequest",
                   @"KalCalendar",
                   @"DatePicker",
                   @"SDWebImage",
                   @"GCD",
+                  @"Emoji",
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
                             NSStringFromClass([TableViewCtrl class]),
                             NSStringFromClass([CommenViewCtrl class]),
                             NSStringFromClass([DockViewCtrl class]),
+                            NSStringFromClass([AnimationsViewCtrl class]),
                             NSStringFromClass([BabySelectViewController class]),
                             NSStringFromClass([ASIHttpDemoViewCtrl class]),
                             NSStringFromClass([KalViewController class]),
                             NSStringFromClass([DatePickerDemoViewCtrl class]),
                             NSStringFromClass([SDWebImageViewCtrl class]),
                             NSStringFromClass([GCDDemoViewCtrl class]),
+                            NSStringFromClass([EmojiViewCtrl class]),
                             nil];
 }
 

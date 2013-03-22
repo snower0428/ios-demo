@@ -9,6 +9,7 @@
 #import "CenterViewController.h"
 #import "JASidePanelController.h"
 #import "UIViewController+JASidePanel.h"
+#import "DockViewDefines.h"
 
 @interface CenterViewController ()
 
@@ -80,21 +81,17 @@
 
 - (void)leftItemAction
 {
-    if (self.sidePanelController.leftPanel) {
-        [self.sidePanelController showLeftPanelAnimated:YES];
-    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:kShowLeftNotification object:nil];
 }
 
 - (void)rightItemAction
 {
-    if (self.sidePanelController.rightPanel) {
-        [self.sidePanelController showRightPanelAnimated:YES];
-    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:kShowRightNotification object:nil];
 }
 
 - (void)dismissAction
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kDismissActionNotification object:nil];
 }
 
 #pragma mark - dealloc
