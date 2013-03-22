@@ -10,6 +10,8 @@
 		794ADF2016F9C3450043E6DC /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794ADF1F16F9C3450043E6DC /* DDMenuController.m */; };
 		794ADF2316F9C3EE0043E6DC /* DDMenuDockViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 794ADF2216F9C3ED0043E6DC /* DDMenuDockViewCtrl.m */; };
 		795D421516FBF3C2007524F4 /* EmojiViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 795D421416FBF3C2007524F4 /* EmojiViewCtrl.m */; };
+		795D421816FBF4D9007524F4 /* EmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 795D421716FBF4D9007524F4 /* EmojiView.m */; };
+		795D423616FC2B34007524F4 /* EmojiCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 795D423516FC2B33007524F4 /* EmojiCoding.m */; };
 		79710CAF16F8428100AAC9A4 /* GCDDemoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79710CAE16F8428100AAC9A4 /* GCDDemoViewCtrl.m */; };
 		7985E13C16F86B3E0024BA1E /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7985E13B16F86B3E0024BA1E /* test.jpg */; };
 		79896E5916F98D5500861A26 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896E5816F98D5500861A26 /* CenterViewController.m */; };
@@ -318,6 +320,7 @@
 		79D4469D16B6701500C3F952 /* FZY4JW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 79D4469C16B6701500C3F952 /* FZY4JW.TTF */; };
 		79D446CF16B675B000C3F952 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D446CE16B675AA00C3F952 /* libKal.a */; };
 		79D507CD16E46AAC001D7529 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79D507CF16E46AAC001D7529 /* Localizable.strings */; };
+		79E4A18D16FC600F00577255 /* EmojiViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E4A18C16FC600F00577255 /* EmojiViewContainer.m */; };
 		79E6FF4516B42C890075CAAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FF4416B42C880075CAAF /* README.md */; };
 		79F6658216BCE41300937CAD /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657A16BCE41300937CAD /* blackArrow.png */; };
 		79F6658316BCE41300937CAD /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F6657B16BCE41300937CAD /* blackArrow@2x.png */; };
@@ -353,6 +356,10 @@
 		794ADF2216F9C3ED0043E6DC /* DDMenuDockViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuDockViewCtrl.m; sourceTree = "<group>"; };
 		795D421316FBF3C2007524F4 /* EmojiViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiViewCtrl.h; sourceTree = "<group>"; };
 		795D421416FBF3C2007524F4 /* EmojiViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiViewCtrl.m; sourceTree = "<group>"; };
+		795D421616FBF4D9007524F4 /* EmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiView.h; sourceTree = "<group>"; };
+		795D421716FBF4D9007524F4 /* EmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiView.m; sourceTree = "<group>"; };
+		795D423416FC2B32007524F4 /* EmojiCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiCoding.h; sourceTree = "<group>"; };
+		795D423516FC2B33007524F4 /* EmojiCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCoding.m; sourceTree = "<group>"; };
 		79710CAD16F8428100AAC9A4 /* GCDDemoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDemoViewCtrl.h; sourceTree = "<group>"; };
 		79710CAE16F8428100AAC9A4 /* GCDDemoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDDemoViewCtrl.m; sourceTree = "<group>"; };
 		7985E13B16F86B3E0024BA1E /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
@@ -844,6 +851,8 @@
 		79D446CE16B675AA00C3F952 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "Demo/KalCalendar/build/Debug-iphonesimulator/libKal.a"; sourceTree = "<group>"; };
 		79D507CE16E46AAC001D7529 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		79D507D016E46AC2001D7529 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		79E4A18B16FC600F00577255 /* EmojiViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiViewContainer.h; sourceTree = "<group>"; };
+		79E4A18C16FC600F00577255 /* EmojiViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiViewContainer.m; sourceTree = "<group>"; };
 		79E6FF4416B42C880075CAAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		79F6657A16BCE41300937CAD /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
 		79F6657B16BCE41300937CAD /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
@@ -895,6 +904,12 @@
 			children = (
 				795D421316FBF3C2007524F4 /* EmojiViewCtrl.h */,
 				795D421416FBF3C2007524F4 /* EmojiViewCtrl.m */,
+				795D421616FBF4D9007524F4 /* EmojiView.h */,
+				795D421716FBF4D9007524F4 /* EmojiView.m */,
+				79E4A18B16FC600F00577255 /* EmojiViewContainer.h */,
+				79E4A18C16FC600F00577255 /* EmojiViewContainer.m */,
+				795D423416FC2B32007524F4 /* EmojiCoding.h */,
+				795D423516FC2B33007524F4 /* EmojiCoding.m */,
 			);
 			path = Emoji;
 			sourceTree = "<group>";
@@ -2191,6 +2206,9 @@
 				79D3370D16FB1F8C007B1AE5 /* EmojiPictographs.m in Sources */,
 				79D3370E16FB1F8C007B1AE5 /* EmojiTransport.m in Sources */,
 				795D421516FBF3C2007524F4 /* EmojiViewCtrl.m in Sources */,
+				795D421816FBF4D9007524F4 /* EmojiView.m in Sources */,
+				795D423616FC2B34007524F4 /* EmojiCoding.m in Sources */,
+				79E4A18D16FC600F00577255 /* EmojiViewContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

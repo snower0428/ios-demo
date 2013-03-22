@@ -7,11 +7,15 @@
 //
 
 #import "EmojiViewCtrl.h"
+#import "EmojiViewContainer.h"
 #import "Emoji.h"
 #import "EmojiEmoticons.h"
 #import "EmojiMapSymbols.h"
 #import "EmojiPictographs.h"
 #import "EmojiTransport.h"
+
+#import "EmojiCoding.h"
+
 
 @interface EmojiViewCtrl ()
 
@@ -43,25 +47,19 @@
     NSLog(@"%d----------%d----------%d----------%d----------%d",
           [arrayEmoticons count], [arrayMapSymbols count], [arrayPictographs count], [arrayTransport count], [arrayEmoji count]);
     
-//    NSString *str = @"";
-//    for (int i = 0; i < [arrayEmoticons count]; i++) {
-//        str = [str stringByAppendingFormat:@"%@", [arrayEmoticons objectAtIndex:i]];
-//    }
-//    UILabel *label = [[UILabel alloc] initWithFrame:self.view.bounds];
-//    label.backgroundColor = [UIColor clearColor];
-//    label.text = str;
-//    label.textAlignment = UITextAlignmentLeft;
-//    label.lineBreakMode = UILineBreakModeWordWrap;
-//    label.numberOfLines = 20;
-//    [self.view addSubview:label];
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Emoji" style:UIBarButtonItemStyleBordered target:self action:@selector(showEmoji)];
     self.navigationItem.rightBarButtonItem = rightItem;
     [rightItem release];
     
-    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 400)];
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
     [self.view addSubview:searchBar];
     [searchBar release];
+    
+    CGRect emojiViewFrame = CGRectMake(0, self.view.frame.size.height - kEmojiBoardHeight, self.view.frame.size.width, kEmojiBoardHeight);
+    EmojiViewContainer *container = [[EmojiViewContainer alloc] initWithFrame:emojiViewFrame];
+    [self.view addSubview:container];
+    [container release];
 }
 
 - (void)viewDidLoad

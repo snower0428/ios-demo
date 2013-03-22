@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EmojiViewCtrl : UIViewController
+@interface EmojiViewCtrl : UIViewController <UIScrollViewDelegate>
+{
+    
+}
 
 @end
