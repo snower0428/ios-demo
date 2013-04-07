@@ -13,5 +13,8 @@
 + (NSMutableArray *)emojiAll;
 + (NSMutableArray *)emojiSmiley;
 + (NSMutableArray *)emojiFlower;
++ (NSMutableArray *)emojiBell;
++ (NSMutableArray *)emojiVehicle;
++ (NSMutableArray *)emojiNumber;
 
 @end

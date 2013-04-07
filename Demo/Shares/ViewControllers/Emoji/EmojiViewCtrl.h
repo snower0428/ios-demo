@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EmojiViewCtrl : UIViewController <UIScrollViewDelegate>
+@interface EmojiViewCtrl : UIViewController <UISearchBarDelegate>
 {
-    
+//    UITapGestureRecognizer  *_tapRecognizer;
+    BOOL                    _emojiBoardIsShow;
 }
 
 @end

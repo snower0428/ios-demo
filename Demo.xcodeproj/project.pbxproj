@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7946340717116CE200387E1B /* Emoji.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7946340417116CE100387E1B /* Emoji.bundle */; };
+		7946340817116CE200387E1B /* EmojiRecentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7946340617116CE100387E1B /* EmojiRecentManager.m */; };
 		794ADF2016F9C3450043E6DC /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794ADF1F16F9C3450043E6DC /* DDMenuController.m */; };
 		794ADF2316F9C3EE0043E6DC /* DDMenuDockViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 794ADF2216F9C3ED0043E6DC /* DDMenuDockViewCtrl.m */; };
 		795D421516FBF3C2007524F4 /* EmojiViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 795D421416FBF3C2007524F4 /* EmojiViewCtrl.m */; };
@@ -350,6 +352,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7946340417116CE100387E1B /* Emoji.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoji.bundle; sourceTree = "<group>"; };
+		7946340517116CE100387E1B /* EmojiRecentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiRecentManager.h; sourceTree = "<group>"; };
+		7946340617116CE100387E1B /* EmojiRecentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiRecentManager.m; sourceTree = "<group>"; };
 		794ADF1E16F9C3450043E6DC /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
 		794ADF1F16F9C3450043E6DC /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
 		794ADF2116F9C3ED0043E6DC /* DDMenuDockViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuDockViewCtrl.h; sourceTree = "<group>"; };
@@ -902,6 +907,9 @@
 		795D421216FBF3C2007524F4 /* Emoji */ = {
 			isa = PBXGroup;
 			children = (
+				7946340417116CE100387E1B /* Emoji.bundle */,
+				7946340517116CE100387E1B /* EmojiRecentManager.h */,
+				7946340617116CE100387E1B /* EmojiRecentManager.m */,
 				795D421316FBF3C2007524F4 /* EmojiViewCtrl.h */,
 				795D421416FBF3C2007524F4 /* EmojiViewCtrl.m */,
 				795D421616FBF4D9007524F4 /* EmojiView.h */,
@@ -2030,6 +2038,7 @@
 				79C7575C16E752CB00DF23E0 /* placeholder.png in Resources */,
 				79C7575D16E752CB00DF23E0 /* placeholder@2x.png in Resources */,
 				7985E13C16F86B3E0024BA1E /* test.jpg in Resources */,
+				7946340717116CE200387E1B /* Emoji.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2209,6 +2218,7 @@
 				795D421816FBF4D9007524F4 /* EmojiView.m in Sources */,
 				795D423616FC2B34007524F4 /* EmojiCoding.m in Sources */,
 				79E4A18D16FC600F00577255 /* EmojiViewContainer.m in Sources */,
+				7946340817116CE200387E1B /* EmojiRecentManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
