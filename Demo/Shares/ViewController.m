@@ -31,6 +31,8 @@
                   @"SDWebImage",
                   @"GCD",
                   @"Emoji",
+                  @"ListView",
+                  @"WaterflowView",
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
@@ -45,6 +47,8 @@
                             NSStringFromClass([SDWebImageViewCtrl class]),
                             NSStringFromClass([GCDDemoViewCtrl class]),
                             NSStringFromClass([EmojiViewCtrl class]),
+                            NSStringFromClass([ListViewCtrl class]),
+                            NSStringFromClass([WaterflowViewCtrl class]),
                             nil];
 }
 

@@ -35,5 +35,7 @@
 #import "AnimationsViewCtrl.h"
 #import "HMGLTransitionViewCtrl.h"
 #import "EmojiViewCtrl.h"
+#import "ListViewCtrl.h"
+#import "WaterflowViewCtrl.h"
 
 #endif
