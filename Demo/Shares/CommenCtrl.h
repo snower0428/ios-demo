@@ -37,5 +37,6 @@
 #import "EmojiViewCtrl.h"
 #import "ListViewCtrl.h"
 #import "WaterflowViewCtrl.h"
+#import "LauncherViewCtrl.h"
 
 #endif

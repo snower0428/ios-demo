@@ -37,6 +37,7 @@
 @synthesize style = _style;
 @synthesize color = _color;
 @synthesize cornerRadius = _cornerRadius;
+@synthesize shadowAlpha = _shadowAlpha;
 @synthesize borderColor = _borderColor;
 @synthesize borderWidth = _borderWidth;
 
@@ -61,8 +62,8 @@
         self.messageLabel.backgroundColor = [UIColor clearColor];
         self.messageLabel.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
         self.messageLabel.adjustsFontSizeToFitWidth = NO;
-        self.messageLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        self.messageLabel.textAlignment = style == RZHudBoxStyleInfo ? NSTextAlignmentLeft : NSTextAlignmentCenter;
+        self.messageLabel.lineBreakMode = UILineBreakModeTailTruncation;
+        self.messageLabel.textAlignment = style == RZHudBoxStyleInfo ? UITextAlignmentLeft : UITextAlignmentCenter;
         self.messageLabel.font = [UIFont systemFontOfSize:18];
         self.messageLabel.shadowColor = [UIColor clearColor];
         

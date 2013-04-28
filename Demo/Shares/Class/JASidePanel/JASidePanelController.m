@@ -42,6 +42,28 @@ static char ja_kvoContext;
 @property (nonatomic, strong) UIView *rightPanelContainer;
 @property (nonatomic, strong) UIView *centerPanelContainer;
 
+- (void)_baseInit;
+- (void)_configureContainers;
+- (void)_swapCenter:(UIViewController *)previous with:(UIViewController *)next;
+- (CGRect)_adjustCenterFrame;
+- (void)_showCenterPanel:(BOOL)animated bounce:(BOOL)shouldBounce;
+- (void)_layoutSideContainers:(BOOL)animate duration:(NSTimeInterval)duration;
+- (void)_loadCenterPanel;
+- (void)_loadLeftPanel;
+- (void)_loadRightPanel;
+- (void)_layoutSidePanels;
+- (void)_undoPan;
+- (void)_showLeftPanel:(BOOL)animated bounce:(BOOL)shouldBounce;
+- (void)_showRightPanel:(BOOL)animated bounce:(BOOL)shouldBounce;
+- (void)_placeButtonForLeftPanel;
+- (void)_toggleScrollsToTopForCenter:(BOOL)center left:(BOOL)left right:(BOOL)right;
+- (BOOL)_isOnTopLevelViewController:(UIViewController *)root;
+- (CGFloat)_correctMovement:(CGFloat)movement;
+- (BOOL)_toggleScrollsToTop:(BOOL)enabled forView:(UIView *)view;
+- (BOOL)_validateThreshold:(CGFloat)movement;
+- (void)_completePan:(CGFloat)deltaX;
+- (void)_addTapGestureToView:(UIView *)view;
+
 @end
 
 @implementation JASidePanelController

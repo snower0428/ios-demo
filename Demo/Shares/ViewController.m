@@ -33,6 +33,7 @@
                   @"Emoji",
                   @"ListView",
                   @"WaterflowView",
+                  @"LauncherView",
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
@@ -49,6 +50,7 @@
                             NSStringFromClass([EmojiViewCtrl class]),
                             NSStringFromClass([ListViewCtrl class]),
                             NSStringFromClass([WaterflowViewCtrl class]),
+                            NSStringFromClass([LauncherViewCtrl class]),
                             nil];
 }
 

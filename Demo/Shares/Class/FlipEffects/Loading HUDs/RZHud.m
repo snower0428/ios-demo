@@ -63,6 +63,7 @@
 @synthesize shadowAlpha = _shadowAlpha;
 
 @synthesize circleRadius = _circleRadius;
+@synthesize blocksTouches = _blocksTouches;
 
 @synthesize cornerRadius = _cornerRadius;
 @synthesize labelColor = _labelColor;
