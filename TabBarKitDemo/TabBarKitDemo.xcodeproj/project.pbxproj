@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79DFC9D317574E0F00451B64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DFC9D217574E0F00451B64 /* UIKit.framework */; };
+		79DFC9D517574E0F00451B64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DFC9D417574E0F00451B64 /* Foundation.framework */; };
+		79DFC9D717574E0F00451B64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DFC9D617574E0F00451B64 /* CoreGraphics.framework */; };
+		79DFC9DD17574E0F00451B64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79DFC9DB17574E0F00451B64 /* InfoPlist.strings */; };
+		79DFC9DF17574E0F00451B64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC9DE17574E0F00451B64 /* main.m */; };
+		79DFC9E317574E0F00451B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC9E217574E0F00451B64 /* AppDelegate.m */; };
+		79DFC9E617574E0F00451B64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC9E517574E0F00451B64 /* ViewController.m */; };
+		79DFCA011757507E00451B64 /* NSObject+TBKAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC9F61757507E00451B64 /* NSObject+TBKAssociatedObject.m */; };
+		79DFCA021757507E00451B64 /* UIImage+TBKMasking.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC9F81757507E00451B64 /* UIImage+TBKMasking.m */; };
+		79DFCA031757507E00451B64 /* TBKTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC9FB1757507E00451B64 /* TBKTabBar.m */; };
+		79DFCA041757507E00451B64 /* TBKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC9FD1757507E00451B64 /* TBKTabBarController.m */; };
+		79DFCA051757507E00451B64 /* TBKTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC9FF1757507E00451B64 /* TBKTabBarItem.m */; };
+		79DFCA131757517D00451B64 /* TBKCContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFCA081757517D00451B64 /* TBKCContentViewController.m */; };
+		79DFCA141757517D00451B64 /* TBKCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFCA0A1757517D00451B64 /* TBKCDetailViewController.m */; };
+		79DFCA151757517D00451B64 /* TBKCImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFCA0C1757517D00451B64 /* TBKCImagesViewController.m */; };
+		79DFCA161757517D00451B64 /* TBKCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFCA0E1757517D00451B64 /* TBKCMasterViewController.m */; };
+		79DFCA171757517D00451B64 /* TBKCMoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFCA101757517D00451B64 /* TBKCMoviesViewController.m */; };
+		79DFCA181757517D00451B64 /* TBKCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DFCA121757517D00451B64 /* TBKCSettingsViewController.m */; };
+		79DFCA1B175754AB00451B64 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DFCA19175754A200451B64 /* QuartzCore.framework */; };
+		79DFCA27175755A700451B64 /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA1D175755A700451B64 /* Book.png */; };
+		79DFCA28175755A700451B64 /* Book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA1E175755A700451B64 /* Book@2x.png */; };
+		79DFCA29175755A700451B64 /* Bookmarks.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA1F175755A700451B64 /* Bookmarks.png */; };
+		79DFCA2A175755A700451B64 /* Bookmarks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA20175755A700451B64 /* Bookmarks@2x.png */; };
+		79DFCA2B175755A700451B64 /* Bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA21175755A700451B64 /* Bulb.png */; };
+		79DFCA2C175755A700451B64 /* Bulb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA22175755A700451B64 /* Bulb@2x.png */; };
+		79DFCA2D175755A700451B64 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA23175755A700451B64 /* Settings.png */; };
+		79DFCA2E175755A700451B64 /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA24175755A700451B64 /* Settings@2x.png */; };
+		79DFCA2F175755A700451B64 /* Super8.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA25175755A700451B64 /* Super8.png */; };
+		79DFCA30175755A700451B64 /* Super8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79DFCA26175755A700451B64 /* Super8@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79DFC9CE17574E0F00451B64 /* TabBarKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DFC9D217574E0F00451B64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79DFC9D417574E0F00451B64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79DFC9D617574E0F00451B64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79DFC9DA17574E0F00451B64 /* TabBarKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBarKitDemo-Info.plist"; sourceTree = "<group>"; };
+		79DFC9DC17574E0F00451B64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79DFC9DE17574E0F00451B64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79DFC9E017574E0F00451B64 /* TabBarKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabBarKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		79DFC9E117574E0F00451B64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		79DFC9E217574E0F00451B64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79DFC9E417574E0F00451B64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		79DFC9E517574E0F00451B64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		79DFC9F51757507E00451B64 /* NSObject+TBKAssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TBKAssociatedObject.h"; sourceTree = "<group>"; };
+		79DFC9F61757507E00451B64 /* NSObject+TBKAssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TBKAssociatedObject.m"; sourceTree = "<group>"; };
+		79DFC9F71757507E00451B64 /* UIImage+TBKMasking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBKMasking.h"; sourceTree = "<group>"; };
+		79DFC9F81757507E00451B64 /* UIImage+TBKMasking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TBKMasking.m"; sourceTree = "<group>"; };
+		79DFC9FA1757507E00451B64 /* TBKTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKTabBar.h; sourceTree = "<group>"; };
+		79DFC9FB1757507E00451B64 /* TBKTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKTabBar.m; sourceTree = "<group>"; };
+		79DFC9FC1757507E00451B64 /* TBKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKTabBarController.h; sourceTree = "<group>"; };
+		79DFC9FD1757507E00451B64 /* TBKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKTabBarController.m; sourceTree = "<group>"; };
+		79DFC9FE1757507E00451B64 /* TBKTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKTabBarItem.h; sourceTree = "<group>"; };
+		79DFC9FF1757507E00451B64 /* TBKTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKTabBarItem.m; sourceTree = "<group>"; };
+		79DFCA001757507E00451B64 /* TabBarKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarKit.h; sourceTree = "<group>"; };
+		79DFCA071757517D00451B64 /* TBKCContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKCContentViewController.h; sourceTree = "<group>"; };
+		79DFCA081757517D00451B64 /* TBKCContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKCContentViewController.m; sourceTree = "<group>"; };
+		79DFCA091757517D00451B64 /* TBKCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKCDetailViewController.h; sourceTree = "<group>"; };
+		79DFCA0A1757517D00451B64 /* TBKCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKCDetailViewController.m; sourceTree = "<group>"; };
+		79DFCA0B1757517D00451B64 /* TBKCImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKCImagesViewController.h; sourceTree = "<group>"; };
+		79DFCA0C1757517D00451B64 /* TBKCImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKCImagesViewController.m; sourceTree = "<group>"; };
+		79DFCA0D1757517D00451B64 /* TBKCMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKCMasterViewController.h; sourceTree = "<group>"; };
+		79DFCA0E1757517D00451B64 /* TBKCMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKCMasterViewController.m; sourceTree = "<group>"; };
+		79DFCA0F1757517D00451B64 /* TBKCMoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKCMoviesViewController.h; sourceTree = "<group>"; };
+		79DFCA101757517D00451B64 /* TBKCMoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKCMoviesViewController.m; sourceTree = "<group>"; };
+		79DFCA111757517D00451B64 /* TBKCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKCSettingsViewController.h; sourceTree = "<group>"; };
+		79DFCA121757517D00451B64 /* TBKCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKCSettingsViewController.m; sourceTree = "<group>"; };
+		79DFCA19175754A200451B64 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		79DFCA1D175755A700451B64 /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
+		79DFCA1E175755A700451B64 /* Book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book@2x.png"; sourceTree = "<group>"; };
+		79DFCA1F175755A700451B64 /* Bookmarks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bookmarks.png; sourceTree = "<group>"; };
+		79DFCA20175755A700451B64 /* Bookmarks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bookmarks@2x.png"; sourceTree = "<group>"; };
+		79DFCA21175755A700451B64 /* Bulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bulb.png; sourceTree = "<group>"; };
+		79DFCA22175755A700451B64 /* Bulb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bulb@2x.png"; sourceTree = "<group>"; };
+		79DFCA23175755A700451B64 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = "<group>"; };
+		79DFCA24175755A700451B64 /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@2x.png"; sourceTree = "<group>"; };
+		79DFCA25175755A700451B64 /* Super8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Super8.png; sourceTree = "<group>"; };
+		79DFCA26175755A700451B64 /* Super8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super8@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79DFC9CB17574E0F00451B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DFCA1B175754AB00451B64 /* QuartzCore.framework in Frameworks */,
+				79DFC9D317574E0F00451B64 /* UIKit.framework in Frameworks */,
+				79DFC9D517574E0F00451B64 /* Foundation.framework in Frameworks */,
+				79DFC9D717574E0F00451B64 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79DFC9C317574E0F00451B64 = {
+			isa = PBXGroup;
+			children = (
+				79DFCA1C175755A600451B64 /* Resource */,
+				79DFC9D817574E0F00451B64 /* TabBarKitDemo */,
+				79DFC9D117574E0F00451B64 /* Frameworks */,
+				79DFC9CF17574E0F00451B64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79DFC9CF17574E0F00451B64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79DFC9CE17574E0F00451B64 /* TabBarKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79DFC9D117574E0F00451B64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79DFCA19175754A200451B64 /* QuartzCore.framework */,
+				79DFC9D217574E0F00451B64 /* UIKit.framework */,
+				79DFC9D417574E0F00451B64 /* Foundation.framework */,
+				79DFC9D617574E0F00451B64 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79DFC9D817574E0F00451B64 /* TabBarKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				79DFCA061757517D00451B64 /* ViewControllers */,
+				79DFC9F31757507E00451B64 /* TabBarKit */,
+				79DFC9E117574E0F00451B64 /* AppDelegate.h */,
+				79DFC9E217574E0F00451B64 /* AppDelegate.m */,
+				79DFC9E417574E0F00451B64 /* ViewController.h */,
+				79DFC9E517574E0F00451B64 /* ViewController.m */,
+				79DFC9D917574E0F00451B64 /* Supporting Files */,
+			);
+			path = TabBarKitDemo;
+			sourceTree = "<group>";
+		};
+		79DFC9D917574E0F00451B64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79DFC9DA17574E0F00451B64 /* TabBarKitDemo-Info.plist */,
+				79DFC9DB17574E0F00451B64 /* InfoPlist.strings */,
+				79DFC9DE17574E0F00451B64 /* main.m */,
+				79DFC9E017574E0F00451B64 /* TabBarKitDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79DFC9F31757507E00451B64 /* TabBarKit */ = {
+			isa = PBXGroup;
+			children = (
+				79DFC9F41757507E00451B64 /* Categories */,
+				79DFC9F91757507E00451B64 /* Classes */,
+				79DFCA001757507E00451B64 /* TabBarKit.h */,
+			);
+			name = TabBarKit;
+			path = ../../Common/TabBarKit;
+			sourceTree = "<group>";
+		};
+		79DFC9F41757507E00451B64 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				79DFC9F51757507E00451B64 /* NSObject+TBKAssociatedObject.h */,
+				79DFC9F61757507E00451B64 /* NSObject+TBKAssociatedObject.m */,
+				79DFC9F71757507E00451B64 /* UIImage+TBKMasking.h */,
+				79DFC9F81757507E00451B64 /* UIImage+TBKMasking.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		79DFC9F91757507E00451B64 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79DFC9FA1757507E00451B64 /* TBKTabBar.h */,
+				79DFC9FB1757507E00451B64 /* TBKTabBar.m */,
+				79DFC9FC1757507E00451B64 /* TBKTabBarController.h */,
+				79DFC9FD1757507E00451B64 /* TBKTabBarController.m */,
+				79DFC9FE1757507E00451B64 /* TBKTabBarItem.h */,
+				79DFC9FF1757507E00451B64 /* TBKTabBarItem.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		79DFCA061757517D00451B64 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79DFCA071757517D00451B64 /* TBKCContentViewController.h */,
+				79DFCA081757517D00451B64 /* TBKCContentViewController.m */,
+				79DFCA091757517D00451B64 /* TBKCDetailViewController.h */,
+				79DFCA0A1757517D00451B64 /* TBKCDetailViewController.m */,
+				79DFCA0B1757517D00451B64 /* TBKCImagesViewController.h */,
+				79DFCA0C1757517D00451B64 /* TBKCImagesViewController.m */,
+				79DFCA0D1757517D00451B64 /* TBKCMasterViewController.h */,
+				79DFCA0E1757517D00451B64 /* TBKCMasterViewController.m */,
+				79DFCA0F1757517D00451B64 /* TBKCMoviesViewController.h */,
+				79DFCA101757517D00451B64 /* TBKCMoviesViewController.m */,
+				79DFCA111757517D00451B64 /* TBKCSettingsViewController.h */,
+				79DFCA121757517D00451B64 /* TBKCSettingsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79DFCA1C175755A600451B64 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				79DFCA1D175755A700451B64 /* Book.png */,
+				79DFCA1E175755A700451B64 /* Book@2x.png */,
+				79DFCA1F175755A700451B64 /* Bookmarks.png */,
+				79DFCA20175755A700451B64 /* Bookmarks@2x.png */,
+				79DFCA21175755A700451B64 /* Bulb.png */,
+				79DFCA22175755A700451B64 /* Bulb@2x.png */,
+				79DFCA23175755A700451B64 /* Settings.png */,
+				79DFCA24175755A700451B64 /* Settings@2x.png */,
+				79DFCA25175755A700451B64 /* Super8.png */,
+				79DFCA26175755A700451B64 /* Super8@2x.png */,
+			);
+			name = Resource;
+			path = TabBarKitDemo/Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79DFC9CD17574E0F00451B64 /* TabBarKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79DFC9EF17574E0F00451B64 /* Build configuration list for PBXNativeTarget "TabBarKitDemo" */;
+			buildPhases = (
+				79DFC9CA17574E0F00451B64 /* Sources */,
+				79DFC9CB17574E0F00451B64 /* Frameworks */,
+				79DFC9CC17574E0F00451B64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabBarKitDemo;
+			productName = TabBarKitDemo;
+			productReference = 79DFC9CE17574E0F00451B64 /* TabBarKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79DFC9C517574E0F00451B64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 79DFC9C817574E0F00451B64 /* Build configuration list for PBXProject "TabBarKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79DFC9C317574E0F00451B64;
+			productRefGroup = 79DFC9CF17574E0F00451B64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79DFC9CD17574E0F00451B64 /* TabBarKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79DFC9CC17574E0F00451B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DFC9DD17574E0F00451B64 /* InfoPlist.strings in Resources */,
+				79DFCA27175755A700451B64 /* Book.png in Resources */,
+				79DFCA28175755A700451B64 /* Book@2x.png in Resources */,
+				79DFCA29175755A700451B64 /* Bookmarks.png in Resources */,
+				79DFCA2A175755A700451B64 /* Bookmarks@2x.png in Resources */,
+				79DFCA2B175755A700451B64 /* Bulb.png in Resources */,
+				79DFCA2C175755A700451B64 /* Bulb@2x.png in Resources */,
+				79DFCA2D175755A700451B64 /* Settings.png in Resources */,
+				79DFCA2E175755A700451B64 /* Settings@2x.png in Resources */,
+				79DFCA2F175755A700451B64 /* Super8.png in Resources */,
+				79DFCA30175755A700451B64 /* Super8@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79DFC9CA17574E0F00451B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DFC9DF17574E0F00451B64 /* main.m in Sources */,
+				79DFC9E317574E0F00451B64 /* AppDelegate.m in Sources */,
+				79DFC9E617574E0F00451B64 /* ViewController.m in Sources */,
+				79DFCA011757507E00451B64 /* NSObject+TBKAssociatedObject.m in Sources */,
+				79DFCA021757507E00451B64 /* UIImage+TBKMasking.m in Sources */,
+				79DFCA031757507E00451B64 /* TBKTabBar.m in Sources */,
+				79DFCA041757507E00451B64 /* TBKTabBarController.m in Sources */,
+				79DFCA051757507E00451B64 /* TBKTabBarItem.m in Sources */,
+				79DFCA131757517D00451B64 /* TBKCContentViewController.m in Sources */,
+				79DFCA141757517D00451B64 /* TBKCDetailViewController.m in Sources */,
+				79DFCA151757517D00451B64 /* TBKCImagesViewController.m in Sources */,
+				79DFCA161757517D00451B64 /* TBKCMasterViewController.m in Sources */,
+				79DFCA171757517D00451B64 /* TBKCMoviesViewController.m in Sources */,
+				79DFCA181757517D00451B64 /* TBKCSettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79DFC9DB17574E0F00451B64 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79DFC9DC17574E0F00451B64 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79DFC9ED17574E0F00451B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79DFC9EE17574E0F00451B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79DFC9F017574E0F00451B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabBarKitDemo/TabBarKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "TabBarKitDemo/TabBarKitDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79DFC9F117574E0F00451B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabBarKitDemo/TabBarKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "TabBarKitDemo/TabBarKitDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79DFC9C817574E0F00451B64 /* Build configuration list for PBXProject "TabBarKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DFC9ED17574E0F00451B64 /* Debug */,
+				79DFC9EE17574E0F00451B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79DFC9EF17574E0F00451B64 /* Build configuration list for PBXNativeTarget "TabBarKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DFC9F017574E0F00451B64 /* Debug */,
+				79DFC9F117574E0F00451B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79DFC9C517574E0F00451B64 /* Project object */;
+}
