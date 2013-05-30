@@ -30,7 +30,7 @@
     self.view = view;
     [view release];
     
-    UIImage *image = [UIImage imageNamed:@"test.jpg"];
+    UIImage *image = [UIImage imageNamed:@"test01.jpg"];
     UIImage *imageRounded = [image roundedCornerImage:20 borderSize:10];
     UIImage *imageCropped = [image croppedImage:CGRectMake(0, 0, 160, 240)];
 //    UIImage *imageCropped = [image transparentBorderImage:20];

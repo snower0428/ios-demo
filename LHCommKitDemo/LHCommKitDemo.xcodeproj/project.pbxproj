@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		79FD9E0417463E62009CD5DB /* LHCommKitAgregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 79FD9E0517463E62009CD5DB /* Build configuration list for PBXAggregateTarget "LHCommKitAgregate" */;
+			buildPhases = (
+				79FD9E0817463E8A009CD5DB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = LHCommKitAgregate;
+			productName = LHCommKitAgregate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		79FD9DCA1746364B009CD5DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FD9DC91746364B009CD5DB /* UIKit.framework */; };
+		79FD9DCC1746364B009CD5DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FD9DCB1746364B009CD5DB /* Foundation.framework */; };
+		79FD9DCE1746364B009CD5DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FD9DCD1746364B009CD5DB /* CoreGraphics.framework */; };
+		79FD9DD41746364B009CD5DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79FD9DD21746364B009CD5DB /* InfoPlist.strings */; };
+		79FD9DD61746364B009CD5DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FD9DD51746364B009CD5DB /* main.m */; };
+		79FD9DDA1746364B009CD5DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FD9DD91746364B009CD5DB /* AppDelegate.m */; };
+		79FD9DDC1746364B009CD5DB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FD9DDB1746364B009CD5DB /* Default.png */; };
+		79FD9DDE1746364B009CD5DB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FD9DDD1746364B009CD5DB /* Default@2x.png */; };
+		79FD9DE01746364B009CD5DB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FD9DDF1746364B009CD5DB /* Default-568h@2x.png */; };
+		79FD9DE31746364B009CD5DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FD9DE21746364B009CD5DB /* ViewController.m */; };
+		79FD9DFB1746379A009CD5DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79FD9DF91746379A009CD5DB /* InfoPlist.strings */; };
+		79FD9E0317463D4A009CD5DB /* LHCommKitText.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FD9E0217463D4A009CD5DB /* LHCommKitText.m */; };
+		79FD9E0A17463EF7009CD5DB /* LHCommKitHearder.h in Headers */ = {isa = PBXBuildFile; fileRef = 79FD9E0017463D14009CD5DB /* LHCommKitHearder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79FD9E0B17463EF9009CD5DB /* LHCommKitText.h in Headers */ = {isa = PBXBuildFile; fileRef = 79FD9E0117463D4A009CD5DB /* LHCommKitText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79FD9DC51746364B009CD5DB /* LHCommKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHCommKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FD9DC91746364B009CD5DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79FD9DCB1746364B009CD5DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79FD9DCD1746364B009CD5DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79FD9DD11746364B009CD5DB /* LHCommKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LHCommKitDemo-Info.plist"; sourceTree = "<group>"; };
+		79FD9DD31746364B009CD5DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79FD9DD51746364B009CD5DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79FD9DD71746364B009CD5DB /* LHCommKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHCommKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		79FD9DD81746364B009CD5DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		79FD9DD91746364B009CD5DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79FD9DDB1746364B009CD5DB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		79FD9DDD1746364B009CD5DB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		79FD9DDF1746364B009CD5DB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		79FD9DE11746364B009CD5DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		79FD9DE21746364B009CD5DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		79FD9DF31746379A009CD5DB /* LHCommKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHCommKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FD9DF81746379A009CD5DB /* LHCommKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LHCommKit-Info.plist"; sourceTree = "<group>"; };
+		79FD9DFA1746379A009CD5DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79FD9DFC1746379A009CD5DB /* LHCommKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHCommKit-Prefix.pch"; sourceTree = "<group>"; };
+		79FD9E0017463D14009CD5DB /* LHCommKitHearder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHCommKitHearder.h; sourceTree = "<group>"; };
+		79FD9E0117463D4A009CD5DB /* LHCommKitText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCommKitText.h; sourceTree = "<group>"; };
+		79FD9E0217463D4A009CD5DB /* LHCommKitText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHCommKitText.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79FD9DC21746364B009CD5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FD9DCA1746364B009CD5DB /* UIKit.framework in Frameworks */,
+				79FD9DCC1746364B009CD5DB /* Foundation.framework in Frameworks */,
+				79FD9DCE1746364B009CD5DB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79FD9DF01746379A009CD5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79FD9DBA1746364B009CD5DB = {
+			isa = PBXGroup;
+			children = (
+				79FD9DCF1746364B009CD5DB /* LHCommKitDemo */,
+				79FD9DF61746379A009CD5DB /* LHCommKit */,
+				79FD9DC81746364B009CD5DB /* Frameworks */,
+				79FD9DC61746364B009CD5DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79FD9DC61746364B009CD5DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79FD9DC51746364B009CD5DB /* LHCommKitDemo.app */,
+				79FD9DF31746379A009CD5DB /* LHCommKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79FD9DC81746364B009CD5DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79FD9DC91746364B009CD5DB /* UIKit.framework */,
+				79FD9DCB1746364B009CD5DB /* Foundation.framework */,
+				79FD9DCD1746364B009CD5DB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79FD9DCF1746364B009CD5DB /* LHCommKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				79FD9DD81746364B009CD5DB /* AppDelegate.h */,
+				79FD9DD91746364B009CD5DB /* AppDelegate.m */,
+				79FD9DE11746364B009CD5DB /* ViewController.h */,
+				79FD9DE21746364B009CD5DB /* ViewController.m */,
+				79FD9DD01746364B009CD5DB /* Supporting Files */,
+			);
+			path = LHCommKitDemo;
+			sourceTree = "<group>";
+		};
+		79FD9DD01746364B009CD5DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79FD9DD11746364B009CD5DB /* LHCommKitDemo-Info.plist */,
+				79FD9DD21746364B009CD5DB /* InfoPlist.strings */,
+				79FD9DD51746364B009CD5DB /* main.m */,
+				79FD9DD71746364B009CD5DB /* LHCommKitDemo-Prefix.pch */,
+				79FD9DDB1746364B009CD5DB /* Default.png */,
+				79FD9DDD1746364B009CD5DB /* Default@2x.png */,
+				79FD9DDF1746364B009CD5DB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79FD9DF61746379A009CD5DB /* LHCommKit */ = {
+			isa = PBXGroup;
+			children = (
+				79FD9DF71746379A009CD5DB /* Supporting Files */,
+				79FD9E0017463D14009CD5DB /* LHCommKitHearder.h */,
+				79FD9E0117463D4A009CD5DB /* LHCommKitText.h */,
+				79FD9E0217463D4A009CD5DB /* LHCommKitText.m */,
+			);
+			path = LHCommKit;
+			sourceTree = "<group>";
+		};
+		79FD9DF71746379A009CD5DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79FD9DF81746379A009CD5DB /* LHCommKit-Info.plist */,
+				79FD9DF91746379A009CD5DB /* InfoPlist.strings */,
+				79FD9DFC1746379A009CD5DB /* LHCommKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		79FD9E0917463ED6009CD5DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FD9E0A17463EF7009CD5DB /* LHCommKitHearder.h in Headers */,
+				79FD9E0B17463EF9009CD5DB /* LHCommKitText.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		79FD9DC41746364B009CD5DB /* LHCommKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79FD9DEC1746364B009CD5DB /* Build configuration list for PBXNativeTarget "LHCommKitDemo" */;
+			buildPhases = (
+				79FD9DC11746364B009CD5DB /* Sources */,
+				79FD9DC21746364B009CD5DB /* Frameworks */,
+				79FD9DC31746364B009CD5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHCommKitDemo;
+			productName = LHCommKitDemo;
+			productReference = 79FD9DC51746364B009CD5DB /* LHCommKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79FD9DF21746379A009CD5DB /* LHCommKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79FD9DFD1746379A009CD5DB /* Build configuration list for PBXNativeTarget "LHCommKit" */;
+			buildPhases = (
+				79FD9DEF1746379A009CD5DB /* Sources */,
+				79FD9DF01746379A009CD5DB /* Frameworks */,
+				79FD9DF11746379A009CD5DB /* Resources */,
+				79FD9E0917463ED6009CD5DB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHCommKit;
+			productName = LHCommKit;
+			productReference = 79FD9DF31746379A009CD5DB /* LHCommKit.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79FD9DBC1746364B009CD5DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "ND WebSoft Inc";
+			};
+			buildConfigurationList = 79FD9DBF1746364B009CD5DB /* Build configuration list for PBXProject "LHCommKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79FD9DBA1746364B009CD5DB;
+			productRefGroup = 79FD9DC61746364B009CD5DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79FD9DC41746364B009CD5DB /* LHCommKitDemo */,
+				79FD9DF21746379A009CD5DB /* LHCommKit */,
+				79FD9E0417463E62009CD5DB /* LHCommKitAgregate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79FD9DC31746364B009CD5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FD9DD41746364B009CD5DB /* InfoPlist.strings in Resources */,
+				79FD9DDC1746364B009CD5DB /* Default.png in Resources */,
+				79FD9DDE1746364B009CD5DB /* Default@2x.png in Resources */,
+				79FD9DE01746364B009CD5DB /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79FD9DF11746379A009CD5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FD9DFB1746379A009CD5DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79FD9E0817463E8A009CD5DB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n\nFMK_NAME=LHCommKit\n\nFMK_VERSION=1\n\n\n\n# Install dir will be the final output to the framework.\n\n# The following line create it in the root folder of the current project.\n\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n\n\n# Working dir will be deleted after the framework creation.\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n\n\n# Building both architectures.\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n\n\n# Cleaning the oldest.\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\n\n\n# Creates and renews the final product folder.\n\nmkdir -p \"${INSTALL_DIR}\"\n\nmkdir -p \"${INSTALL_DIR}/Versions\"\n\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\n\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\n\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n\n\n# Creates the internal links.\n\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\n\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\n\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\n\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\n\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n\n\n# Copies the headers and resources files to the final product folder.\n\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n\n\n# Removes the binary and header from the resources folder.\n\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\n\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79FD9DC11746364B009CD5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FD9DD61746364B009CD5DB /* main.m in Sources */,
+				79FD9DDA1746364B009CD5DB /* AppDelegate.m in Sources */,
+				79FD9DE31746364B009CD5DB /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79FD9DEF1746379A009CD5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FD9E0317463D4A009CD5DB /* LHCommKitText.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79FD9DD21746364B009CD5DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79FD9DD31746364B009CD5DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79FD9DF91746379A009CD5DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79FD9DFA1746379A009CD5DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79FD9DEA1746364B009CD5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79FD9DEB1746364B009CD5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79FD9DED1746364B009CD5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Products\"",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LHCommKitDemo/LHCommKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "LHCommKitDemo/LHCommKitDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79FD9DEE1746364B009CD5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Products\"",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LHCommKitDemo/LHCommKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "LHCommKitDemo/LHCommKitDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		79FD9DFE1746379A009CD5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Products\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "LHCommKit/LHCommKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		79FD9DFF1746379A009CD5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Products\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "LHCommKit/LHCommKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		79FD9E0617463E62009CD5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		79FD9E0717463E62009CD5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79FD9DBF1746364B009CD5DB /* Build configuration list for PBXProject "LHCommKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79FD9DEA1746364B009CD5DB /* Debug */,
+				79FD9DEB1746364B009CD5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79FD9DEC1746364B009CD5DB /* Build configuration list for PBXNativeTarget "LHCommKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79FD9DED1746364B009CD5DB /* Debug */,
+				79FD9DEE1746364B009CD5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79FD9DFD1746379A009CD5DB /* Build configuration list for PBXNativeTarget "LHCommKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79FD9DFE1746379A009CD5DB /* Debug */,
+				79FD9DFF1746379A009CD5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79FD9E0517463E62009CD5DB /* Build configuration list for PBXAggregateTarget "LHCommKitAgregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79FD9E0617463E62009CD5DB /* Debug */,
+				79FD9E0717463E62009CD5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79FD9DBC1746364B009CD5DB /* Project object */;
+}

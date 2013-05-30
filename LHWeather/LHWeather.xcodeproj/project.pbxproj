@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		797431DD175398B0007EAEAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797431DC175398B0007EAEAC /* UIKit.framework */; };
+		797431DF175398B0007EAEAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797431DE175398B0007EAEAC /* Foundation.framework */; };
+		797431E1175398B0007EAEAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797431E0175398B0007EAEAC /* CoreGraphics.framework */; };
+		797431E7175398B0007EAEAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 797431E5175398B0007EAEAC /* InfoPlist.strings */; };
+		797431E9175398B0007EAEAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 797431E8175398B0007EAEAC /* main.m */; };
+		797431ED175398B0007EAEAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 797431EC175398B0007EAEAC /* AppDelegate.m */; };
+		797431EF175398B0007EAEAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 797431EE175398B0007EAEAC /* Default.png */; };
+		797431F1175398B0007EAEAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 797431F0175398B0007EAEAC /* Default@2x.png */; };
+		797431F3175398B0007EAEAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 797431F2175398B0007EAEAC /* Default-568h@2x.png */; };
+		797431F6175398B0007EAEAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797431F5175398B0007EAEAC /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		797431D8175398B0007EAEAC /* LHWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		797431DC175398B0007EAEAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		797431DE175398B0007EAEAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		797431E0175398B0007EAEAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		797431E4175398B0007EAEAC /* LHWeather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LHWeather-Info.plist"; sourceTree = "<group>"; };
+		797431E6175398B0007EAEAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		797431E8175398B0007EAEAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		797431EA175398B0007EAEAC /* LHWeather-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHWeather-Prefix.pch"; sourceTree = "<group>"; };
+		797431EB175398B0007EAEAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		797431EC175398B0007EAEAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		797431EE175398B0007EAEAC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		797431F0175398B0007EAEAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		797431F2175398B0007EAEAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		797431F4175398B0007EAEAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		797431F5175398B0007EAEAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		797431D5175398B0007EAEAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797431DD175398B0007EAEAC /* UIKit.framework in Frameworks */,
+				797431DF175398B0007EAEAC /* Foundation.framework in Frameworks */,
+				797431E1175398B0007EAEAC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		797431CD175398B0007EAEAC = {
+			isa = PBXGroup;
+			children = (
+				797431E2175398B0007EAEAC /* LHWeather */,
+				797431DB175398B0007EAEAC /* Frameworks */,
+				797431D9175398B0007EAEAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		797431D9175398B0007EAEAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797431D8175398B0007EAEAC /* LHWeather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		797431DB175398B0007EAEAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				797431DC175398B0007EAEAC /* UIKit.framework */,
+				797431DE175398B0007EAEAC /* Foundation.framework */,
+				797431E0175398B0007EAEAC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		797431E2175398B0007EAEAC /* LHWeather */ = {
+			isa = PBXGroup;
+			children = (
+				797431EB175398B0007EAEAC /* AppDelegate.h */,
+				797431EC175398B0007EAEAC /* AppDelegate.m */,
+				797431F4175398B0007EAEAC /* ViewController.h */,
+				797431F5175398B0007EAEAC /* ViewController.m */,
+				797431E3175398B0007EAEAC /* Supporting Files */,
+			);
+			path = LHWeather;
+			sourceTree = "<group>";
+		};
+		797431E3175398B0007EAEAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				797431E4175398B0007EAEAC /* LHWeather-Info.plist */,
+				797431E5175398B0007EAEAC /* InfoPlist.strings */,
+				797431E8175398B0007EAEAC /* main.m */,
+				797431EA175398B0007EAEAC /* LHWeather-Prefix.pch */,
+				797431EE175398B0007EAEAC /* Default.png */,
+				797431F0175398B0007EAEAC /* Default@2x.png */,
+				797431F2175398B0007EAEAC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		797431D7175398B0007EAEAC /* LHWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797431FF175398B0007EAEAC /* Build configuration list for PBXNativeTarget "LHWeather" */;
+			buildPhases = (
+				797431D4175398B0007EAEAC /* Sources */,
+				797431D5175398B0007EAEAC /* Frameworks */,
+				797431D6175398B0007EAEAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHWeather;
+			productName = LHWeather;
+			productReference = 797431D8175398B0007EAEAC /* LHWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		797431CF175398B0007EAEAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "ND WebSoft Inc";
+			};
+			buildConfigurationList = 797431D2175398B0007EAEAC /* Build configuration list for PBXProject "LHWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 797431CD175398B0007EAEAC;
+			productRefGroup = 797431D9175398B0007EAEAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				797431D7175398B0007EAEAC /* LHWeather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		797431D6175398B0007EAEAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797431E7175398B0007EAEAC /* InfoPlist.strings in Resources */,
+				797431EF175398B0007EAEAC /* Default.png in Resources */,
+				797431F1175398B0007EAEAC /* Default@2x.png in Resources */,
+				797431F3175398B0007EAEAC /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		797431D4175398B0007EAEAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797431E9175398B0007EAEAC /* main.m in Sources */,
+				797431ED175398B0007EAEAC /* AppDelegate.m in Sources */,
+				797431F6175398B0007EAEAC /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		797431E5175398B0007EAEAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				797431E6175398B0007EAEAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		797431FD175398B0007EAEAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		797431FE175398B0007EAEAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79743200175398B0007EAEAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LHWeather/LHWeather-Prefix.pch";
+				INFOPLIST_FILE = "LHWeather/LHWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79743201175398B0007EAEAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LHWeather/LHWeather-Prefix.pch";
+				INFOPLIST_FILE = "LHWeather/LHWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		797431D2175398B0007EAEAC /* Build configuration list for PBXProject "LHWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797431FD175398B0007EAEAC /* Debug */,
+				797431FE175398B0007EAEAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797431FF175398B0007EAEAC /* Build configuration list for PBXNativeTarget "LHWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79743200175398B0007EAEAC /* Debug */,
+				79743201175398B0007EAEAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 797431CF175398B0007EAEAC /* Project object */;
+}

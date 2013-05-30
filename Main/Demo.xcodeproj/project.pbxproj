@@ -15,13 +15,15 @@
 		795D421816FBF4D9007524F4 /* EmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 795D421716FBF4D9007524F4 /* EmojiView.m */; };
 		795D423616FC2B34007524F4 /* EmojiCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 795D423516FC2B33007524F4 /* EmojiCoding.m */; };
 		79710CAF16F8428100AAC9A4 /* GCDDemoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79710CAE16F8428100AAC9A4 /* GCDDemoViewCtrl.m */; };
-		7985E13C16F86B3E0024BA1E /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7985E13B16F86B3E0024BA1E /* test.jpg */; };
 		79896E5916F98D5500861A26 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896E5816F98D5500861A26 /* CenterViewController.m */; };
 		79896E5C16F98D6300861A26 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896E5B16F98D6300861A26 /* LeftViewController.m */; };
 		79896E5F16F98D7200861A26 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896E5E16F98D7200861A26 /* RightViewController.m */; };
 		79896E6216F98E3700861A26 /* JADockViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896E6116F98E3700861A26 /* JADockViewCtrl.m */; };
 		79896E6816F9902500861A26 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896E6516F9902500861A26 /* JASidePanelController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		79896E6916F9902500861A26 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896E6716F9902500861A26 /* UIViewController+JASidePanel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		798A41CB174C99E80063B1A4 /* CoreAnimationEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 798A41CA174C99E80063B1A4 /* CoreAnimationEffect.m */; };
+		798A41D1174C9D0B0063B1A4 /* test01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 798A41CF174C9D0A0063B1A4 /* test01.jpg */; };
+		798A41D2174C9D0B0063B1A4 /* test02.png in Resources */ = {isa = PBXBuildFile; fileRef = 798A41D0174C9D0A0063B1A4 /* test02.png */; };
 		7995508217153580008E1216 /* CarouselViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7995506F17153580008E1216 /* CarouselViewCtrl.m */; };
 		7995508317153580008E1216 /* CMPopTipViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7995507117153580008E1216 /* CMPopTipViewCtrl.m */; };
 		7995508417153580008E1216 /* CommenViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7995507317153580008E1216 /* CommenViewCtrl.m */; };
@@ -383,7 +385,6 @@
 		795D423516FC2B33007524F4 /* EmojiCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCoding.m; sourceTree = "<group>"; };
 		79710CAD16F8428100AAC9A4 /* GCDDemoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDemoViewCtrl.h; sourceTree = "<group>"; };
 		79710CAE16F8428100AAC9A4 /* GCDDemoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDDemoViewCtrl.m; sourceTree = "<group>"; };
-		7985E13B16F86B3E0024BA1E /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		79896E5716F98D5500861A26 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
 		79896E5816F98D5500861A26 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		79896E5A16F98D6300861A26 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
@@ -396,6 +397,10 @@
 		79896E6516F9902500861A26 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
 		79896E6616F9902500861A26 /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
 		79896E6716F9902500861A26 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
+		798A41C9174C99E80063B1A4 /* CoreAnimationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationEffect.h; sourceTree = "<group>"; };
+		798A41CA174C99E80063B1A4 /* CoreAnimationEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationEffect.m; sourceTree = "<group>"; };
+		798A41CF174C9D0A0063B1A4 /* test01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test01.jpg; sourceTree = "<group>"; };
+		798A41D0174C9D0A0063B1A4 /* test02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test02.png; sourceTree = "<group>"; };
 		7995506E17153580008E1216 /* CarouselViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselViewCtrl.h; sourceTree = "<group>"; };
 		7995506F17153580008E1216 /* CarouselViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselViewCtrl.m; sourceTree = "<group>"; };
 		7995507017153580008E1216 /* CMPopTipViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipViewCtrl.h; sourceTree = "<group>"; };
@@ -1504,6 +1509,8 @@
 				79C66C4316E600C4009FA008 /* Utility.m */,
 				79C66C4416E600C4009FA008 /* XMLParse.h */,
 				79C66C4516E600C4009FA008 /* XMLParse.mm */,
+				798A41C9174C99E80063B1A4 /* CoreAnimationEffect.h */,
+				798A41CA174C99E80063B1A4 /* CoreAnimationEffect.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -1724,9 +1731,10 @@
 		79D4443816B62E0C00C3F952 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				798A41CF174C9D0A0063B1A4 /* test01.jpg */,
+				798A41D0174C9D0A0063B1A4 /* test02.png */,
 				79F682CC1721528600641FE1 /* close.png */,
 				79F682CD1721528600641FE1 /* close@2x.png */,
-				7985E13B16F86B3E0024BA1E /* test.jpg */,
 				79C7575816E752CB00DF23E0 /* page.png */,
 				79C7575916E752CB00DF23E0 /* placeholder.png */,
 				79C7575A16E752CB00DF23E0 /* placeholder@2x.png */,
@@ -2143,10 +2151,11 @@
 				79C7575B16E752CB00DF23E0 /* page.png in Resources */,
 				79C7575C16E752CB00DF23E0 /* placeholder.png in Resources */,
 				79C7575D16E752CB00DF23E0 /* placeholder@2x.png in Resources */,
-				7985E13C16F86B3E0024BA1E /* test.jpg in Resources */,
 				7946340717116CE200387E1B /* Emoji.bundle in Resources */,
 				79F682CE1721528600641FE1 /* close.png in Resources */,
 				79F682CF1721528600641FE1 /* close@2x.png in Resources */,
+				798A41D1174C9D0B0063B1A4 /* test01.jpg in Resources */,
+				798A41D2174C9D0B0063B1A4 /* test02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2341,6 +2350,7 @@
 				79F682C517214B9600641FE1 /* LauncherViewCtrl.m in Sources */,
 				79F682CA17214BEA00641FE1 /* LauncherExampleIcon.m in Sources */,
 				79F682CB17214BEA00641FE1 /* LauncherService.m in Sources */,
+				798A41CB174C99E80063B1A4 /* CoreAnimationEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2427,6 +2437,10 @@
 		79C9CF2616B14502006A03F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../LHCommKitDemo/Products\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -2447,6 +2461,10 @@
 		79C9CF2716B14502006A03F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../LHCommKitDemo/Products\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
