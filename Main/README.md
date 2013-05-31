@@ -28,8 +28,6 @@ How to use "Kal"
 4. if Kal.bundle does not in Copy Bundle Resources, drag into it
 5. add "-all_load" to Project/Target/Build Settings/Linking/Other Linker Flags
 
-/ ˈpʌmpkin /
-
 
 About iCarousel:
 --------------------
