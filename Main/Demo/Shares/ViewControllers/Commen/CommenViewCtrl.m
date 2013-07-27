@@ -7,7 +7,6 @@
 //
 
 #import "CommenViewCtrl.h"
-#import "CommenCtrl.h"
 
 @interface CommenViewCtrl ()
 

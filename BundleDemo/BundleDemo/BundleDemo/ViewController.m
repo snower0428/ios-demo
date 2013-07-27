@@ -23,6 +23,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = [UIColor grayColor];
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.frame = CGRectMake(10, 10, 100, 50);
     [button setTitle:@"Test" forState:UIControlStateNormal];

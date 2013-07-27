@@ -13,7 +13,6 @@
 #import "ASIHttpDemoViewCtrl.h"
 #import "TableViewDemoCtrl.h"
 #import "LivelyTableViewCtrl.h"
-#import "Kal.h"
 #import "DatePickerDemoViewCtrl.h"
 #import "EGORefreshTableViewCtrl.h"
 #import "CMPopTipViewCtrl.h"
@@ -38,5 +37,9 @@
 #import "ListViewCtrl.h"
 #import "WaterflowViewCtrl.h"
 #import "LauncherViewCtrl.h"
+
+// Calendar
+#import "LHCalendarViewCtrl.h"
+#import "KalCalendarViewCtrl.h"
 
 #endif

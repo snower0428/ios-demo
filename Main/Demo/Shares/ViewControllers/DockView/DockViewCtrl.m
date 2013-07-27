@@ -7,7 +7,6 @@
 //
 
 #import "DockViewCtrl.h"
-#import "CommenCtrl.h"
 
 @interface DockViewCtrl ()
 

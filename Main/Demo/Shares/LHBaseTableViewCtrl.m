@@ -7,7 +7,6 @@
 //
 
 #import "LHBaseTableViewCtrl.h"
-#import "CommenCtrl.h"
 
 @interface LHBaseTableViewCtrl ()
 

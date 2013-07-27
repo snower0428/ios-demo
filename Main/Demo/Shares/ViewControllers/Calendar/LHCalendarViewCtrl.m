@@ -1,28 +1,20 @@
 //
-//  BundleCtrl.m
-//  BundleTest
+//  LHCalendarViewCtrl.m
+//  Demo
 //
-//  Created by lei hui on 13-1-6.
+//  Created by lei hui on 13-7-26.
 //  Copyright (c) 2013年 __MyCompanyName__. All rights reserved.
 //
 
-#import "BundleCtrl.h"
+#import "LHCalendarViewCtrl.h"
 
-@implementation BundleCtrl
+@implementation LHCalendarViewCtrl
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-    }
-    return self;
-}
-
-- (id)init
-{
-    if (self = [super init]) {
-        //
     }
     return self;
 }
@@ -42,35 +34,19 @@
 {
     [super loadView];
     
-    UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" 
-                                                                          style:UIBarButtonItemStyleBordered 
-                                                                         target:self 
-                                                                         action:@selector(back)];
-    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
-    [leftBarButtonItem release];
+    _arrayName = [[NSArray alloc] initWithObjects:
+                  @"Kal",
+                  nil];
     
-    self.view.backgroundColor = [UIColor blueColor];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 320, 50)];
-    label.textColor = [UIColor redColor];
-    label.textAlignment = UITextAlignmentCenter;
-    label.text = @"I am a bundle!";
-    [self.view addSubview:label];
-}
-
-- (void)back
-{
-    [self.navigationController dismissModalViewControllerAnimated:YES];
+    _arrayViewController = [[NSArray alloc] initWithObjects:
+                            NSStringFromClass([KalCalendarViewCtrl class]),
+                            nil];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
 }
 
 - (void)viewDidUnload
@@ -84,6 +60,16 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark - dealloc
+
+- (void)dealloc
+{
+    [_arrayName release];
+    [_arrayViewController release];
+    
+    [super dealloc];
 }
 
 @end

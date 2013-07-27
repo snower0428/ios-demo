@@ -64,6 +64,18 @@
     [self.view addSubview:label];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"PricipalCtrl viewWillAppear:");
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
 - (void)back
 {
     [self.navigationController dismissModalViewControllerAnimated:YES];

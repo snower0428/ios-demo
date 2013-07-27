@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "CommenCtrl.h"
 
 @interface ViewController ()
 
@@ -20,13 +19,13 @@
     [super loadView];
     
     _arrayName = [[NSArray alloc] initWithObjects:
+                  @"Calendar",
                   @"TableView",
                   @"CommenView",
                   @"DockView",
                   @"Animations",
                   @"BabyInfo",
                   @"ASIHttpRequest",
-                  @"KalCalendar",
                   @"DatePicker",
                   @"SDWebImage",
                   @"GCD",
@@ -37,13 +36,13 @@
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
+                            NSStringFromClass([LHCalendarViewCtrl class]),
                             NSStringFromClass([TableViewCtrl class]),
                             NSStringFromClass([CommenViewCtrl class]),
                             NSStringFromClass([DockViewCtrl class]),
                             NSStringFromClass([AnimationsViewCtrl class]),
                             NSStringFromClass([BabySelectViewController class]),
                             NSStringFromClass([ASIHttpDemoViewCtrl class]),
-                            NSStringFromClass([KalViewController class]),
                             NSStringFromClass([DatePickerDemoViewCtrl class]),
                             NSStringFromClass([SDWebImageViewCtrl class]),
                             NSStringFromClass([GCDDemoViewCtrl class]),
