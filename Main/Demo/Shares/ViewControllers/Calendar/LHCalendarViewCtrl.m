@@ -36,10 +36,12 @@
     
     _arrayName = [[NSArray alloc] initWithObjects:
                   @"Kal",
+                  @"OCCalendar",
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
                             NSStringFromClass([KalCalendarViewCtrl class]),
+                            NSStringFromClass([OCCalendarViewCtrl class]),
                             nil];
 }
 

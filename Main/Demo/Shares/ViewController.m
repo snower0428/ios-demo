@@ -19,7 +19,10 @@
     [super loadView];
     
     _arrayName = [[NSArray alloc] initWithObjects:
+                  @"DataStorage",
+                  @"Controls",
                   @"Calendar",
+                  @"CoreGraphics",
                   @"TableView",
                   @"CommenView",
                   @"DockView",
@@ -36,7 +39,10 @@
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
+                            NSStringFromClass([LHDataStorageViewCtrl class]),
+                            NSStringFromClass([LHControlsViewCtrl class]),
                             NSStringFromClass([LHCalendarViewCtrl class]),
+                            NSStringFromClass([LHCoreGraphicsViewCtrl class]),
                             NSStringFromClass([TableViewCtrl class]),
                             NSStringFromClass([CommenViewCtrl class]),
                             NSStringFromClass([DockViewCtrl class]),

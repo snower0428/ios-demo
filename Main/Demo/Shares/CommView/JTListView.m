@@ -137,7 +137,7 @@ BOOL JTListViewLayoutIsVertical(JTListViewLayout layout)
     __block CGPoint contentOffset = CGPointZero;
     __block CGSize  contentSize   = CGSizeZero;
 
-    NSEnumerationOptions enumerationOptions;
+    NSEnumerationOptions enumerationOptions = NSEnumerationConcurrent;
     
     if (_layout == JTListViewLayoutLeftToRight || _layout == JTListViewLayoutTopToBottom)
     {
@@ -149,6 +149,10 @@ BOOL JTListViewLayoutIsVertical(JTListViewLayout layout)
     }
     
     void(^contentUpdater)(CGRect);
+    
+    contentUpdater = ^(CGRect rect) {
+        
+    };
     
     if ([self isHorizontalLayout])
     {
@@ -629,6 +633,10 @@ BOOL JTListViewLayoutIsVertical(JTListViewLayout layout)
 - (void)updateItemSizesAtIndexes:(NSIndexSet *)indexes
 {    
     CGSize(^sizeForItemAtIndex)(NSUInteger);
+    
+    sizeForItemAtIndex = ^(NSUInteger idx) {
+        return CGSizeZero;
+    };
     
     if ([self isHorizontalLayout])
     {

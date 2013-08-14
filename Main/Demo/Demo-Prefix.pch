@@ -11,7 +11,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
     #import "Support.h"
     #import "CommenCtrl.h"
     #import "LHDefines.h"
+    #import "LHUtility.h"
 #endif

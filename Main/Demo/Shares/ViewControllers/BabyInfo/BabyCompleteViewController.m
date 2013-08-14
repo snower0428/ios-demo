@@ -247,7 +247,7 @@
     
     [UIView animateWithDuration:0.5
                           delay:0
-                        options:UIViewAnimationCurveEaseInOut
+                        options:UIViewAnimationOptionCurveEaseInOut
                      animations:^(void){
                          self.view.alpha = 0;
                      }

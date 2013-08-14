@@ -72,7 +72,7 @@
         [UIDatePickerCtrl shareInstance].view.alpha = 0;
         [UIView animateWithDuration:0.5
                               delay:0
-                            options:UIViewAnimationCurveEaseInOut
+                            options:UIViewAnimationOptionCurveEaseInOut
                          animations:^(void){
                              [UIDatePickerCtrl shareInstance].view.alpha = 1;
                          }

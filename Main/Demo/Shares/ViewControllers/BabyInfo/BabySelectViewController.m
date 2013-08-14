@@ -95,7 +95,7 @@
     
     [UIView animateWithDuration:0.8
                           delay:0
-                        options:UIViewAnimationCurveEaseInOut
+                        options:UIViewAnimationOptionCurveEaseInOut
                      animations:^(void){
                          _imageViewTitle.frame = CGRectOffset(_imageViewTitle.frame, 0, 100);
                          maskView.frame = CGRectOffset(maskView.frame, -self.view.bounds.size.width, 0);

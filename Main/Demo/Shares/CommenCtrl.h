@@ -38,8 +38,25 @@
 #import "WaterflowViewCtrl.h"
 #import "LauncherViewCtrl.h"
 
+// Controls
+#import "LHControlsViewCtrl.h"
+#import "LHCALayerViewCtrl.h"
+#import "SSCheckBoxViewCtrl.h"
+
 // Calendar
 #import "LHCalendarViewCtrl.h"
 #import "KalCalendarViewCtrl.h"
+#import "OCCalendarViewCtrl.h"
+
+// CoreGraphics
+#import "LHCoreGraphicsViewCtrl.h"
+#import "LHCoreGraphicsDemoViewCtrl.h"
+#import "RSInstagramArtworkVIewCtrl.h"
+
+// DataStorage
+#import "LHDataStorageViewCtrl.h"
+#import "FailedBanksListViewCtrl.h"
+#import "FailedBanksDetailViewCtrl.h"
+#import "SDScaffoldKit.h"
 
 #endif

@@ -411,7 +411,7 @@ typedef enum
         __block __typeof(self) _self = self;
         [UIView animateWithDuration:0.3
                               delay:0
-                            options:UIViewAnimationCurveEaseInOut
+                            options:UIViewAnimationOptionCurveEaseInOut
                          animations:^(void) {
                              [_self showPickerFrame];
                          }
@@ -428,7 +428,7 @@ typedef enum
         __block __typeof(self) _self = self;
         [UIView animateWithDuration:0.3
                               delay:0
-                            options:UIViewAnimationCurveEaseInOut
+                            options:UIViewAnimationOptionCurveEaseInOut
                          animations:^(void) {
                              [_self hidePickerFrame];
                          }

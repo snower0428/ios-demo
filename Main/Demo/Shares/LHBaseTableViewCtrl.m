@@ -7,6 +7,7 @@
 //
 
 #import "LHBaseTableViewCtrl.h"
+#import "DataController.h"
 
 @interface LHBaseTableViewCtrl ()
 
@@ -68,16 +69,21 @@
         NSString *strClass = [_arrayViewController objectAtIndex:indexPath.row];
         id object = NSClassFromString(strClass);
         
-        UIViewController *ctrl = [[[object alloc] init] autorelease];
-        
-        if ([ctrl isKindOfClass:[JADockViewCtrl class]] ||
-            [ctrl isKindOfClass:[DDMenuDockViewCtrl class]]
+        if ([strClass isEqualToString:@"JADockViewCtrl"] ||
+            [strClass isEqualToString:@"DDMenuDockViewCtrl"]
             )
         {
+            UIViewController *ctrl = [[[object alloc] init] autorelease];
             [self presentViewController:ctrl animated:YES completion:nil];
+        }
+        else if ([strClass isEqualToString:@"SDScaffoldIndexViewController"])
+        {
+            UIViewController *ctrl = [[object alloc] initWithEntityName:@"User" sortBy:@"lastname" context:MANAGED_OBJECT_CONTEXT];
+            [self.navigationController pushViewController:ctrl animated:YES];
         }
         else
         {
+            UIViewController *ctrl = [[[object alloc] init] autorelease];
             [self.navigationController pushViewController:ctrl animated:YES];
         }
     }
