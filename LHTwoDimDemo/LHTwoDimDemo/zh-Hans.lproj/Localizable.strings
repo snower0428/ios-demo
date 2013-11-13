@@ -1,0 +1,75 @@
+/* 
+  Localizable.strings
+  LHTwoDimDemo
+
+  Created by leihui on 13-11-2.
+  Copyright (c) 2013年 ND WebSoft Inc. All rights reserved.
+*/
+
+//二维码
+"Two Dim Code is NULL" = "扫描的二维码信息为空";
+"Cancel" = "取消";
+"Confirm" = "确认";
+"Can not progress URL" = "无法处理的二维码:";
+"Open in Safari" = "在Safari中打开";
+"Data Loading" = "正在加载";
+"Data Loading..." = "请稍候...";
+
+"AddContactActionName" = "名字";
+"AddContactActionJobTitle" = "职业";
+"AddContactActionJobStr" = "职位";
+"AddContactActionPhoneNumbers" = "电话";
+"EmailActionRecipient" = "邮箱";
+"AddContactActionOrganization" = "公司";
+"WeiBoString" = "微博";
+"AddContactActionWeiBoStr" = "部门";
+"AddContactActionAddress" = "地址";
+"AddContactActionPhoneNote" = "备注";
+"TextAction" = "文本";
+"SMSActionNumberBody" = "短信";
+"SMSActionBody" = "短信信息";
+"SMSActionNumber" = "短信";
+"CallActionNumber" = "电话号码";
+"ShowMapActionLocation" = "地理位置";
+"WifiActionSSID" = "网络名称";
+"WifiActionPassword" = "密码";
+"WifiActionTFormat" = "类别";
+"AddContactActionFaxStr" = "传真";
+"AddContactActionZipCodeStr" = "邮编";
+"AddContactActionMobilePhone" = "手机";
+"Richeng" = "日程";
+"RichengActionSummary" = "日程标题";
+"RichengActionDTStart" = "开始时间";
+"RichengActionDTEnd" = "结束时间";
+"RichengActionLocation" = "地点";
+"RichengActionDescription" = "说明";
+
+"OpenTorch" = "打开";
+"CloseTorch" = "关闭";
+
+"OpenUrlActionURL" = "网址";
+"SMSActionBody" = "短信";
+
+"mobilePhone" = "电话";
+"text" = "文本内容";
+"email" = "邮件";
+"showMap" = "地理位置";
+"sms" = "短信";
+
+"Place a barcode inside the viewfinder rectangle to scan it" = "请将二维码对准放在矩形取景区域";
+
+"openLink" = "访问链接";
+"addContact" = "添加联系人";
+"callPhone" = "拨打此电话";
+"sendMail" = "发邮件";
+"showMap" = "显示位置";
+"sendSMS" = "发送短信";
+"copyText" = "复制文本";
+"copySuccess" = "文本复制成功";
+
+"do you want to open link" = "您是否要访问该链接";
+"do you want to copy text" = "您是否要复制该文本";
+"do you want to call phone" = "您是否要拨打此电话";
+"do you want to send email" = "您是否要给该邮箱发邮件";
+"do you want to send message" = "您是否要发短信给";
+"do you want to show address" = "您是否要定位该地址";

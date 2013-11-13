@@ -90,4 +90,16 @@ typedef void(^ButtonBlock)(void);
 //本地化字符串
 #define  _(string)              NSLocalizedString(string, nil)
 
+#ifdef __IPHONE_6_0
+#define UITextAlignmentLeft                 NSTextAlignmentLeft
+#define UITextAlignmentCenter               NSTextAlignmentCenter
+#define UITextAlignmentRight                NSTextAlignmentRight
+#define UILineBreakModeCharacterWrap        NSLineBreakByCharWrapping
+#define UILineBreakModeWordWrap             NSLineBreakByWordWrapping
+#define UILineBreakModeClip                 NSLineBreakByClipping
+#define UILineBreakModeTruncatingHead 		NSLineBreakByTruncatingHead
+#define UILineBreakModeTruncatingMiddle     NSLineBreakByTruncatingMiddle
+#define UILineBreakModeTailTruncation       NSLineBreakByTruncatingTail
+#endif
+
 #endif

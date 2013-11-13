@@ -59,4 +59,14 @@
 #import "FailedBanksDetailViewCtrl.h"
 #import "SDScaffoldKit.h"
 
+// Audio
+#import "LHLyricsViewCtrl.h"
+
+// MultiThread
+#import "LHMultiThreadViewCtrl.h"
+#import "NSThreadViewCtrl.h"
+#import "NSThreadViewCtrl2.h"
+#import "NSOperationViewCtrl.h"
+#import "GCDViewCtrl.h"
+
 #endif

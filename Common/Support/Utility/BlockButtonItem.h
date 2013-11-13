@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface BlockButtonItem : NSObject{
     NSString    *m_title;
     ButtonBlock m_block;

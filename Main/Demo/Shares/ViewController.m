@@ -19,6 +19,8 @@
     [super loadView];
     
     _arrayName = [[NSArray alloc] initWithObjects:
+                  @"MultiThread",
+                  @"Lyrics",
                   @"DataStorage",
                   @"Controls",
                   @"Calendar",
@@ -39,6 +41,8 @@
                   nil];
     
     _arrayViewController = [[NSArray alloc] initWithObjects:
+                            NSStringFromClass([LHMultiThreadViewCtrl class]),
+                            NSStringFromClass([LHLyricsViewCtrl class]),
                             NSStringFromClass([LHDataStorageViewCtrl class]),
                             NSStringFromClass([LHControlsViewCtrl class]),
                             NSStringFromClass([LHCalendarViewCtrl class]),

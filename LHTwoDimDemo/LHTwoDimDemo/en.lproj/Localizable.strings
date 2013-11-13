@@ -1,0 +1,75 @@
+/* 
+  Localizable.strings
+  LHTwoDimDemo
+
+  Created by leihui on 13-11-2.
+  Copyright (c) 2013年 ND WebSoft Inc. All rights reserved.
+*/
+
+//二维码
+"Two Dim Code is NULL" = "Invalid QR code";
+"Cancel" = "Cancel";
+"Confirm" = "Confirm";
+"Can not progress URL" = "Cannot recognize the QR code";
+"Open in Safari" = "Open it in Safari";
+"Data Loading" = "Loading";
+"Data Loading..." = "Loading...";
+
+"AddContactActionName" = "Name";
+"AddContactActionJobTitle" = "Occupation";
+"AddContactActionJobStr" = "Title";
+"AddContactActionPhoneNumbers" = "Number";
+"EmailActionRecipient" = "Email";
+"AddContactActionOrganization" = "Company";
+"WeiBoString" = "WeiBo";
+"AddContactActionWeiBoStr" = "Department";
+"AddContactActionAddress" = "Address";
+"AddContactActionPhoneNote" = "Note";
+"TextAction" = "Text";
+"SMSActionNumberBody" = "SMS";
+"SMSActionBody" = "SMS";
+"SMSActionNumber" = "SMS";
+"CallActionNumber" = "Number";
+"ShowMapActionLocation" = "Location";
+"WifiActionSSID" = "Network";
+"WifiActionPassword" = "Password";
+"WifiActionTFormat" = "Format";
+"AddContactActionFaxStr" = "Fax";
+"AddContactActionZipCodeStr" = "Postal code";
+"AddContactActionMobilePhone" = "Mobile";
+"Richeng" = "Agenda";
+"RichengActionSummary" = "Summary";
+"RichengActionDTStart" = "Start time";
+"RichengActionDTEnd" = "End time";
+"RichengActionLocation" = "Place";
+"RichengActionDescription" = "Description";
+
+"OpenTorch" = "Open";
+"CloseTorch" = "Close";
+
+"OpenUrlActionURL" = "Open URL";
+"SMSActionBody" = "SMS";
+
+"mobilePhone" = "Mobile";
+"text" = "Text";
+"email" = "Email";
+"showMap" = "Location";
+"sms" = "SMS";
+
+"Place a barcode inside the viewfinder rectangle to scan it" = "Align the QR code within the frame to start scanning";
+
+"openLink" = "Open link";
+"addContact" = "Add Contact";
+"callPhone" = "Call";
+"sendMail" = "Send Mail";
+"showMap" = "Show Map";
+"sendSMS" = "Send SMS";
+"copyText" = "Copy Text";
+"copySuccess" = "Text copied";
+
+"do you want to open link" = "Do you want to open the link";
+"do you want to copy text" = "Do you want to copy the text";
+"do you want to call phone" = "Do you want to call";
+"do you want to send email" = "Do you want to send email";
+"do you want to send message" = "Do you want to send message";
+"do you want to show address" = "Do you want to show address";

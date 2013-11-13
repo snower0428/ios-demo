@@ -79,6 +79,9 @@
 		7902551F179F6AD40028694C /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 790254D7179F6AD40028694C /* Utility.m */; };
 		79025520179F6AD40028694C /* XMLParse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 790254D9179F6AD40028694C /* XMLParse.mm */; };
 		79025522179F6BC60028694C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79025521179F6BC60028694C /* Default-568h@2x.png */; };
+		790D93D017C22BE30074F695 /* LHMultiThreadViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D93CF17C22BE30074F695 /* LHMultiThreadViewCtrl.m */; };
+		790D93D317C22C740074F695 /* NSThreadViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D93D217C22C740074F695 /* NSThreadViewCtrl.m */; };
+		790D93D617C2320B0074F695 /* NSThreadViewCtrl2.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D93D517C2320B0074F695 /* NSThreadViewCtrl2.m */; };
 		7946340717116CE200387E1B /* Emoji.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7946340417116CE100387E1B /* Emoji.bundle */; };
 		7946340817116CE200387E1B /* EmojiRecentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7946340617116CE100387E1B /* EmojiRecentManager.m */; };
 		794ADF2016F9C3450043E6DC /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794ADF1F16F9C3450043E6DC /* DDMenuController.m */; };
@@ -416,6 +419,12 @@
 		79F682CB17214BEA00641FE1 /* LauncherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F682C917214BEA00641FE1 /* LauncherService.m */; };
 		79F682CE1721528600641FE1 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F682CC1721528600641FE1 /* close.png */; };
 		79F682CF1721528600641FE1 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F682CD1721528600641FE1 /* close@2x.png */; };
+		79F6A5C317C3065000E04AC8 /* NSOperationViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6A5C217C3065000E04AC8 /* NSOperationViewCtrl.m */; };
+		79F6A5C617C30C4800E04AC8 /* GCDViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6A5C517C30C4800E04AC8 /* GCDViewCtrl.m */; };
+		79F745FD17BCCE2E00639618 /* MusicLrcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F745FA17BCCE2E00639618 /* MusicLrcHelper.m */; };
+		79F745FE17BCCE2E00639618 /* MusicLrcLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F745FC17BCCE2E00639618 /* MusicLrcLine.m */; };
+		79F7460117BCCE5E00639618 /* LHLyricsViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F7460017BCCE5E00639618 /* LHLyricsViewCtrl.m */; };
+		79F7460F17BCD5C700639618 /* 王菲 - 致青春.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 79F7460E17BCD5C700639618 /* 王菲 - 致青春.lrc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -567,6 +576,13 @@
 		790254D8179F6AD40028694C /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParse.h; sourceTree = "<group>"; };
 		790254D9179F6AD40028694C /* XMLParse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XMLParse.mm; sourceTree = "<group>"; };
 		79025521179F6BC60028694C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		790D93CE17C22BE30074F695 /* LHMultiThreadViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMultiThreadViewCtrl.h; sourceTree = "<group>"; };
+		790D93CF17C22BE30074F695 /* LHMultiThreadViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMultiThreadViewCtrl.m; sourceTree = "<group>"; };
+		790D93D117C22C740074F695 /* NSThreadViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadViewCtrl.h; sourceTree = "<group>"; };
+		790D93D217C22C740074F695 /* NSThreadViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewCtrl.m; sourceTree = "<group>"; };
+		790D93D417C2320B0074F695 /* NSThreadViewCtrl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadViewCtrl2.h; sourceTree = "<group>"; };
+		790D93D517C2320B0074F695 /* NSThreadViewCtrl2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewCtrl2.m; sourceTree = "<group>"; };
+		7911CDBA1824F36500CD1614 /* LHDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHDefines.h; path = ../../../LHDefines.h; sourceTree = "<group>"; };
 		7946340417116CE100387E1B /* Emoji.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoji.bundle; sourceTree = "<group>"; };
 		7946340517116CE100387E1B /* EmojiRecentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiRecentManager.h; sourceTree = "<group>"; };
 		7946340617116CE100387E1B /* EmojiRecentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiRecentManager.m; sourceTree = "<group>"; };
@@ -790,7 +806,6 @@
 		79C9117117A249DE004F3A0B /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
 		79C9117217A249DE004F3A0B /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
 		79C9118217A24BDF004F3A0B /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Kal.bundle; sourceTree = "<group>"; };
-		79C9118417A25282004F3A0B /* LHDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHDefines.h; sourceTree = "<group>"; };
 		79C9CF0D16B14502006A03F4 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C9CF1116B14502006A03F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79C9CF1316B14502006A03F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1084,6 +1099,17 @@
 		79F682C917214BEA00641FE1 /* LauncherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherService.m; sourceTree = "<group>"; };
 		79F682CC1721528600641FE1 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		79F682CD1721528600641FE1 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		79F6A5C117C3065000E04AC8 /* NSOperationViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationViewCtrl.h; sourceTree = "<group>"; };
+		79F6A5C217C3065000E04AC8 /* NSOperationViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewCtrl.m; sourceTree = "<group>"; };
+		79F6A5C417C30C4800E04AC8 /* GCDViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewCtrl.h; sourceTree = "<group>"; };
+		79F6A5C517C30C4800E04AC8 /* GCDViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewCtrl.m; sourceTree = "<group>"; };
+		79F745F917BCCE2E00639618 /* MusicLrcHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLrcHelper.h; sourceTree = "<group>"; };
+		79F745FA17BCCE2E00639618 /* MusicLrcHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLrcHelper.m; sourceTree = "<group>"; };
+		79F745FB17BCCE2E00639618 /* MusicLrcLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLrcLine.h; sourceTree = "<group>"; };
+		79F745FC17BCCE2E00639618 /* MusicLrcLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLrcLine.m; sourceTree = "<group>"; };
+		79F745FF17BCCE5E00639618 /* LHLyricsViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHLyricsViewCtrl.h; sourceTree = "<group>"; };
+		79F7460017BCCE5E00639618 /* LHLyricsViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHLyricsViewCtrl.m; sourceTree = "<group>"; };
+		79F7460E17BCD5C700639618 /* 王菲 - 致青春.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "王菲 - 致青春.lrc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1308,6 +1334,23 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		790D93CD17C22BCC0074F695 /* MultiThread */ = {
+			isa = PBXGroup;
+			children = (
+				790D93CE17C22BE30074F695 /* LHMultiThreadViewCtrl.h */,
+				790D93CF17C22BE30074F695 /* LHMultiThreadViewCtrl.m */,
+				790D93D117C22C740074F695 /* NSThreadViewCtrl.h */,
+				790D93D217C22C740074F695 /* NSThreadViewCtrl.m */,
+				790D93D417C2320B0074F695 /* NSThreadViewCtrl2.h */,
+				790D93D517C2320B0074F695 /* NSThreadViewCtrl2.m */,
+				79F6A5C117C3065000E04AC8 /* NSOperationViewCtrl.h */,
+				79F6A5C217C3065000E04AC8 /* NSOperationViewCtrl.m */,
+				79F6A5C417C30C4800E04AC8 /* GCDViewCtrl.h */,
+				79F6A5C517C30C4800E04AC8 /* GCDViewCtrl.m */,
+			);
+			path = MultiThread;
+			sourceTree = "<group>";
+		};
 		794ADF1D16F9C3450043E6DC /* DDMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -1511,6 +1554,7 @@
 		79C6698E16E5FFAF009FA008 /* Shares */ = {
 			isa = PBXGroup;
 			children = (
+				7911CDBA1824F36500CD1614 /* LHDefines.h */,
 				79C6698F16E5FFAF009FA008 /* AppDelegate.h */,
 				79C6699016E5FFAF009FA008 /* AppDelegate.m */,
 				79C66ACA16E5FFB0009FA008 /* ViewController.h */,
@@ -1523,7 +1567,6 @@
 				79F5470C17BA17F2005E5CD5 /* LHUtility.mm */,
 				79C66A4116E5FFAF009FA008 /* CommDemoDefines.h */,
 				79C9E59C16F94F7500C9C2EB /* CommenCtrl.h */,
-				79C9118417A25282004F3A0B /* LHDefines.h */,
 				79C66ACC16E5FFB0009FA008 /* ViewControllers */,
 				79C9115617A249DE004F3A0B /* UIControls */,
 				79C66A4216E5FFAF009FA008 /* CommView */,
@@ -1648,6 +1691,8 @@
 		79C66ACC16E5FFB0009FA008 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				790D93CD17C22BCC0074F695 /* MultiThread */,
+				79F745F617BCCDF200639618 /* Audio */,
 				79D0CF1317B2223B0073B536 /* DataStorage */,
 				79CD140517A78AFE00359CAA /* Controls */,
 				79C9113017A229F1004F3A0B /* Calendar */,
@@ -1735,6 +1780,7 @@
 		79C9115617A249DE004F3A0B /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
+				79F745F717BCCE2E00639618 /* Audio */,
 				79CD13D417A78AA100359CAA /* CheckBox */,
 				79C9115717A249DE004F3A0B /* Calendar */,
 			);
@@ -2064,6 +2110,7 @@
 		79D4443816B62E0C00C3F952 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				79F7460E17BCD5C700639618 /* 王菲 - 致青春.lrc */,
 				7966E3B217A8B133004A29AB /* test01.png */,
 				798A41D0174C9D0A0063B1A4 /* test02.png */,
 				79F682CC1721528600641FE1 /* close.png */,
@@ -2328,6 +2375,34 @@
 			path = LauncherView;
 			sourceTree = "<group>";
 		};
+		79F745F617BCCDF200639618 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				79F745FF17BCCE5E00639618 /* LHLyricsViewCtrl.h */,
+				79F7460017BCCE5E00639618 /* LHLyricsViewCtrl.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		79F745F717BCCE2E00639618 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				79F745F817BCCE2E00639618 /* Lyrics */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		79F745F817BCCE2E00639618 /* Lyrics */ = {
+			isa = PBXGroup;
+			children = (
+				79F745F917BCCE2E00639618 /* MusicLrcHelper.h */,
+				79F745FA17BCCE2E00639618 /* MusicLrcHelper.m */,
+				79F745FB17BCCE2E00639618 /* MusicLrcLine.h */,
+				79F745FC17BCCE2E00639618 /* MusicLrcLine.m */,
+			);
+			path = Lyrics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2544,6 +2619,7 @@
 				79CD140217A78AA100359CAA /* cb_mono_on@2x.png in Resources */,
 				7966E3B317A8B133004A29AB /* test01.png in Resources */,
 				79F546E717B9E259005E5CD5 /* banklist.sqlite3 in Resources */,
+				79F7460F17BCD5C700639618 /* 王菲 - 致青春.lrc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2782,6 +2858,14 @@
 				79F5470617BA15DD005E5CD5 /* NSManagedObjectContext+Utility.mm in Sources */,
 				79F5470D17BA1805005E5CD5 /* LHUtility.mm in Sources */,
 				79F5471017BA1DA8005E5CD5 /* LHDemoModel.xcdatamodeld in Sources */,
+				79F745FD17BCCE2E00639618 /* MusicLrcHelper.m in Sources */,
+				79F745FE17BCCE2E00639618 /* MusicLrcLine.m in Sources */,
+				79F7460117BCCE5E00639618 /* LHLyricsViewCtrl.m in Sources */,
+				790D93D017C22BE30074F695 /* LHMultiThreadViewCtrl.m in Sources */,
+				790D93D317C22C740074F695 /* NSThreadViewCtrl.m in Sources */,
+				790D93D617C2320B0074F695 /* NSThreadViewCtrl2.m in Sources */,
+				79F6A5C317C3065000E04AC8 /* NSOperationViewCtrl.m in Sources */,
+				79F6A5C617C30C4800E04AC8 /* GCDViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

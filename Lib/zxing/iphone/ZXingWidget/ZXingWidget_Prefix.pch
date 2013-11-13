@@ -1,0 +1,32 @@
+//
+// Prefix header for all source files of the 'CocoaTouchStaticLibrary' target in the 'CocoaTouchStaticLibrary' project.
+//
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import "UIImageManager.h"
+#endif
+
+
+#define SystemVersion   [[[UIDevice currentDevice] systemVersion] floatValue]
+#define _(s)            NSLocalizedString((s), @"")
+
+#define DestoryTwoDimCodeNotification       @"destoryTwoDimCode"
+#define ReleaseMainCtrlNotification         @"ReleaseMainCtrlNotification"
+#define kRemoveIndicatorViewNotification    @"kRemoveIndicatorViewNotification"
+
+
+//判断是否是iPhone5设备
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)]?\
+CGSizeEqualToSize(CGSizeMake(640,1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define SCREEN_WIDTH 320
+#define SCREEN_HEIGHT (iPhone5?[[UIScreen mainScreen] currentMode].size.height/2:480)
+#define DockIntervalHeight      13
+#define	DockHeight				93
+#define	STATUSBAR_HEIGHT		20
+#define	NAVIGATIONBAR_HEIGHT	44
+#define SEARCHBAR_HEIGHT        40
+
+#define DEBUG 1
+
+#define PreviewShow       1
