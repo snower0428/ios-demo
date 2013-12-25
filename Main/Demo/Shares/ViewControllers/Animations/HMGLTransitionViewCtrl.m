@@ -33,7 +33,7 @@
     
     [self createView];
     
-//    Switch3DTransition *transition = [[Switch3DTransition alloc] init];
+    _transition = [[Switch3DTransition alloc] init];
 }
 
 - (void)viewDidLoad
@@ -52,13 +52,14 @@
 
 - (void)createView
 {
+    _viewContainer = [[UIView alloc] initWithFrame:CGRectMake(20, 10, 280, 140)];
+    _viewContainer.backgroundColor = [UIColor clearColor];
     //
     //========================================
     //
     //View1
-    _view1 = [[UIView alloc] initWithFrame:CGRectMake(20, 10, 280, 140)];
+    _view1 = [[UIView alloc] initWithFrame:_viewContainer.bounds];
     _view1.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:_view1];
     
     UILabel *label1 = [UILabel labelWithName:@"This is View1"
                                         font:[UIFont systemFontOfSize:18]
@@ -78,13 +79,14 @@
     [btnCtrlTransition1 setTitle:@"ViewController Transition" forState:UIControlStateNormal];
     [_view1 addSubview:btnCtrlTransition1];
     [btnCtrlTransition1 addTarget:self action:@selector(ctrlTransitionPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_viewContainer addSubview:_view1];
     //
     //========================================
     //
     //View2
     _view2 = [[UIView alloc] initWithFrame:_view1.frame];
     _view2.backgroundColor = [UIColor purpleColor];
-    [self.view addSubview:_view2];
     
     UILabel *label2 = [UILabel labelWithName:@"This is View2"
                                         font:[UIFont systemFontOfSize:18]
@@ -104,14 +106,42 @@
     [btnCtrlTransition2 setTitle:@"ViewController Transition" forState:UIControlStateNormal];
     [_view2 addSubview:btnCtrlTransition2];
     [btnCtrlTransition2 addTarget:self action:@selector(ctrlTransitionPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+//    [_viewContainer addSubview:_view2];
+    //
+    //========================================
+    //
+    [self.view addSubview:_viewContainer];
 }
 
 - (void)viewTransitionPressed:(id)sender
 {
     if (((UIButton *)sender).superview == _view1) {
+//        UIView *containerView = view1.superview;
         
+        [[HMGLTransitionManager sharedTransitionManager] setTransition:_transition];
+        [[HMGLTransitionManager sharedTransitionManager] beginTransition:_viewContainer];
+        
+        // Here you can do whatever you want except changing position, size or transformation of container view, or removing it from view hierarchy.
+        _view2.frame = _view1.frame;
+        [_view1 removeFromSuperview];
+        [_viewContainer addSubview:_view2];
+        
+        [[HMGLTransitionManager sharedTransitionManager] commitTransition];
     } else {
+//        UIView *containerView = view2.superview;
         
+        // Set transition
+        [[HMGLTransitionManager sharedTransitionManager] setTransition:_transition];
+        [[HMGLTransitionManager sharedTransitionManager] beginTransition:_viewContainer];
+        
+        // Here you can do whatever you want except changing position, size or transformation of container view, or removing it from view hierarchy.
+        _view1.frame = _view2.frame;
+        [_view2 removeFromSuperview];
+        [_viewContainer addSubview:_view1];
+        
+        // Commit transition
+        [[HMGLTransitionManager sharedTransitionManager] commitTransition];
     }
 }
 
@@ -128,8 +158,11 @@
 
 - (void)dealloc
 {
+    [_viewContainer release];
     [_view1 release];
     [_view2 release];
+    
+    [_transition release];
     
     [super dealloc];
 }

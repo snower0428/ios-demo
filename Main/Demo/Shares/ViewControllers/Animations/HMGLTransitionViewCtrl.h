@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HMGLTransitionManager.h"
 
 @interface HMGLTransitionViewCtrl : UIViewController
 {
+    UIView          *_viewContainer;
     UIView          *_view1;
     UIView          *_view2;
+    
+    HMGLTransition  *_transition;
 }
 
 @end
