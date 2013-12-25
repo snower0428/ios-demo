@@ -36,6 +36,11 @@
 #define	TABBAR_HEIGHT			50
 #define TOOLBAR_HEIGHT          44
 
+//状态栏透明页面偏移量
+#define kTopShift   (SYSTEM_VERSION<7.0 ? (-STATUSBAR_HEIGHT) : 0)
+
+#define kTopOrigin  (SYSTEM_VERSION<7.0 ? 0 : (STATUSBAR_HEIGHT+NAVIGATIONBAR_HEIGHT))
+
 #define RGB(r, g, b)            [UIColor colorWithRed:(float)(r)/255.f green:(float)(g)/255.f blue:(float)(b)/255.f alpha:1.0f]
 #define RGBA(r, g, b, a)        [UIColor colorWithRed:(float)(r)/255.f green:(float)(g)/255.f blue:(float)(b)/255.f alpha:a]
 
