@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79063AA1187E9BCA003681B7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79063AA3187E9BCA003681B7 /* Localizable.strings */; };
+		79BE52AD187D305700696858 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79BE52AB187D305700696858 /* InfoPlist.strings */; };
+		79BE52B8187D31D500696858 /* CalendarWeeAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE52B7187D31D500696858 /* CalendarWeeAppController.m */; };
+		79BE52BA187D322C00696858 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BE52B9187D322C00696858 /* Foundation.framework */; };
+		79BE52BC187D323400696858 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BE52BB187D323400696858 /* UIKit.framework */; };
+		79BE52C8187D34B400696858 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = 79BE52C7187D34B400696858 /* Resource */; };
+		79BE530D187D439900696858 /* UIImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE530C187D439900696858 /* UIImageManager.m */; };
+		79BE535C187D5CB000696858 /* CnCalendar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79BE533F187D5CB000696858 /* CnCalendar.mm */; };
+		79BE535F187D5CB000696858 /* KalDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE5346187D5CB000696858 /* KalDate.m */; };
+		79BE5360187D5CB000696858 /* KalGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE5348187D5CB000696858 /* KalGridView.m */; };
+		79BE5361187D5CB000696858 /* KalLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE534A187D5CB000696858 /* KalLogic.m */; };
+		79BE5362187D5CB000696858 /* KalMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE534C187D5CB000696858 /* KalMonthView.m */; };
+		79BE5364187D5CB000696858 /* KalSkinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE5351187D5CB000696858 /* KalSkinManager.m */; };
+		79BE5365187D5CB000696858 /* KalTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE5353187D5CB000696858 /* KalTileView.m */; };
+		79BE5366187D5CB000696858 /* KalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE5355187D5CB000696858 /* KalView.m */; };
+		79BE5367187D5CB000696858 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE5357187D5CB000696858 /* NSDateAdditions.m */; };
+		79BE5368187D5CB000696858 /* SRMonthPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE5359187D5CB000696858 /* SRMonthPicker.m */; };
+		79BE5369187D5CB000696858 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE535B187D5CB000696858 /* UIViewAdditions.m */; };
+		79BE536D187D5D0C00696858 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE536C187D5D0C00696858 /* UIImage+Category.m */; };
+		79BE5370187D5D3200696858 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE536F187D5D3200696858 /* UIColor+Expanded.m */; };
+		79BE5373187D5D6600696858 /* UIButton+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE5372187D5D6600696858 /* UIButton+Additions.m */; };
+		79BE5379187D603F00696858 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BE5378187D603F00696858 /* CoreGraphics.framework */; };
+		79BE537B187D607400696858 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BE537A187D607400696858 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79063AA2187E9BCA003681B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79063AA4187E9BEC003681B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		79063AA5187E9BEC003681B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		79063AA6187E9BF4003681B7 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		79063AA7187E9BF4003681B7 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		79063AA8187E9DDF003681B7 /* CalendarWeeAppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CalendarWeeAppDefines.h; path = Class/CalendarWeeAppDefines.h; sourceTree = "<group>"; };
+		79BE52A3187D305700696858 /* CalendarWeeApp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarWeeApp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BE52AA187D305700696858 /* CalendarWeeApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalendarWeeApp-Info.plist"; sourceTree = "<group>"; };
+		79BE52AC187D305700696858 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79BE52AE187D305700696858 /* CalendarWeeApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalendarWeeApp-Prefix.pch"; sourceTree = "<group>"; };
+		79BE52B5187D31D500696858 /* BBWeeAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBWeeAppController.h; sourceTree = "<group>"; };
+		79BE52B6187D31D500696858 /* CalendarWeeAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarWeeAppController.h; sourceTree = "<group>"; };
+		79BE52B7187D31D500696858 /* CalendarWeeAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarWeeAppController.m; sourceTree = "<group>"; };
+		79BE52B9187D322C00696858 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79BE52BB187D323400696858 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79BE52C7187D34B400696858 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
+		79BE530B187D439900696858 /* UIImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageManager.h; sourceTree = "<group>"; };
+		79BE530C187D439900696858 /* UIImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageManager.m; sourceTree = "<group>"; };
+		79BE530E187D442400696858 /* LHDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHDefines.h; path = ../../../LHDefines.h; sourceTree = "<group>"; };
+		79BE533E187D5CB000696858 /* CnCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CnCalendar.h; sourceTree = "<group>"; };
+		79BE533F187D5CB000696858 /* CnCalendar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CnCalendar.mm; sourceTree = "<group>"; };
+		79BE5340187D5CB000696858 /* Kal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kal.h; sourceTree = "<group>"; };
+		79BE5345187D5CB000696858 /* KalDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalDate.h; sourceTree = "<group>"; };
+		79BE5346187D5CB000696858 /* KalDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalDate.m; sourceTree = "<group>"; };
+		79BE5347187D5CB000696858 /* KalGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalGridView.h; sourceTree = "<group>"; };
+		79BE5348187D5CB000696858 /* KalGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalGridView.m; sourceTree = "<group>"; };
+		79BE5349187D5CB000696858 /* KalLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalLogic.h; sourceTree = "<group>"; };
+		79BE534A187D5CB000696858 /* KalLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalLogic.m; sourceTree = "<group>"; };
+		79BE534B187D5CB000696858 /* KalMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalMonthView.h; sourceTree = "<group>"; };
+		79BE534C187D5CB000696858 /* KalMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalMonthView.m; sourceTree = "<group>"; };
+		79BE534F187D5CB000696858 /* KalPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalPrivate.h; sourceTree = "<group>"; };
+		79BE5350187D5CB000696858 /* KalSkinManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalSkinManager.h; sourceTree = "<group>"; };
+		79BE5351187D5CB000696858 /* KalSkinManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalSkinManager.m; sourceTree = "<group>"; };
+		79BE5352187D5CB000696858 /* KalTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalTileView.h; sourceTree = "<group>"; };
+		79BE5353187D5CB000696858 /* KalTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalTileView.m; sourceTree = "<group>"; };
+		79BE5354187D5CB000696858 /* KalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalView.h; sourceTree = "<group>"; };
+		79BE5355187D5CB000696858 /* KalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalView.m; sourceTree = "<group>"; };
+		79BE5356187D5CB000696858 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAdditions.h; sourceTree = "<group>"; };
+		79BE5357187D5CB000696858 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAdditions.m; sourceTree = "<group>"; };
+		79BE5358187D5CB000696858 /* SRMonthPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRMonthPicker.h; sourceTree = "<group>"; };
+		79BE5359187D5CB000696858 /* SRMonthPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMonthPicker.m; sourceTree = "<group>"; };
+		79BE535A187D5CB000696858 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		79BE535B187D5CB000696858 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		79BE536B187D5D0C00696858 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		79BE536C187D5D0C00696858 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		79BE536E187D5D3200696858 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		79BE536F187D5D3200696858 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
+		79BE5371187D5D6600696858 /* UIButton+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Additions.h"; sourceTree = "<group>"; };
+		79BE5372187D5D6600696858 /* UIButton+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Additions.m"; sourceTree = "<group>"; };
+		79BE5376187D5FC300696858 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		79BE5378187D603F00696858 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79BE537A187D607400696858 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79BE52A0187D305700696858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BE537B187D607400696858 /* Accelerate.framework in Frameworks */,
+				79BE5379187D603F00696858 /* CoreGraphics.framework in Frameworks */,
+				79BE52BC187D323400696858 /* UIKit.framework in Frameworks */,
+				79BE52BA187D322C00696858 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79BE529A187D305700696858 = {
+			isa = PBXGroup;
+			children = (
+				79BE52A8187D305700696858 /* CalendarWeeApp */,
+				79BE52A5187D305700696858 /* Frameworks */,
+				79BE52A4187D305700696858 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79BE52A4187D305700696858 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79BE52A3187D305700696858 /* CalendarWeeApp.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79BE52A5187D305700696858 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79BE537A187D607400696858 /* Accelerate.framework */,
+				79BE5378187D603F00696858 /* CoreGraphics.framework */,
+				79BE5376187D5FC300696858 /* QuartzCore.framework */,
+				79BE52BB187D323400696858 /* UIKit.framework */,
+				79BE52B9187D322C00696858 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79BE52A8187D305700696858 /* CalendarWeeApp */ = {
+			isa = PBXGroup;
+			children = (
+				79BE533C187D5CB000696858 /* Class */,
+				79BE530E187D442400696858 /* LHDefines.h */,
+				79063AA8187E9DDF003681B7 /* CalendarWeeAppDefines.h */,
+				79BE530B187D439900696858 /* UIImageManager.h */,
+				79BE530C187D439900696858 /* UIImageManager.m */,
+				79BE52B5187D31D500696858 /* BBWeeAppController.h */,
+				79BE52B6187D31D500696858 /* CalendarWeeAppController.h */,
+				79BE52B7187D31D500696858 /* CalendarWeeAppController.m */,
+				79BE52A9187D305700696858 /* Supporting Files */,
+			);
+			path = CalendarWeeApp;
+			sourceTree = "<group>";
+		};
+		79BE52A9187D305700696858 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79BE52C7187D34B400696858 /* Resource */,
+				79BE52AA187D305700696858 /* CalendarWeeApp-Info.plist */,
+				79BE52AB187D305700696858 /* InfoPlist.strings */,
+				79BE52AE187D305700696858 /* CalendarWeeApp-Prefix.pch */,
+				79063AA3187E9BCA003681B7 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79BE533C187D5CB000696858 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				79BE536A187D5D0C00696858 /* Categories */,
+				79BE533D187D5CB000696858 /* Kal */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		79BE533D187D5CB000696858 /* Kal */ = {
+			isa = PBXGroup;
+			children = (
+				79BE533E187D5CB000696858 /* CnCalendar.h */,
+				79BE533F187D5CB000696858 /* CnCalendar.mm */,
+				79BE5340187D5CB000696858 /* Kal.h */,
+				79BE5345187D5CB000696858 /* KalDate.h */,
+				79BE5346187D5CB000696858 /* KalDate.m */,
+				79BE5347187D5CB000696858 /* KalGridView.h */,
+				79BE5348187D5CB000696858 /* KalGridView.m */,
+				79BE5349187D5CB000696858 /* KalLogic.h */,
+				79BE534A187D5CB000696858 /* KalLogic.m */,
+				79BE534B187D5CB000696858 /* KalMonthView.h */,
+				79BE534C187D5CB000696858 /* KalMonthView.m */,
+				79BE534F187D5CB000696858 /* KalPrivate.h */,
+				79BE5350187D5CB000696858 /* KalSkinManager.h */,
+				79BE5351187D5CB000696858 /* KalSkinManager.m */,
+				79BE5352187D5CB000696858 /* KalTileView.h */,
+				79BE5353187D5CB000696858 /* KalTileView.m */,
+				79BE5354187D5CB000696858 /* KalView.h */,
+				79BE5355187D5CB000696858 /* KalView.m */,
+				79BE5356187D5CB000696858 /* NSDateAdditions.h */,
+				79BE5357187D5CB000696858 /* NSDateAdditions.m */,
+				79BE5358187D5CB000696858 /* SRMonthPicker.h */,
+				79BE5359187D5CB000696858 /* SRMonthPicker.m */,
+				79BE535A187D5CB000696858 /* UIViewAdditions.h */,
+				79BE535B187D5CB000696858 /* UIViewAdditions.m */,
+			);
+			path = Kal;
+			sourceTree = "<group>";
+		};
+		79BE536A187D5D0C00696858 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				79BE5371187D5D6600696858 /* UIButton+Additions.h */,
+				79BE5372187D5D6600696858 /* UIButton+Additions.m */,
+				79BE536E187D5D3200696858 /* UIColor+Expanded.h */,
+				79BE536F187D5D3200696858 /* UIColor+Expanded.m */,
+				79BE536B187D5D0C00696858 /* UIImage+Category.h */,
+				79BE536C187D5D0C00696858 /* UIImage+Category.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79BE52A2187D305700696858 /* CalendarWeeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79BE52B1187D305700696858 /* Build configuration list for PBXNativeTarget "CalendarWeeApp" */;
+			buildPhases = (
+				79BE529F187D305700696858 /* Sources */,
+				79BE52A0187D305700696858 /* Frameworks */,
+				79BE52A1187D305700696858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalendarWeeApp;
+			productName = CalendarWeeApp;
+			productReference = 79BE52A3187D305700696858 /* CalendarWeeApp.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79BE529B187D305700696858 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "ND WebSoft Inc";
+			};
+			buildConfigurationList = 79BE529E187D305700696858 /* Build configuration list for PBXProject "CalendarWeeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 79BE529A187D305700696858;
+			productRefGroup = 79BE52A4187D305700696858 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79BE52A2187D305700696858 /* CalendarWeeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79BE52A1187D305700696858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BE52C8187D34B400696858 /* Resource in Resources */,
+				79063AA1187E9BCA003681B7 /* Localizable.strings in Resources */,
+				79BE52AD187D305700696858 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79BE529F187D305700696858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BE52B8187D31D500696858 /* CalendarWeeAppController.m in Sources */,
+				79BE5362187D5CB000696858 /* KalMonthView.m in Sources */,
+				79BE5360187D5CB000696858 /* KalGridView.m in Sources */,
+				79BE5369187D5CB000696858 /* UIViewAdditions.m in Sources */,
+				79BE5370187D5D3200696858 /* UIColor+Expanded.m in Sources */,
+				79BE5361187D5CB000696858 /* KalLogic.m in Sources */,
+				79BE5366187D5CB000696858 /* KalView.m in Sources */,
+				79BE5368187D5CB000696858 /* SRMonthPicker.m in Sources */,
+				79BE536D187D5D0C00696858 /* UIImage+Category.m in Sources */,
+				79BE535F187D5CB000696858 /* KalDate.m in Sources */,
+				79BE535C187D5CB000696858 /* CnCalendar.mm in Sources */,
+				79BE5367187D5CB000696858 /* NSDateAdditions.m in Sources */,
+				79BE5364187D5CB000696858 /* KalSkinManager.m in Sources */,
+				79BE5373187D5D6600696858 /* UIButton+Additions.m in Sources */,
+				79BE5365187D5CB000696858 /* KalTileView.m in Sources */,
+				79BE530D187D439900696858 /* UIImageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79063AA3187E9BCA003681B7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79063AA2187E9BCA003681B7 /* en */,
+				79063AA5187E9BEC003681B7 /* zh-Hans */,
+				79063AA7187E9BF4003681B7 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		79BE52AB187D305700696858 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79BE52AC187D305700696858 /* en */,
+				79063AA4187E9BEC003681B7 /* zh-Hans */,
+				79063AA6187E9BF4003681B7 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79BE52AF187D305700696858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		79BE52B0187D305700696858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		79BE52B2187D305700696858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalendarWeeApp/CalendarWeeApp-Prefix.pch";
+				INFOPLIST_FILE = "CalendarWeeApp/CalendarWeeApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		79BE52B3187D305700696858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalendarWeeApp/CalendarWeeApp-Prefix.pch";
+				INFOPLIST_FILE = "CalendarWeeApp/CalendarWeeApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79BE529E187D305700696858 /* Build configuration list for PBXProject "CalendarWeeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BE52AF187D305700696858 /* Debug */,
+				79BE52B0187D305700696858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79BE52B1187D305700696858 /* Build configuration list for PBXNativeTarget "CalendarWeeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BE52B2187D305700696858 /* Debug */,
+				79BE52B3187D305700696858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79BE529B187D305700696858 /* Project object */;
+}

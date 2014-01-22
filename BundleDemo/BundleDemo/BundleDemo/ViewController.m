@@ -25,8 +25,13 @@
     
     self.view.backgroundColor = [UIColor grayColor];
     
+    CGFloat yOffset = 0.f;
+    if (SYSTEM_VERSION) {
+        yOffset = STATUSBAR_HEIGHT + NAVIGATIONBAR_HEIGHT;
+    }
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(10, 10, 100, 50);
+    button.frame = CGRectMake(10, 10+yOffset, 300, 50);
     [button setTitle:@"Test" forState:UIControlStateNormal];
     [self.view addSubview:button];
     [button addTarget:self action:@selector(Test) forControlEvents:UIControlEventTouchUpInside];
@@ -53,7 +58,7 @@
 		NSLog(@"MainClass is create correct");
         
         UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:ctrl];
-        [self presentModalViewController:navCtrl animated:YES];
+        [self presentViewController:navCtrl animated:YES completion:nil];
         [ctrl release];
         [navCtrl release];
 	}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791BE190187CFF4B0032900A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 791BE18F187CFF4B0032900A /* Default-568h@2x.png */; };
 		79A66FE0169981A400CFF887 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A66FDF169981A400CFF887 /* UIKit.framework */; };
 		79A66FE2169981A400CFF887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A66FE1169981A400CFF887 /* Foundation.framework */; };
 		79A66FE4169981A400CFF887 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A66FE3169981A400CFF887 /* CoreGraphics.framework */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		791BE18F187CFF4B0032900A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		791BE191187CFFFA0032900A /* LHDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHDefines.h; path = ../../../LHDefines.h; sourceTree = "<group>"; };
 		79A66FDB169981A400CFF887 /* BundleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BundleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A66FDF169981A400CFF887 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79A66FE1169981A400CFF887 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +51,7 @@
 		79A66FD0169981A400CFF887 = {
 			isa = PBXGroup;
 			children = (
+				791BE18F187CFF4B0032900A /* Default-568h@2x.png */,
 				79A66FE5169981A400CFF887 /* BundleDemo */,
 				79A66FDE169981A400CFF887 /* Frameworks */,
 				79A66FDC169981A400CFF887 /* Products */,
@@ -75,6 +79,7 @@
 		79A66FE5169981A400CFF887 /* BundleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				791BE191187CFFFA0032900A /* LHDefines.h */,
 				79A66FEE169981A400CFF887 /* AppDelegate.h */,
 				79A66FEF169981A400CFF887 /* AppDelegate.m */,
 				79A66FF1169981A400CFF887 /* ViewController.h */,
@@ -146,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79A66FEA169981A400CFF887 /* InfoPlist.strings in Resources */,
+				791BE190187CFF4B0032900A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +201,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -213,7 +219,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

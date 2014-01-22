@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  CalendarWeeApp
+
+  Created by leihui on 14-1-9.
+  Copyright (c) 2014年 ND WebSoft Inc. All rights reserved.
+*/
+
+"Sun" = "Sun";
+"Mon" = "Mon";
+"Tue" = "Tue";
+"Wed" = "Wed";
+"Thu" = "Thu";
+"Fri" = "Fri";
+"Sat" = "Sat";
